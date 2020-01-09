@@ -1,4 +1,4 @@
 export default {
-  title: 'Marina Aísa - Product Designer and Front-End Developer',
-  description: 'I’m a Product Designer (UI/UX) and Front-End Developer based in Barcelona.'
+  title: 'Antje Sommer - Front-End Developer',
+  description: 'I am a Front-End Developer with UX Design and Ecommerce background based in Hamburg.'
 }
