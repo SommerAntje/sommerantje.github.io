@@ -4,11 +4,16 @@
       <a href="/" class="header__link-logo nuxt-link-exact-active nuxt-link-active">
          <img src="~/assets/images/logo-antje.svg" alt="Logo Antje Sommer" class="header__logo" />
       </a>
+      <div class="navigation-items">
+        <LangSwitcher/>
+      </div>
     </div>
   </header>
 </template>
 <script>
+import LangSwitcher from '~/components/LangSwitcher';
 export default {
+  components: {LangSwitcher}
 }
 </script>
 

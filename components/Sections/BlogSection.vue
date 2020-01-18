@@ -4,7 +4,6 @@
       <div>
         <h2>{{ $t('posts') }}</h2>
       </div>
-      <LangSwitcher/>
     </div>
     <ul class="blogs">
       <blog-card
@@ -16,10 +15,8 @@
 </template>
 <script>
 import BlogCard from "~/components/BlogCard.vue";
-import LangSwitcher from '~/components/LangSwitcher'
-
 export default {
-  components: { BlogCard, LangSwitcher },
+  components: { BlogCard},
   props: {
     blogs: {
       type: Array
