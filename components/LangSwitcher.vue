@@ -27,7 +27,7 @@ select {
   border-radius: 0;
   color: $primary;
   padding: 1rem 3rem 1rem 1rem;
-  border: 1px solid transparent;
+  border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
