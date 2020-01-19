@@ -4,18 +4,14 @@
       <a href="/" class="header__link-logo nuxt-link-exact-active nuxt-link-active">
          <img src="~/assets/images/logo-antje.svg" alt="Logo Antje Sommer" class="header__logo" />
       </a>
-      <div class="navigation-items">
-        <LangSwitcher/>
-        <LangSwitcher/>
-        <ul class="nav-list"><li class="nav-item"><a href="/blog" class="ani"><span>Posts</span></a></li></ul>
-      </div>
+       <Navigation/>
     </div>
   </header>
 </template>
 <script>
-import LangSwitcher from '~/components/LangSwitcher';
+import Navigation from '~/components/Navigation';
 export default {
-  components: {LangSwitcher}
+  components: {Navigation}
 }
 </script>
 
@@ -48,39 +44,6 @@ export default {
 
     @media (min-width: $screen-sm){
       flex-direction: row;
-    }
-  }
-}
-.navigation-items {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-
-  .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-
-    @media (min-width: $screen-sm) {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-       flex-direction: row;
-    }
-  }
-
-  .nav-item {
-    @media (min-width: 768px) {
-      li {
-          margin-bottom: 0;
-      }
     }
   }
 }
