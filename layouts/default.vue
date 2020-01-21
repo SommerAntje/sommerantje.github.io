@@ -1,6 +1,7 @@
 <template>
   <div class="layout">
     <Header/>
+    <SideNav/>
     <nuxt class="nuxt-content"/>
     <Footer/>
   </div>
@@ -8,11 +9,13 @@
 <script>
   import Footer from '~/components/Sections/Footer'
   import Header from '~/components/Sections/Header'
+  import SideNav from '~/components/Sections/SideNav'
 
   export default {
     components: {
       Footer,
-      Header
+      Header,
+      SideNav
     }
   }
 </script>
