@@ -4,14 +4,19 @@
       <a href="/" class="header__link-logo nuxt-link-exact-active nuxt-link-active">
          <img src="~/assets/images/logo-antje.svg" alt="Logo Antje Sommer" class="header__logo" />
       </a>
-       <Navigation/>
+      <DrawerToggle/>
+      <Navigation/>
     </div>
   </header>
 </template>
 <script>
 import Navigation from '~/components/Navigation';
+import DrawerToggle from '~/components/DrawerToggle';
 export default {
-  components: {Navigation}
+  components: {
+    Navigation,
+    DrawerToggle
+  }
 }
 </script>
 
