@@ -31,6 +31,11 @@ export default {
       -webkit-box-pack: justify;
       justify-content: space-between;
     }
+    @media (max-width: $screen-xs) {
+      a {
+        color: $text-negative;
+      }
+    }
   }
 
   .nav-list {
@@ -46,6 +51,11 @@ export default {
 
   .nav-item {
     margin: 0 10px;
+    @media (max-width: $screen-xs) {
+      margin: 10px;
+      border-bottom: 1px solid $text-negative;
+      padding: 0.5rem;
+    }
   }
 
   @media (min-width: $screen-sm) {

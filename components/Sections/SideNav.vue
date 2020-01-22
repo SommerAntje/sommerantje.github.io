@@ -30,7 +30,7 @@ export default {
     }
     .sidenav {
         height: auto;
-        background-color: $text-negative;
+        background-color: $primary;
         z-index: 10000;
         box-sizing: border-box;
         padding: 30px;

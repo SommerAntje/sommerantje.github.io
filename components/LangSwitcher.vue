@@ -41,10 +41,31 @@ select {
 
   &:hover {
     border-color: $primary;
+    @media (max-width: $screen-xs) {
+     option {
+        color: $primary;
+      }
+    }
   }
   
   &:focus {
     outline: none;
+      @media (max-width: $screen-xs) {
+      option {
+        color: $primary;
+      }
+    }
+  }
+}
+.lang-switcher {
+    @media (max-width: $screen-xs) {
+      color: $text-negative;
+    }
+   &:focus {
+    outline: none;
+      @media (max-width: $screen-xs) {
+      color: $text-negative;
+    }
   }
 }
 </style>
