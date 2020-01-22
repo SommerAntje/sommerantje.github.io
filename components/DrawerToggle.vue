@@ -1,5 +1,5 @@
 <template>
-    <div role="button" class="drawer-toggle">
+    <div role="button" class="drawer-toggle" @click="$store.dispatch('nav/toggleSidebar')">
         <div class="bar"></div> 
         <div class="bar"></div> 
         <div class="bar"></div>
@@ -23,15 +23,11 @@ export default {
 
     .bar {
         width: 90%;
-        height: 4px;
+        height: 3px;
         background-color: $primary;
         margin-bottom: .8rem;
         border-radius: 20px;
     }
 }
-@media (min-width: $screen-sm) {
-    .drawer-toggle {
-        display: none;
-    }
-}
+
 </style>

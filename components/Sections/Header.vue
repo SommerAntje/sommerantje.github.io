@@ -1,8 +1,8 @@
 <template>
-  <header class="header">
-    <div class="container header__container">
-      <a href="/" class="header__link-logo nuxt-link-exact-active nuxt-link-active">
-         <img src="~/assets/images/logo-antje.svg" alt="Logo Antje Sommer" class="header__logo" />
+  <header class="the-header">
+    <div class="container">
+      <a href="/" class="the-header__link-logo nuxt-link-exact-active nuxt-link-active">
+         <img src="~/assets/images/logo-antje.svg" alt="Logo Antje Sommer" class="the-header__logo" />
       </a>
       <DrawerToggle/>
       <Navigation/>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
-.header {
+.the-header {
   width: 100%;
   height: 6rem;
   display: -webkit-box;
@@ -40,15 +40,31 @@ export default {
   &__link-logo {
      line-height: 0;
   }
-  
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: column;
 
-    @media (min-width: $screen-sm){
+  .container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+     width: 100%;
+
+    @media (max-width: $screen-xs){
       flex-direction: row;
+    }
+  }
+  @media (min-width: $screen-sm) {
+    .drawer-toggle {
+        display: none;
+    }
+  }
+  @media (min-width: $screen-sm) {
+    height: 8rem;
+  }
+  @media (max-width: $screen-xs) {
+    .navigation-items {
+      display: none;
     }
   }
 }

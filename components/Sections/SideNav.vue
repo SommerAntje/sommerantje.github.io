@@ -1,28 +1,36 @@
 <template>
     <div class="sidenav-container">
-        <div class="sidenav-backdrop"></div> 
-        <div class="sidenav">
-            <Navigation/>
-            <LangSwitcher/>
-        </div>
+        <div v-if="toggleSidebar" class="sidenav-backdrop" @click="$store.dispatch('nav/toggleSidebar')"></div> 
+       <transition name="slide-side">
+            <div v-if="toggleSidebar" class="sidenav">
+                <Navigation/>
+                <LangSwitcher/>
+            </div>
+        </transition>
     </div>
 </template>
 <script>
 import Navigation from '~/components/Navigation';
-import LangSwitcher from '~/components/LangSwitcher';
 export default {
     components: {
         Navigation
+    },
+     computed: {
+        toggleSidebar() {
+            return this.$store.getters['nav/toggleSidebar']
+        }
     }
 }
 </script>
-<style lang="scss">
-.sidenav-container {
-    height: 100%;
-    width: 100%;
+<style scoped lang="scss">
+    .sidenav-container {
+        height: 100%;
+        width: 100%;
+        
+    }
     .sidenav {
         height: auto;
-        background-color: #6c5cff;
+        background-color: $text-negative;
         z-index: 10000;
         box-sizing: border-box;
         padding: 30px;
@@ -39,5 +47,12 @@ export default {
         top: 0;
         left: 0;
     }
-}
+    .slide-side-enter-active,
+    .slide-side-leave-active {
+        transition: all 0.3s ease-out;
+    }
+    .slide-side-enter,
+    .slide-side-leave-to {
+        transform: translateY(-100%);
+    }
 </style>
