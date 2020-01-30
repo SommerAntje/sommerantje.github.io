@@ -1,13 +1,12 @@
 <template>
    <section class="hero">
        <div class="hero__content">
-    
-           <img src="https://dummyimage.com/600x400/32aae1/fff.png&text=Antje+IMG" alt="Imagen de Marina" class="hero__profile" />
-      
+           <img src="~/assets/images/profile_picture.png" alt="Antje Sommer" class="hero__profile" lazy="loaded" />
        <div class="hero__text">
-		 <h1 id="hero-text" style="background: white;">
+		 <h1>
 			 <span id="hero-text-content" class="hero-text--typing"> Hi! I'm 
-			 	<a target="_blank" rel="noopener" href="https://twitter.com/MarinaAisa">Antje Sommer</a>
+			 	<a target="_blank" rel="noopener" href="https://github.com/SommerAntje">Antje Sommer,</a>
+                welcome to my blog.
 			 </span>
 		 </h1>
 	 </div>
@@ -25,7 +24,7 @@ export default {
 <style lang="scss">
  .hero {
     width: 100%;
-    background: #161618;
+    background: #fff;
     text-align: center;
     position: relative;
 }
@@ -39,82 +38,85 @@ export default {
         margin-bottom: 7.2rem;
     }
 }
-.container, .hero .hero__content {
+.hero__content {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
     max-width: 100%;
+    vertical-align: middle;   
 }
 
-.hero .hero__content {
-    vertical-align: middle;
-    overflow: hidden;
-}
 @media (min-width: 1140px) {
-    .container, .hero .hero__content {
+   .hero__content {
         max-width: 1000px;
     }
 }
 @media (min-width: 992px) {
-    .container, .hero .hero__content {
+    .hero__content {
         max-width: 1000px;
     }
 }
 @media (min-width: 768px) {
-    .container, .hero .hero__content {
+    .hero__content {
         max-width: 990px;
     }
-}
-@media (min-width: 375px) {
-    .container, .hero .hero__content {
-        max-width: 768px;
-    }
-}
 
+}
 
 @media (min-width: 1140px) {
-    .hero .hero__text {
+    .hero__text {
         width: 30%;
     }
 }
 @media (min-width: 992px) {
-    .hero .hero__text {
+    .hero__text {
         width: 40%;
     }
 }
 @media (min-width: 768px) {
-    .hero .hero__text {
+ .hero__text {
         width: 48%;
         position: absolute;
         min-height: 0;
         margin-bottom: 0;
     }
 }
-.hero .hero__text {
+.hero__text {
     position: absolute;
     background: #fff;
     min-height: 74px;
     margin-bottom: 2rem;
-    padding: 0;
-    top: 58%;
-    width: 20%;
+    padding: 1rem;
+    top: 55%;
+    width: 27%;
+    left: 21%;
+    @media (max-width: 375px) {
+       top: 68%;
+       width: 77%;
+       left: -6%;
+    }
+
 }
 
-.hero .hero__profile {
-    float: right;
+.hero__profile {
     margin-bottom: 0;
-}
-
-.hero .hero__profile {
+    border: 5px solid #32AAE1;
+    border-radius: 50%;
     width: 50%;
-    margin-bottom: -8px;
+    top: 4rem;
+    position: relative;
+    @media (max-width: 375px) {
+        width: 100%;
+    }
 }
 
 img {
     max-width: 100%;
     height: auto;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 </style>
