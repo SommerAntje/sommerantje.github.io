@@ -1,5 +1,6 @@
 <template>
   <div class="page-index">
+      <HeroBanner />
     <div class="container">
       <BlogSection :blogs="blogs"/>
     </div>
@@ -8,9 +9,10 @@
 
 <script>
   import BlogSection from "~/components/Sections/BlogSection"
-
   import blogsEn from '~/contents/en/blogsEn.js'
   import blogsEs from '~/contents/es/blogsEs.js'
+
+  import HeroBanner from "~/components/Sections/HeroBanner"
 
   export default {
     async asyncData ({app}) {
@@ -30,7 +32,7 @@
       })
     },
     
-    components: { BlogSection },
+    components: { BlogSection, HeroBanner},
 
     transition: {
       name: 'slide-fade'
