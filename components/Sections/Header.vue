@@ -39,8 +39,6 @@ export default {
 
   &__link-logo {
      line-height: 0;
-     border: 2px solid $primary;
-     padding: 0.5rem;
   }
 
   .container {
