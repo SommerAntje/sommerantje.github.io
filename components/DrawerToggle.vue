@@ -25,7 +25,8 @@ export default {
         width: 90%;
         height: 3px;
         background-color: $primary;
-        margin-bottom: .8rem;
+        margin-top: .4rem;
+        margin-bottom: .4rem;
         border-radius: 20px;
     }
 }
