@@ -8,7 +8,7 @@ const productionUrl = {
   en: "/en",
   es: "/es"
 };
-const baseUrl = 'https://marinaaisa.com';
+const baseUrl = 'https://github.com/SommerAntje';
 
 module.exports = {
   env: {

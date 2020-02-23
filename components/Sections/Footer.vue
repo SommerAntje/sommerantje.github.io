@@ -25,7 +25,7 @@ export default {
 <style lang="scss">
 .footer {
 	&__info {
-		background-color: $background-secondary;
+		background-color: $text-negative;
 		padding: 1.5em 0;
   }
   
@@ -48,13 +48,12 @@ export default {
 	}
 
 	&__top-page {
-		color: $text-negative;
 		display: block;
 		text-align: center;
 		line-height: 1;
-		-webkit-transition: 1s;
-		-moz-transition: 1s;
-    transition: 1s;
+		-webkit-transition: 2s;
+		-moz-transition: 2s;
+    transition: 2s;
     
 		@media (min-width: $screen-sm){
 			text-align: right;
