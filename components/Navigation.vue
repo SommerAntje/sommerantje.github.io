@@ -6,11 +6,6 @@
         <span> Posts </span>
       </nuxt-link>
     </li>
-    <li class="nav-item">
-    <nuxt-link to="/resume" class="ani">
-        <span> Resume </span>
-    </nuxt-link>
-    </li>
   </ul>
   <LangSwitcher />
 </div>
