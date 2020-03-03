@@ -5,16 +5,6 @@
   +
   <img src="https://geekytheory.com/wp-content/uploads/2014/03/markdown_inte-1024x630.png" height="60">
 </p>
-<h1 align="center">
-  Nuxt + Markdown blog starter
-</h1>
-<p align="center">
-  This is not an official project. It's made by <a href="https://marinaaisa.com/">Marina Aísa</a> and you can contribute submitting a pull-request.
-  </a>
-</p>
-
-## ⚡️ Live
-[Check it live](https://nuxt-markdown-blog-starter.netlify.com/)
 
 ## ✨ Quick start
 
@@ -95,4 +85,4 @@
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/marinaaisa/nuxt-markdown-blog-starter)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/)
