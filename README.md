@@ -10,10 +10,6 @@
 
 1.  **Clone this repository.**
 
-    ```sh
-    git clone https://github.com/marinaaisa/nuxt-markdown-blog-starter.git
-    ```
-
 2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
