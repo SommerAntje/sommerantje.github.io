@@ -63,7 +63,7 @@ body {
 
 ::selection { 
   background: $primary;
-  color: white;
+  color: $background-primary;
 }
 
 .fa{
@@ -113,7 +113,7 @@ button {
   height: 3.6rem;
   background-color: $primary;
   text-decoration: none;
-  color: #ffffff;
+  color: $background-primary;
   cursor: pointer;
   border: 0;
   text-align: center;
@@ -124,7 +124,7 @@ button {
 }
 
 button:hover {
-  background-color: #574bc1;
+  background-color: $primary;
 }
 
 button:focus {
@@ -146,7 +146,7 @@ button:active {
   &__field {
     transition: border .1s ease;
     border: 1px solid $grey-3;
-    background-color: white;
+    background-color: $background-primary;
     padding: 0 8px;
     height: 36px;
     font-size: 16px;
@@ -163,7 +163,7 @@ button:active {
     }
 
     &:disabled {
-      background-color: grey;
+      background-color: $grey-2;
       pointer-events: none;
     }
   }
