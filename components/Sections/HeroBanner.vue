@@ -8,10 +8,7 @@
       />
       <div class="hero__text">
         <h1>
-          <span
-            id="hero-text-content"
-            class="hero-text--typing"
-          > Hi! I'm
+          <span> Hi! I'm
             <a
               target="_blank"
               rel="noopener"
@@ -32,16 +29,16 @@ export default {};
 <style lang="scss">
 .hero {
   width: 100%;
-  background: #fff;
+  background: $background-primary;
   text-align: center;
   position: relative;
 
-  @media (min-width: $screen-md) {
-    height: 488px; 
-  }
-
   @media (min-width: $screen-sm) {
     margin-bottom: 7.2rem;
+  }
+
+  @media (min-width: $screen-md) {
+    height: 488px; 
   }
 
   &__content {
@@ -52,54 +49,50 @@ export default {};
     max-width: 100%;
     vertical-align: middle;
 
-    @media (min-width: $screen-lg) {
-     max-width: $container-lg;
-    }
-
-    @media (min-width: $screen-md) {
-     max-width: $container-lg;
-    }
-
     @media (min-width: $screen-sm) {
      max-width: $container-md;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      -webkit-transition: all 0.3s ease;
-      transition: all 0.3s ease;
+    @media (min-width: $screen-md) {
+     max-width: $container-lg;
     }
+
+    @media (min-width: $screen-lg) {
+     max-width: $container-lg;
+    }
+
   }
 
   &__profile {
     margin-bottom: 0;
-    border: 5px solid #32aae1;
+    border: 5px solid $primary;
     border-radius: 50%;
     width: 50%;
     position: relative;
-
+    height: auto;
+    float: right;
+    max-width: 100%;	 
+  
     @media (max-width: $screen-xs) {
       width: 100%;
-    }
+    }  
   }
 
   &__text {
     position: absolute;
-    background: #fff;
+    background: transparent;
     min-height: 74px;
     margin-bottom: 2rem;
     padding: 1rem;
-    top: 55%;
-    width: 27%;
-    left: 21%;
+    top: 39%;
 
-    @media (min-width: $screen-lg) {
-      width: 30%;
-    }
-
-    @media (min-width: $screen-md) {
-      width: 40%;
+    @media (max-width: $screen-xs) {
+      position: relative;
+      min-height: 74px;
+      margin-bottom: 0;
+      padding: 0;
+      top: 0;
+      margin-top: 2.75rem;
     }
 
     @media (min-width: $screen-sm) {
@@ -109,23 +102,32 @@ export default {};
       margin-bottom: 0;
     }
 
-    @media (max-width: $screen-xs) {
-      top: 68%;
-      width: 77%;
-      left: -6%;
+    @media (min-width: $screen-md) {
+      width: 40%;
     }
 
+    @media (min-width: $screen-lg) {
+      width: 30%;
+    }
+  
     h1 {
       margin-bottom: 0;
-      padding: .7rem 2rem;
+      padding: 2rem;
       text-align: left;
       -webkit-transition: background-color .3s ease-out;
       transition: background-color .3s ease-out;
     
+      @media (max-width: $screen-xs) {
+        font-size: 3rem;
+        text-align: center;
+        padding: 0;
+      }
+
       @media (min-width: $screen-sm) {
         font-size: 3rem;
       }
     }
   }
 }
+
 </style>
