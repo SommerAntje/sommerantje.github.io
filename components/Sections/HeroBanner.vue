@@ -68,11 +68,8 @@ export default {};
     border: 5px solid $primary;
     border-radius: 50%;
     width: 50%;
-    position: relative;
-    height: auto;
     float: right;
-    max-width: 100%;	 
-  
+  	 
     @media (max-width: $screen-xs) {
       width: 100%;
     }  
