@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="hero__content">
       <ImageResponsive
-        imageURL="profile_picture.jpg"
+        imageURL="profile_picture_.jpg"
         classes="hero__profile"
         alt="Antje Sommer"
       />
