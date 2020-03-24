@@ -67,12 +67,21 @@ export default {};
     margin-bottom: 0;
     border: 5px solid $primary;
     border-radius: 50%;
-    width: 50%;
+    width: 100%;
     float: right;
+
+    @media (min-width: $screen-sm) and (max-width: $screen-md) {
+      width: 50%;
+    }
   	 
-    @media (max-width: $screen-xs) {
-      width: 100%;
-    }  
+    @media (min-width: $screen-md) {
+      width: 50%;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 50%;
+    }
+
   }
 
   &__text {
@@ -92,6 +101,14 @@ export default {};
       margin-top: 2.75rem;
     }
 
+    @media (min-width: $screen-xs) and (max-width: $screen-sm)  {
+      position: relative;
+      min-height: 74px;
+      margin-bottom: 0;
+      padding: 0;
+      margin-top: 2.75rem;
+    }
+
     @media (min-width: $screen-sm) {
       width: 48%;
       position: absolute;
@@ -108,20 +125,16 @@ export default {};
     }
   
     h1 {
-      margin-bottom: 0;
-      padding: 2rem;
-      text-align: left;
+      font-size: 3rem;
+      text-align: center;
+      padding: 0;
       -webkit-transition: background-color .3s ease-out;
       transition: background-color .3s ease-out;
     
-      @media (max-width: $screen-xs) {
-        font-size: 3rem;
-        text-align: center;
-        padding: 0;
-      }
-
-      @media (min-width: $screen-sm) {
-        font-size: 3rem;
+      @media (min-width: $screen-md) {
+        margin-bottom: 0;
+        padding: 2rem;
+        text-align: left;
       }
     }
   }
