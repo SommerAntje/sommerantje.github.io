@@ -34,7 +34,7 @@ export default {
   background-color: #fff;
 
   &__logo {
-    height: 38px;
+    height: 33px;
   }
 
   &__link-logo {

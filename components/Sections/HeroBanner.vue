@@ -2,6 +2,11 @@
   <section class="hero">
     <div class="hero__content">
       <ImageResponsive
+        imageURL="placeholder_pixel.jpg"
+        classes="placeholder_lazyload"
+        alt="lazyload pixel"
+      />
+      <ImageResponsive
         imageURL="profile_picture_.jpg"
         classes="hero__profile"
         alt="Antje Sommer"
@@ -27,6 +32,9 @@ export default {};
 </script>
 
 <style lang="scss">
+.placeholder_lazyload {
+  visibility: hidden;
+}
 .hero {
   width: 100%;
   background: $background-primary;
