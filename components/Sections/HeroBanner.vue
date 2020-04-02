@@ -32,6 +32,8 @@ export default {};
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 .placeholder_lazyload {
   visibility: hidden;
 }
@@ -133,7 +135,8 @@ export default {};
     }
   
     h1 {
-      font-size: 3rem;
+      font-family: 'Indie Flower', cursive;
+      font-size: 3.5rem;
       text-align: center;
       padding: 0;
       -webkit-transition: background-color .3s ease-out;
