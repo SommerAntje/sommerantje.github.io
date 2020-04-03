@@ -63,10 +63,10 @@ export default {
     }
   }
 
-  .navigation-items {
+  .navigation {
     display: none;
 
-  	@media (min-width: $screen-md) {
+  	@media (min-width: $screen-sm) {
   		display: inline-flex;
     }
   }
@@ -74,7 +74,7 @@ export default {
   .drawer-toggle {
     display: flex;
 
-  	@media (min-width: $screen-md) {
+  	@media (min-width: $screen-sm) {
   		display: none;
   	}
   }

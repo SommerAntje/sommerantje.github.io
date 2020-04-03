@@ -41,8 +41,13 @@ select {
 
   &:hover {
     border-color: $primary;
-    @media (max-width: $screen-xs) {
-     option {
+    option {
+      color: $primary;
+    }
+
+    option:selected {
+      color: $text-negative;
+      @media (min-width: $screen-sm) {
         color: $primary;
       }
     }
@@ -50,21 +55,29 @@ select {
   
   &:focus {
     outline: none;
-      @media (max-width: $screen-xs) {
-      option {
+     option {
+      color: $primary;
+    }
+
+    option:selected {
+      color: $text-negative;
+      @media (min-width: $screen-sm) {
         color: $primary;
       }
     }
   }
 }
 .lang-switcher {
-    @media (max-width: $screen-xs) {
-      color: $text-negative;
+    color: $text-negative;
+    @media (min-width: $screen-sm) {
+      color: $primary;
     }
+    
    &:focus {
     outline: none;
-      @media (max-width: $screen-xs) {
-      color: $text-negative;
+    color: $text-negative;
+    @media (min-width: $screen-sm) {
+      color: $primary;
     }
   }
 }
