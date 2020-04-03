@@ -64,17 +64,17 @@ export default {
   }
 
   .navigation-items {
-  	@media (max-width: $screen-xs) {
-  		display: none;
-    }
-    
-    @media(max-width: $screen-sm){
-      display: none;
+    display: none;
+
+  	@media (min-width: $screen-md) {
+  		display: inline-flex;
     }
   }
 
   .drawer-toggle {
-  	@media(min-width: $screen-sm) {
+    display: flex;
+
+  	@media (min-width: $screen-md) {
   		display: none;
   	}
   }
