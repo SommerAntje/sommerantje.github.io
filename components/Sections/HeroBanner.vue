@@ -7,7 +7,7 @@
         alt="lazyload pixel"
       />
       <ImageResponsive
-        imageURL="profile_picture_.jpg"
+        imageURL="profile_picture_blue.jpg"
         classes="hero__profile"
         alt="Antje Sommer"
       />
