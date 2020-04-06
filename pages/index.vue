@@ -2,7 +2,7 @@
   <div class="page-index">
       <HeroBanner />
     <div class="container">
-      <BlogSection :blogs="blogs"/>
+      <BlogSection :blogs="blogs" />
     </div>
   </div>
 </template>
@@ -18,13 +18,13 @@
     async asyncData ({app}) {
 
       const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
-      
+  
       async function asyncImport (blogName) {
         const wholeMD = await import(`~/contents/${app.i18n.locale}/blog/${blogName}.md`)
         return wholeMD.attributes
       }
 
-      return Promise.all(blogs.map(blog => asyncImport(blog)))
+      return Promise.all(blogs.slice(-2).map(blog => asyncImport(blog)))
       .then((res) => {
         return {
           blogs: res
