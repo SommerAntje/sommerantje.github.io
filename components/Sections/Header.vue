@@ -23,9 +23,9 @@ export default {
 <style lang="scss">
 .header {
   width: 100%;
-  height: 6rem;
   display: -webkit-box;
   display: flex;
+  height: 8rem;
   justify-content: space-around;
   -webkit-box-align: center;
   align-items: center;
@@ -34,7 +34,7 @@ export default {
   background-color: $background-primary;
   
   @media (min-width: $screen-sm){
-  	height: 8rem;
+  	height: 6rem;
   }
 
   &__logo {
