@@ -1,16 +1,23 @@
 <template>
   <div class="page-index">
       <HeroBanner />
+    <div style="position: relative; z-index: 9999; background-color: #fff;">
+    <parallax>
+      <img src="~/assets/images/hafen_altona_color.jpg" />
+    </parallax>
+    </div>
+    <div style="background-color: #fff; height: 100vh;"></div>
     <div style="background-color: #fff; height: auto;">
       <div class="container">
         <BlogSection :blogs="blogs" />
       </div>
     </div>
-  
-    <parallax :fixed="true">
-      <img src="~/assets/images/hamburg_blue.jpg" />
-    </parallax>
-    
+    <div style="position: relative;">
+      <parallax :fixed="true">
+        <img src="~/assets/images/hh_hafen_altona.jpg" />
+      </parallax>
+    </div>
+     <div style="background-color: #fff; height: 100vh;"></div>
   </div>
 </template>
 
