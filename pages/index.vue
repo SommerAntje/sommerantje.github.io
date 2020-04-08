@@ -1,18 +1,28 @@
 <template>
   <div class="page-index">
       <HeroBanner />
-    <div class="container">
-      <BlogSection :blogs="blogs" />
+    <div style="background-color: #fff; height: auto;">
+      <div class="container">
+        <BlogSection :blogs="blogs" />
+      </div>
     </div>
+  
+    <parallax :fixed="true">
+      <img src="~/assets/images/hamburg_blue.jpg" />
+    </parallax>
+    
   </div>
 </template>
 
 <script>
-  import BlogSection from "~/components/Sections/BlogSection"
+  import BlogSection from '~/components/Sections/BlogSection'
   import blogsEn from '~/contents/en/blogsEn.js'
   import blogsEs from '~/contents/es/blogsEs.js'
+  import HeroBanner from '~/components/Sections/HeroBanner'
 
-  import HeroBanner from "~/components/Sections/HeroBanner"
+  import Parallax from 'vue-parallaxy'
+
+
 
   export default {
     async asyncData ({app}) {
@@ -32,7 +42,7 @@
       })
     },
     
-    components: { BlogSection, HeroBanner},
+    components: {BlogSection, HeroBanner, Parallax},
 
     transition: {
       name: 'slide-fade'
