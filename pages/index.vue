@@ -8,7 +8,7 @@
     </div>
     <div style="position: relative; z-index: 9999; background-color: #fff;">
       <parallax>
-        <img src="~/assets/images/hafen_altona_color.jpg" />
+        <img src="~/assets/images/hamburg_elphi.jpg" />
       </parallax>
     </div>
     <div style="background-color: #fff; height: 100vh;">
@@ -18,7 +18,7 @@
     </div>
     <div style="position: relative;">
       <parallax :fixed="true">
-        <img src="~/assets/images/hh_hafen_altona.jpg" />
+        <img src="~/assets/images/hafen_altona.jpg" />
       </parallax>
     </div>
      <div style="background-color: #fff; height: 100vh;">
