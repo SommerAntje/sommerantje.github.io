@@ -1,13 +1,17 @@
 <template>
   <div class="page-index">
       <HeroBanner />
-    <div style="position: relative; z-index: 9999; background-color: #fff;">
-    <parallax>
-      <img src="~/assets/images/hafen_altona_color.jpg" />
-    </parallax>
+    <div style="background-color: #fff; height: 100vh;">
+      <div class="container">
+        <BlogSection :blogs="blogs" />
+      </div>
     </div>
-    <div style="background-color: #fff; height: 100vh;"></div>
-    <div style="background-color: #fff; height: auto;">
+    <div style="position: relative; z-index: 9999; background-color: #fff;">
+      <parallax>
+        <img src="~/assets/images/hafen_altona_color.jpg" />
+      </parallax>
+    </div>
+    <div style="background-color: #fff; height: 100vh;">
       <div class="container">
         <BlogSection :blogs="blogs" />
       </div>
@@ -17,7 +21,11 @@
         <img src="~/assets/images/hh_hafen_altona.jpg" />
       </parallax>
     </div>
-     <div style="background-color: #fff; height: 100vh;"></div>
+     <div style="background-color: #fff; height: 100vh;">
+       <div class="container">
+        <BlogSection :blogs="blogs" />
+      </div>
+     </div>
   </div>
 </template>
 
