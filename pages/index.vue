@@ -1,26 +1,22 @@
 <template>
   <div class="page-index">
-      <HeroBanner />
-    <div style="background-color: #fff; height: 100vh;">
-      <div class="container">
-        <BlogSection :blogs="blogs" />
-      </div>
+    <HeroBanner />
+   
+    <div class="container">
+      <BlogSection :blogs="blogs" />
     </div>
-    <div style="background-color: #fff; height: 100vh;">
-      <div class="container">
-        <BlogSection :blogs="blogs" />
-      </div>
+
+    <div class="container">
+      <BlogSection :blogs="blogs" />
     </div>
-    <div style="position: relative;">
-      <parallax :fixed="true">
-        <img src="~/assets/images/turm.jpg" />
-      </parallax>
+
+    <div class="container">
+      <img src="~/assets/images/turm.jpg" />
     </div>
-     <div style="background-color: #fff; height: 100vh;">
-       <div class="container">
-        <BlogSection :blogs="blogs" />
-      </div>
-     </div>
+
+    <div class="container">
+      <BlogSection :blogs="blogs" />
+    </div>
   </div>
 </template>
 
@@ -29,9 +25,6 @@
   import blogsEn from '~/contents/en/blogsEn.js'
   import blogsEs from '~/contents/es/blogsEs.js'
   import HeroBanner from '~/components/Sections/HeroBanner'
-
-  import Parallax from 'vue-parallaxy'
-
 
 
   export default {
@@ -52,7 +45,7 @@
       })
     },
     
-    components: {BlogSection, HeroBanner, Parallax},
+    components: {BlogSection, HeroBanner},
 
     transition: {
       name: 'slide-fade'
