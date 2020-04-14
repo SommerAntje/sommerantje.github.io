@@ -14,7 +14,7 @@
     
     <div class="parallax2">
       <div class="caption">
-        <span class="border">FRONTEND DEVELOPER</span>
+        <span class="border">FRONTEND SKILLS</span>
       </div>
     </div>
     
