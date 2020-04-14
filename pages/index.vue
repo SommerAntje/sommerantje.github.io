@@ -96,20 +96,14 @@
 </script>
 <style lang="scss">
 .parallax1 {
-  /* The image used */
   background-image: url("../assets/images/turm.jpg");
-
-  /* Set a specific height */
   min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   opacity: 0.65;
-
   .caption {
     position: absolute;
     left: 0;
@@ -127,20 +121,14 @@
   }
 }
 .parallax2 {
-  /* The image used */
   background-image: url("../assets/images/turm_blau.jpg");
-
-  /* Set a specific height */
   min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   opacity: 0.65;
-
    .caption {
     position: absolute;
     left: 0;
@@ -158,20 +146,14 @@
   }
 }
 .parallax3 {
-  /* The image used */
   background-image: url("../assets/images/turm_mint.jpg");
-
-  /* Set a specific height */
   min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   opacity: 0.65;
-
   .caption {
     position: absolute;
     left: 0;
@@ -189,20 +171,14 @@
   }
 }
 .parallax4 {
-  /* The image used */
   background-image: url("../assets/images/turm_magenta.jpg");
-
-  /* Set a specific height */
   min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   opacity: 0.65;
-
   .caption {
     position: absolute;
     left: 0;

@@ -138,7 +138,7 @@ export default {};
     }
   
     h1 {
-      font-family: 'Indie Flower', cursive;
+      font-family: 'Indie Flower','Arial', cursive;
       font-size: 3.5rem;
       text-align: center;
       padding: 0;

@@ -1,10 +1,5 @@
 <template>
   <section>
-    <div class="blogs__top">
-      <div>
-        <h2>{{ $t('posts') }}</h2>
-      </div>
-    </div>
     <ul class="blogs">
       <blog-card
         v-for="blog in blogs"
@@ -16,7 +11,7 @@
 <script>
 import BlogCard from "~/components/BlogCard.vue";
 export default {
-  components: { BlogCard},
+  components: {BlogCard},
   props: {
     blogs: {
       type: Array
@@ -26,7 +21,7 @@ export default {
 </script>
 <style lang="scss">
 .blogs {
-  margin: 0;
+  margin: 3vw 0 0 0;
   
   @media (min-width: $screen-sm){
     grid-template-columns: 1fr 1fr;
