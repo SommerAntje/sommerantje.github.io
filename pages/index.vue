@@ -1,22 +1,43 @@
 <template>
   <div class="page-index">
     <HeroBanner />
+
+    <div class="parallax1">
+      <div class="caption">
+        <span class="border">ABOUT ME</span>
+      </div>
+    </div>
    
     <div class="container">
       <BlogSection :blogs="blogs" />
     </div>
+    
+    <div class="parallax2">
+      <div class="caption">
+        <span class="border">FRONTEND DEVELOPER</span>
+      </div>
+    </div>
+    
+    <div class="container">
+      <BlogSection :blogs="blogs" />
+    </div>
+
+    <div class="parallax3">
+      <div class="caption">
+        <span class="border">BLOG POSTS</span>
+      </div>
+    </div>
 
     <div class="container">
       <BlogSection :blogs="blogs" />
     </div>
 
-    <div class="container">
-      <img src="~/assets/images/turm.jpg" />
+    <div class="parallax4">
+      <div class="caption">
+        <span class="border">GET IN TOUCH</span>
+      </div>
     </div>
 
-    <div class="container">
-      <BlogSection :blogs="blogs" />
-    </div>
   </div>
 </template>
 
@@ -73,3 +94,131 @@
     }
   }
 </script>
+<style lang="scss">
+.parallax1 {
+  /* The image used */
+  background-image: url("../assets/images/turm.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.65;
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    .border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    }
+  }
+}
+.parallax2 {
+  /* The image used */
+  background-image: url("../assets/images/turm_blau.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.65;
+
+   .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    .border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    }
+  }
+}
+.parallax3 {
+  /* The image used */
+  background-image: url("../assets/images/turm_mint.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.65;
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    .border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    }
+  }
+}
+.parallax4 {
+  /* The image used */
+  background-image: url("../assets/images/turm_magenta.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.65;
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    .border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    }
+  }
+}
+
+
+</style>

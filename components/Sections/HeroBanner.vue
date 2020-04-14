@@ -66,12 +66,12 @@ export default {};
 
     @media (min-width: $screen-md) {
      max-width: $container-lg;
-     padding-top: 0;
+     padding-top: 1rem;
     }
 
     @media (min-width: $screen-lg) {
      max-width: $container-lg;
-     padding-top: 0;
+     padding-top: 1rem;
     }
 
   }
