@@ -2,9 +2,9 @@
   <div class="page-index">
     <HeroBanner />
 
-    <div class="parallax1">
-      <div class="caption">
-        <span class="border">ABOUT ME</span>
+    <div class="parallax1 parallax">
+      <div class="parallax__caption">
+        <span class="parallax__caption__border">ABOUT ME</span>
       </div>
     </div>
    
@@ -35,9 +35,9 @@
       </p>
     </div>
     
-    <div class="parallax2">
-      <div class="caption">
-        <span class="border">FRONTEND SKILLS</span>
+    <div class="parallax2 parallax">
+      <div class="parallax__caption">
+        <span class="parallax__caption__border">FRONTEND SKILLS</span>
       </div>
     </div>
     
@@ -62,9 +62,9 @@
       </p>
     </div>
 
-    <div class="parallax3">
-      <div class="caption">
-        <span class="border">BLOG POSTS</span>
+    <div class="parallax3 parallax">
+      <div class="parallax__caption">
+        <span class="parallax__caption__border">BLOG POSTS</span>
       </div>
     </div>
 
@@ -72,9 +72,9 @@
       <BlogSection :blogs="blogs" />
     </div>
 
-    <div class="parallax4">
-      <div class="caption">
-        <span class="border">GET IN TOUCH</span>
+    <div class="parallax4 parallax">
+      <div class="parallax__caption">
+        <span class="parallax__caption__border">GET IN TOUCH</span>
       </div>
     </div>
 
@@ -149,81 +149,17 @@
 <style lang="scss">
 .parallax1 {
   background-image: url("../assets/images/turm.jpg");
-  min-height: 500px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  opacity: 0.65;
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    .border {
-      background-color: #111;
-      color: #fff;
-      padding: 18px;
-      font-size: 25px;
-      letter-spacing: 10px;
-    }
-  }
 }
 .parallax2 {
   background-image: url("../assets/images/turm_blau.jpg");
-  min-height: 500px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  opacity: 0.65;
-   .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    .border {
-      background-color: #111;
-      color: #fff;
-      padding: 18px;
-      font-size: 25px;
-      letter-spacing: 10px;
-    }
-  }
 }
 .parallax3 {
   background-image: url("../assets/images/turm_mint.jpg");
-  min-height: 500px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  opacity: 0.65;
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    .border {
-      background-color: #111;
-      color: #fff;
-      padding: 18px;
-      font-size: 25px;
-      letter-spacing: 10px;
-    }
-  }
 }
 .parallax4 {
   background-image: url("../assets/images/turm_magenta.jpg");
+}
+.parallax {
   min-height: 500px; 
   background-attachment: fixed;
   background-position: center;
@@ -231,14 +167,14 @@
   background-size: cover;
   position: relative;
   opacity: 0.65;
-  .caption {
+  &__caption {
     position: absolute;
     left: 0;
     top: 50%;
     width: 100%;
     text-align: center;
     color: #000;
-    .border {
+    &__border {
       background-color: #111;
       color: #fff;
       padding: 18px;
@@ -247,6 +183,4 @@
     }
   }
 }
-
-
 </style>
