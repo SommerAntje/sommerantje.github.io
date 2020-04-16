@@ -9,57 +9,17 @@
     </div>
    
     <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Velit euismod in pellentesque massa placerat duis. Praesent elementum facilisis leo vel.
-        Pellentesque elit eget gravida cum sociis. Augue lacus viverra vitae congue eu consequat. 
-        Aliquam sem fringilla ut morbi tincidunt augue interdum velit. 
-        Orci dapibus ultrices in iaculis nunc sed augue lacus. 
-        Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. 
-        Arcu ac tortor dignissim convallis aenean et tortor at. 
-        Sit amet cursus sit amet dictum sit amet. Consectetur libero id faucibus nisl tincidunt. 
-        Non curabitur gravida arcu ac tortor dignissim convallis aenean et. 
-        Sed cras ornare arcu dui vivamus. Elementum integer enim neque volutpat ac tincidunt vitae semper quis.
-        Nibh sed pulvinar proin gravida hendrerit lectus. Semper risus in hendrerit gravida. 
-        Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.
-      </p>
-      <p>
-        Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. 
-        Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc. 
-        Pellentesque massa placerat duis ultricies lacus sed. Pretium quam vulputate dignissim suspendisse in est ante in. 
-        Faucibus nisl tincidunt eget nullam non. Ut morbi tincidunt augue interdum velit. 
-        Dapibus ultrices in iaculis nunc sed augue lacus. Habitant morbi tristique senectus et netus et. 
-        Aliquet porttitor lacus luctus accumsan tortor posuere ac. 
-        Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis.
-      </p>
+      <About />
     </div>
     
     <div class="parallax2 parallax">
       <div class="parallax__caption">
-        <span class="parallax__caption__border">FRONTEND SKILLS</span>
+        <span class="parallax__caption__border">SKILLS</span>
       </div>
     </div>
     
     <div class="container">
-      <p>
-        Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. 
-        Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc. 
-        Pellentesque massa placerat duis ultricies lacus sed. Pretium quam vulputate dignissim suspendisse in est ante in. 
-        Faucibus nisl tincidunt eget nullam non. Ut morbi tincidunt augue interdum velit. 
-        Dapibus ultrices in iaculis nunc sed augue lacus. Habitant morbi tristique senectus et netus et. 
-        Aliquet porttitor lacus luctus accumsan tortor posuere ac. 
-        Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis.
-      </p>
-      <p>
-        Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. 
-        Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc. 
-        Pellentesque massa placerat duis ultricies lacus sed. Pretium quam vulputate dignissim suspendisse in est ante in. 
-        Faucibus nisl tincidunt eget nullam non. Ut morbi tincidunt augue interdum velit. 
-        Dapibus ultrices in iaculis nunc sed augue lacus. Habitant morbi tristique senectus et netus et. 
-        Aliquet porttitor lacus luctus accumsan tortor posuere ac. 
-        Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis.
-      </p>
+      <Skills />
     </div>
 
     <div class="parallax3 parallax">
@@ -79,17 +39,8 @@
     </div>
 
     <div class="container">
-     <p>
-        Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. 
-        Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc. 
-        Pellentesque massa placerat duis ultricies lacus sed. Pretium quam vulputate dignissim suspendisse in est ante in. 
-        Faucibus nisl tincidunt eget nullam non. Ut morbi tincidunt augue interdum velit. 
-        Dapibus ultrices in iaculis nunc sed augue lacus. Habitant morbi tristique senectus et netus et. 
-        Aliquet porttitor lacus luctus accumsan tortor posuere ac. 
-        Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis.
-      </p>
+       <Contact />
     </div>
-
   </div>
 </template>
 
@@ -98,7 +49,9 @@
   import blogsEn from '~/contents/en/blogsEn.js'
   import blogsEs from '~/contents/es/blogsEs.js'
   import HeroBanner from '~/components/Sections/HeroBanner'
-
+  import About from '~/components/Sections/About'
+  import Skills from '~/components/Sections/Skills'
+  import Contact from '~/components/Sections/Contact'
 
   export default {
     async asyncData ({app}) {
@@ -118,7 +71,7 @@
       })
     },
     
-    components: {BlogSection, HeroBanner},
+    components: {HeroBanner, About, Skills, BlogSection, Contact},
 
     transition: {
       name: 'slide-fade'
