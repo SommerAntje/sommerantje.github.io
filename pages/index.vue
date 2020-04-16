@@ -173,10 +173,10 @@
     top: 50%;
     width: 100%;
     text-align: center;
-    color: #000;
+    color: $background-secondary-darker;
     &__border {
-      background-color: #111;
-      color: #fff;
+      background-color: $background-secondary-darker;
+      color: $background-primary;
       padding: 18px;
       font-size: 25px;
       letter-spacing: 10px;
