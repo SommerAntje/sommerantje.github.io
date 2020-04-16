@@ -101,16 +101,16 @@
 </script>
 <style lang="scss">
 .parallax1 {
-  background-image: url("../assets/images/turm.jpg");
+  background: linear-gradient(rgba(22, 144, 192, 0.3), rgba(153, 7, 250, 0.3)), url("../assets/images/turm.jpg");
 }
 .parallax2 {
-  background-image: url("../assets/images/turm_blau.jpg");
+  background: linear-gradient(rgba(209, 59, 152, 0.5), rgba(40, 148, 190, 0.5)), url("../assets/images/turm.jpg");
 }
 .parallax3 {
-  background-image: url("../assets/images/turm_mint.jpg");
+  background: linear-gradient(rgba(55, 223, 159, 0.5), rgba(199, 39, 106, 0.5)), url("../assets/images/turm.jpg");
 }
 .parallax4 {
-  background-image: url("../assets/images/turm_magenta.jpg");
+  background: linear-gradient(rgba(221, 219, 92, 0.5), rgba(153, 7, 250, 0.5)), url("../assets/images/turm.jpg");
 }
 .parallax {
   min-height: 500px; 
