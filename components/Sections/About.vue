@@ -7,18 +7,16 @@
         Pellentesque elit eget gravida cum sociis. Augue lacus viverra vitae congue eu consequat. 
         Aliquam sem fringilla ut morbi tincidunt augue interdum velit. 
         Orci dapibus ultrices in iaculis nunc sed augue lacus. 
-        Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. 
-        Arcu ac tortor dignissim convallis aenean et tortor at. 
-        Sit amet cursus sit amet dictum sit amet. Consectetur libero id faucibus nisl tincidunt. 
-        Non curabitur gravida arcu ac tortor dignissim convallis aenean et. 
-        Sed cras ornare arcu dui vivamus. Elementum integer enim neque volutpat ac tincidunt vitae semper quis.
-        Nibh sed pulvinar proin gravida hendrerit lectus. Semper risus in hendrerit gravida. 
-        Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.
+        Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar.
       </p>
+      <Timeline />
     </section>
 </template>
 <script>
-export default {};
+import Timeline from '~/components/Timeline'
+export default {
+  components: {Timeline}
+};
 </script>
 <style lang="scss">
 
