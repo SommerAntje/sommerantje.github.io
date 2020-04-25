@@ -124,7 +124,7 @@ export default {
         left: 50%;
         width: 2px;
         height: 100%;
-        background: $primary;
+        background: $grey-3;
     }
     ul {
         margin: 0;

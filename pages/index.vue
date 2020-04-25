@@ -101,7 +101,7 @@
 </script>
 <style lang="scss">
 .parallax1 {
-  background: linear-gradient(rgba(22, 144, 192, 0.4), rgba(153, 7, 250, 0.4)), url("../assets/images/turm.jpg");
+  background: linear-gradient(rgba(53,168,224,0.4), rgba(153, 7, 250, 0.4)), url("../assets/images/turm.jpg");
 }
 .parallax2 {
   background: linear-gradient(rgba(209, 59, 152, 0.4), rgba(40, 148, 190, 0.4)), url("../assets/images/turm.jpg");
