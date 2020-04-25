@@ -149,6 +149,17 @@ export default {
                     border-radius: 50%;
                     box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
                 }
+                .timeline__time {
+                    position: absolute;
+                    top: 12px;
+                    right: -165px;
+                    margin: 0;
+                    padding: 8px 16px;
+                    background: rgba(53,168,224,1);
+                    color: #fff;
+                    border-radius: 18px;
+                }
+           
             }
             &:nth-child(even) {
                 float: right;
@@ -170,6 +181,12 @@ export default {
     }
     &__clear-both {
         clear: both;
+    }
+    &__time {
+        h4 {
+            padding: 0;
+            margin: 0;
+        }
     }
     &__content {
         padding-bottom: 20px;
