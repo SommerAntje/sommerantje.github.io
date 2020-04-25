@@ -137,15 +137,42 @@ export default {
             &:nth-child(odd) {
                 float: left;
                 text-align: right;
+                clear: both;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 24px;
+                    right: -6px;
+                    width: 10px;
+                    height: 10px;
+                    background: rgba(53,168,224,1);
+                    border-radius: 50%;
+                    box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
+                }
             }
             &:nth-child(even) {
                 float: right;
                 text-align: left;
+                clear:both;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 24px;
+                    left: -4px;
+                    width: 10px;
+                    height: 10px;
+                    background: rgba(53,168,224,1);
+                    border-radius: 50%;
+                    box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
+                }
             }
         }
     }
     &__clear-both {
         clear: both;
+    }
+    &__content {
+        padding-bottom: 20px;
     }
 }
 
