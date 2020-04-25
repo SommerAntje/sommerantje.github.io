@@ -103,6 +103,7 @@
                     <h4>January 2018</h4>
                 </div>
             </li>
+            <div class="timeline__clear-both"></div>
         </ul>
     </div>
 </template>
@@ -111,6 +112,41 @@ export default {
 }
 </script>
 <style lang="scss">
-
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background: $primary;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            line-height: normal;
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            &:nth-child(odd) {
+                float: left;
+                text-align: right;
+            }
+            &:nth-child(even) {
+                float: right;
+                text-align: left;
+            }
+        }
+    }
+    &__clear-both {
+        clear: both;
+    }
+}
 
 </style>
