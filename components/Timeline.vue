@@ -178,6 +178,10 @@ export default {
             padding: 0 0 15px 0;
             color: rgba(53,168,224,1)
         }
+        p {
+            margin: 10px 0 0;
+            padding: 0;
+        }
     }
 }
 
