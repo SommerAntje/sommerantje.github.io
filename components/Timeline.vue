@@ -1,5 +1,5 @@
 <template>
-    <div class="timeline">
+    <div class="timeline container">
         <ul>
             <li>
                 <div class="timeline__content">
@@ -100,7 +100,7 @@
                     </p>
                 </div>
                 <div class="timeline__time">
-                    <h4>January 2018</h4>
+                    <h4>January 2012</h4>
                 </div>
             </li>
             <div class="timeline__clear-both"></div>
@@ -117,6 +117,7 @@ export default {
     margin: 50px auto;
     padding: 40px 0;
     width: 1000px;
+    box-sizing: border-box;
     &:before {
         content: '';
         position: absolute;
@@ -152,14 +153,14 @@ export default {
                 .timeline__time {
                     position: absolute;
                     top: 12px;
-                    right: -165px;
+                    right: -150px;
                     margin: 0;
                     padding: 8px 16px;
                     background: rgba(53,168,224,1);
+                    box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
                     color: #fff;
                     border-radius: 18px;
                 }
-           
             }
             &:nth-child(even) {
                 float: right;
@@ -176,6 +177,17 @@ export default {
                     border-radius: 50%;
                     box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
                 }
+                    .timeline__time {
+                    position: absolute;
+                    top: 12px;
+                    left: -150px;
+                    margin: 0;
+                    padding: 8px 16px;
+                    background: rgba(53,168,224,1);
+                    box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
+                    color: #fff;
+                    border-radius: 18px;
+                }
             }
         }
     }
@@ -186,6 +198,7 @@ export default {
         h4 {
             padding: 0;
             margin: 0;
+            font-size: 1.25rem;
         }
     }
     &__content {
@@ -193,7 +206,9 @@ export default {
         h3 {
             margin: 0;
             padding: 0 0 15px 0;
-            color: rgba(53,168,224,1)
+            color: rgba(53,168,224,1);
+            font-size: 1.5rem;
+            text-transform: uppercase;
         }
         p {
             margin: 10px 0 0;
