@@ -173,6 +173,11 @@ export default {
     }
     &__content {
         padding-bottom: 20px;
+        h3 {
+            margin: 0;
+            padding: 0 0 15px 0;
+            color: rgba(53,168,224,1)
+        }
     }
 }
 
