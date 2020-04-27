@@ -48,7 +48,9 @@ export default {};
   }
 
   @media (min-width: $screen-md) {
-    height: 488px; 
+    margin-bottom: 0px;
+    height: 100vh;
+    padding: 8rem 0 9rem 0; 
   }
 
   &__content {
