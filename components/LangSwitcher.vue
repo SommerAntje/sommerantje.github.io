@@ -26,7 +26,7 @@ export default {
 select {
   border-radius: 0;
   color: $primary;
-  padding: 1rem 3rem 1rem 1rem;
+  padding: 1.25rem 3rem 1rem 1rem;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
