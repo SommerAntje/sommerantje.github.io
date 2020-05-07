@@ -49,8 +49,6 @@ export default {};
 
   @media (min-width: $screen-md) {
     margin-bottom: 0px;
-    height: 100vh;
-    padding: 8rem 0 9rem 0; 
     opacity: 0;
     animation: fadeinmove .5s ease;
     animation-delay: .5s;
