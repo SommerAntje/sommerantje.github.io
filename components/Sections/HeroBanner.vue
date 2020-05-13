@@ -71,13 +71,13 @@ export default {};
     @media (min-width: $screen-md) {
      max-width: $container-lg;
      padding-top: 5rem;
-     width: 100vh;
+     height: 100vh;
     }
 
     @media (min-width: $screen-lg) {
      max-width: $container-lg;
      padding-top: 5rem;
-     width: 100vh;
+     height: 100vh;
     }
 
   }
