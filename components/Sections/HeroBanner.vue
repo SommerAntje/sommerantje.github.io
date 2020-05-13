@@ -76,7 +76,7 @@ export default {};
 
     @media (min-width: $screen-lg) {
      max-width: $container-lg;
-     padding-top: 5rem;
+     padding-top: 6%;
      height: 100vh;
     }
 
