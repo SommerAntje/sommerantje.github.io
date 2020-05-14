@@ -59,24 +59,23 @@ export default {};
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 2.4rem;
+    padding: 2.4rem;  
     max-width: 100%;
     vertical-align: middle;
 
     @media (min-width: $screen-sm) {
      max-width: $container-md;
-     padding-top: 1rem;
+     padding-top: 1rem; 
     }
 
     @media (min-width: $screen-md) {
      max-width: $container-lg;
-     padding-top: 5rem;
-     height: 100vh;
+     padding-top: 1rem;
     }
 
     @media (min-width: $screen-lg) {
      max-width: $container-lg;
-     padding-top: 6%;
+     padding-top: 4%;
      height: 100vh;
     }
 
