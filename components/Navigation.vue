@@ -3,7 +3,7 @@
   <ul class="navigation__list">
     <li class="navigation__item">
       <nuxt-link to="/posts" class="ani">
-        <span>My blog</span>
+        <span>Blog</span>
       </nuxt-link>
     </li>
   </ul>
