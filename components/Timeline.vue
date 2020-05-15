@@ -118,6 +118,16 @@ export default {
     padding: 40px 0;
     width: 1000px;
     box-sizing: border-box;
+    
+    @media (max-width: $screen-sm) {
+      width: 100%;
+      padding-bottom: 0;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+    }
+
     &:before {
         content: '';
         position: absolute;
@@ -125,6 +135,11 @@ export default {
         width: 2px;
         height: 100%;
         background: $grey-3;
+        @media (max-width: $screen-sm) {
+            left: 20px;
+            top: 0;
+            height: 98%;
+        }
     }
     ul {
         margin: 0;
@@ -135,10 +150,22 @@ export default {
             width: 50%;
             padding: 20px 40px;
             box-sizing: border-box;
+            @media (max-width: $screen-sm) {
+                padding: 20px 0;
+            }
+
             &:nth-child(odd) {
                 float: left;
                 text-align: right;
                 clear: both;
+
+                @media (max-width: $screen-sm) {
+                    width: 100%;
+                    text-align: left;
+                    padding-left: 50px;
+                    padding-left: 2em;
+                }
+
                 &:before {
                     content: '';
                     position: absolute;
@@ -149,6 +176,10 @@ export default {
                     background: rgba(53,168,224,1);
                     border-radius: 50%;
                     box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
+                    @media (max-width: $screen-sm) {
+                        top: -28px;
+                        left: -8px;
+                    }
                 }
                 .timeline__time {
                     position: absolute;
@@ -160,12 +191,24 @@ export default {
                     box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
                     color: #fff;
                     border-radius: 18px;
+                    @media (max-width: $screen-sm) {
+                        top: -40px;
+                        left: 25px;
+                        right: inherit;
+                    }
                 }
             }
             &:nth-child(even) {
                 float: right;
                 text-align: left;
                 clear:both;
+
+                @media (max-width: $screen-sm) {
+                    width: 100%;
+                    text-align: left;
+                    padding-left: 2em;
+                }
+
                 &:before {
                     content: '';
                     position: absolute;
@@ -176,8 +219,13 @@ export default {
                     background: rgba(53,168,224,1);
                     border-radius: 50%;
                     box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
+                    
+                    @media (max-width: $screen-sm) {
+                        top: -28px;
+                        left: -8px;
+                    }
                 }
-                    .timeline__time {
+                .timeline__time {
                     position: absolute;
                     top: 12px;
                     left: -150px;
@@ -187,6 +235,11 @@ export default {
                     box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
                     color: #fff;
                     border-radius: 18px;
+                    @media (max-width: $screen-sm) {
+                        top: -40px;
+                        left: 25px;
+                        right: inherit;
+                    }
                 }
             }
         }
