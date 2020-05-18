@@ -4,12 +4,12 @@
 
     <div class="parallax1 parallax">
       <div class="parallax__caption">
-        <span class="parallax__caption__border">ABOUT ME</span>
+        <span class="parallax__caption__border">Blog Posts</span>
       </div>
     </div>
    
     <div class="container">
-      <About />
+      <BlogSection :blogs="blogs" />
     </div>
     
     <div class="parallax2 parallax">
@@ -24,12 +24,12 @@
 
     <div class="parallax3 parallax">
       <div class="parallax__caption">
-        <span class="parallax__caption__border">BLOG POSTS</span>
+        <span class="parallax__caption__border">About Me</span>
       </div>
     </div>
 
     <div class="container">
-      <BlogSection :blogs="blogs" />
+      <About />
     </div>
 
     <div class="parallax4 parallax">

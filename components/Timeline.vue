@@ -8,10 +8,6 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
                         Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum. 
-                        Id donec ultrices tincidunt arcu. Porta nibh venenatis cras sed. Interdum velit euismod in pellentesque
-                        massa placerat duis. Id diam maecenas ultricies mi. Pretium nibh ipsum consequat nisl vel pretium. 
-                        Enim diam vulputate ut pharetra 
-                        sit amet aliquam id diam. Arcu felis bibendum ut tristique et. Vel eros donec ac odio tempor.
                     </p>
                 </div>
                 <div class="timeline__time">
@@ -24,11 +20,7 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
-                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum. 
-                        Id donec ultrices tincidunt arcu. Porta nibh venenatis cras sed. Interdum velit euismod in pellentesque
-                        massa placerat duis. Id diam maecenas ultricies mi. Pretium nibh ipsum consequat nisl vel pretium. 
-                        Enim diam vulputate ut pharetra 
-                        sit amet aliquam id diam. Arcu felis bibendum ut tristique et. Vel eros donec ac odio tempor.
+                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
                     </p>
                 </div>
                 <div class="timeline__time">
@@ -41,11 +33,7 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
-                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum. 
-                        Id donec ultrices tincidunt arcu. Porta nibh venenatis cras sed. Interdum velit euismod in pellentesque
-                        massa placerat duis. Id diam maecenas ultricies mi. Pretium nibh ipsum consequat nisl vel pretium. 
-                        Enim diam vulputate ut pharetra 
-                        sit amet aliquam id diam. Arcu felis bibendum ut tristique et. Vel eros donec ac odio tempor.
+                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
                     </p>
                 </div>
                 <div class="timeline__time">
@@ -58,11 +46,7 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
-                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum. 
-                        Id donec ultrices tincidunt arcu. Porta nibh venenatis cras sed. Interdum velit euismod in pellentesque
-                        massa placerat duis. Id diam maecenas ultricies mi. Pretium nibh ipsum consequat nisl vel pretium. 
-                        Enim diam vulputate ut pharetra 
-                        sit amet aliquam id diam. Arcu felis bibendum ut tristique et. Vel eros donec ac odio tempor.
+                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
                     </p>
                 </div>
                 <div class="timeline__time">
@@ -75,11 +59,7 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
-                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum. 
-                        Id donec ultrices tincidunt arcu. Porta nibh venenatis cras sed. Interdum velit euismod in pellentesque
-                        massa placerat duis. Id diam maecenas ultricies mi. Pretium nibh ipsum consequat nisl vel pretium. 
-                        Enim diam vulputate ut pharetra 
-                        sit amet aliquam id diam. Arcu felis bibendum ut tristique et. Vel eros donec ac odio tempor.
+                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
                     </p>
                 </div>
                 <div class="timeline__time">
@@ -92,11 +72,7 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
-                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum. 
-                        Id donec ultrices tincidunt arcu. Porta nibh venenatis cras sed. Interdum velit euismod in pellentesque
-                        massa placerat duis. Id diam maecenas ultricies mi. Pretium nibh ipsum consequat nisl vel pretium. 
-                        Enim diam vulputate ut pharetra 
-                        sit amet aliquam id diam. Arcu felis bibendum ut tristique et. Vel eros donec ac odio tempor.
+                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
                     </p>
                 </div>
                 <div class="timeline__time">
