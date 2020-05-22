@@ -104,13 +104,13 @@
   background: linear-gradient(rgba(53,168,224,0.4), rgba(153, 7, 250, 0.4)), url("../assets/images/turm.jpg");
 }
 .parallax2 {
-  background: linear-gradient(rgba(209, 59, 152, 0.4), rgba(40, 148, 190, 0.4)), url("../assets/images/turm.jpg");
+  background: linear-gradient(rgba(209, 59, 152, 0.4), rgba(40, 148, 190, 0.4)), url("../assets/images/dockland_2.jpg");
 }
 .parallax3 {
-  background: linear-gradient(rgba(55, 223, 159, 0.4), rgba(199, 39, 106, 0.4)), url("../assets/images/turm.jpg");
+  background: linear-gradient(rgba(55, 223, 159, 0.4), rgba(199, 39, 106, 0.4)), url("../assets/images/hafen.jpg");
 }
 .parallax4 {
-  background: linear-gradient(rgba(221, 219, 92, 0.4), rgba(153, 7, 250, 0.4)), url("../assets/images/turm.jpg");
+  background: linear-gradient(rgba(221, 219, 92, 0.4), rgba(153, 7, 250, 0.4)), url("../assets/images/dockland_a.jpg");
 }
 .parallax {
   min-height: 500px; 
