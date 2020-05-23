@@ -21,10 +21,13 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
 .header {
   width: 100%;
   display: -webkit-box;
   display: flex;
+  font-family: 'Raleway', Arial, sans-serif;
   height: 8rem;
   justify-content: space-around;
   -webkit-box-align: center;
@@ -60,6 +63,13 @@ export default {
 
     @media(max-width: $screen-sm){
       flex-direction: row;
+    }
+
+    @media(min-width: $screen-lg){
+      height: 6rem;
+      padding-right: 0;
+      padding-left: 0;
+      max-width: 1250px;
     }
   }
 

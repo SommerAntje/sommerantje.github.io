@@ -7,7 +7,7 @@
         alt="lazyload pixel"
       />
       <ImageResponsive
-        imageURL="profile_picture.jpg"
+        imageURL="profile_square.jpg"
         classes="hero__profile"
         alt="Antje Sommer"
       />
@@ -44,7 +44,7 @@ export default {};
   position: relative;
 
   @media (min-width: $screen-sm) {
-    margin-bottom: 7.2rem;
+    margin-bottom: 0;
   }
 
   @media (min-width: $screen-md) {
@@ -53,38 +53,31 @@ export default {};
     animation: fadeinmove .5s ease;
     animation-delay: .5s;
     animation-fill-mode: forwards;
+    overflow: hidden;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 0px;
+    opacity: 0;
+    animation: fadeinmove .5s ease;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
   }
 
   &__content {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 2.4rem;  
+    padding: 0;  
     max-width: 100%;
     vertical-align: middle;
 
-    @media (min-width: $screen-sm) {
-     max-width: $container-md;
-     padding-top: 1rem; 
-    }
-
-    @media (min-width: $screen-md) {
-     max-width: $container-lg;
-     padding-top: 1rem;
-    }
-
     @media (min-width: $screen-lg) {
-     max-width: $container-lg;
-     padding-top: 4%;
      height: 100vh;
     }
-
   }
 
   &__profile {
     margin-bottom: 0;
-    border: 5px solid $primary;
-    border-radius: 50%;
     width: 100%;
     float: right;
 
@@ -98,8 +91,9 @@ export default {};
 
     @media (min-width: $screen-lg) {
       width: 50%;
+      position: absolute;
+      top: 0;
     }
-
   }
 
   &__text {
@@ -135,10 +129,12 @@ export default {};
     }
 
     @media (min-width: $screen-md) {
-      width: 40%;
+      left: 10%;
+      width: 30%;
     }
 
     @media (min-width: $screen-lg) {
+      left: 10%;
       width: 30%;
     }
   
@@ -149,11 +145,21 @@ export default {};
       padding: 0;
       -webkit-transition: background-color .3s ease-out;
       transition: background-color .3s ease-out;
-    
+
+      @media (min-width: $screen-sm) {
+        margin-bottom: 0;
+        font-size: 3.5rem;
+        text-align: center;
+        padding: 0;
+      }
+
       @media (min-width: $screen-md) {
         margin-bottom: 0;
-        padding: 2rem;
-        text-align: left;
+        padding: 0;
+      }
+
+      @media (min-width: $screen-lg) {
+        font-size: 4.5rem;
       }
     }
   }
