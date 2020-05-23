@@ -69,7 +69,9 @@ export default {
       height: 6rem;
       padding-right: 0;
       padding-left: 0;
-      max-width: 1250px;
+      max-width: 1500px;
+      margin-right: 0;
+      margin-left: 50px;
     }
   }
 
