@@ -14,12 +14,15 @@
       <div class="hero__text">
         <h1>
           <span> Hi! I'm
-            <a
+            <a class="ani"
               target="_blank"
               rel="noopener"
               href="https://github.com/SommerAntje"
-            >Antje Sommer,</a> a self-taught Frontend Developer,
-            welcome to my blog.
+            ><span>Antje Sommer,</span></a>
+            a self-taught Frontend Developer, welcome to 
+            <nuxt-link to="/posts" class="ani">
+              <span>my Blog</span>
+            </nuxt-link>
           </span>
         </h1>
       </div>
@@ -128,15 +131,17 @@ export default {};
     }
 
     @media (min-width: $screen-md) {
-     left: 5%;
-     width: 37%;
-     top: 35%;
+      left: 4%;
+      width: 43%;
+      top: 21%;
+      padding: 4rem;
     }
 
     @media (min-width: $screen-lg) {
-      left: 10%;
-      width: 30%;
-      top: 25%
+      left: 8%;
+      width: 35%;
+      top: 20%;
+      padding: 4rem;
     }
   
     h1 {
@@ -146,6 +151,10 @@ export default {};
       padding: 0;
       -webkit-transition: background-color .3s ease-out;
       transition: background-color .3s ease-out;
+
+      a {
+        cursor: pointer;
+      }
 
       @media (min-width: $screen-sm) {
         margin-bottom: 0;
