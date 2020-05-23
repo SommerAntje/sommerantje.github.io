@@ -129,8 +129,8 @@ export default {};
     }
 
     @media (min-width: $screen-md) {
-      left: 10%;
-      width: 30%;
+     left: 5%;
+     width: 37%;
     }
 
     @media (min-width: $screen-lg) {
