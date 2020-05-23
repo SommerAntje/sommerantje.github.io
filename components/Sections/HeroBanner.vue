@@ -18,7 +18,7 @@
               target="_blank"
               rel="noopener"
               href="https://github.com/SommerAntje"
-            >Antje Sommer,</a>
+            >Antje Sommer,</a> a self-taught Frontend Developer,
             welcome to my blog.
           </span>
         </h1>
@@ -108,7 +108,6 @@ export default {};
       position: relative;
       min-height: 74px;
       margin-bottom: 0;
-      padding: 0;
       top: 0;
       margin-top: 2.75rem;
     }
@@ -117,8 +116,8 @@ export default {};
       position: relative;
       min-height: 74px;
       margin-bottom: 0;
-      padding: 0;
       margin-top: 2.75rem;
+      top: 12%;
     }
 
     @media (min-width: $screen-sm) {
@@ -131,11 +130,13 @@ export default {};
     @media (min-width: $screen-md) {
      left: 5%;
      width: 37%;
+     top: 35%;
     }
 
     @media (min-width: $screen-lg) {
       left: 10%;
       width: 30%;
+      top: 25%
     }
   
     h1 {
