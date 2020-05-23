@@ -70,7 +70,7 @@ export default {
       padding-right: 0;
       padding-left: 0;
       max-width: 1500px;
-      margin-right: 0;
+      margin-right: 30px;
       margin-left: 50px;
     }
   }
