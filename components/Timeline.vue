@@ -88,6 +88,7 @@ export default {
 }
 </script>
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 .timeline {
     position: relative;
     margin: 50px auto;
@@ -166,7 +167,6 @@ export default {
                     background: rgba(53,168,224,1);
                     box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
                     color: #fff;
-                    border-radius: 18px;
                     @media (max-width: $screen-sm) {
                         top: -40px;
                         left: 25px;
@@ -210,7 +210,6 @@ export default {
                     background: rgba(53,168,224,1);
                     box-shadow: 0 0 0 3px rgba(53,168,224,0.4);
                     color: #fff;
-                    border-radius: 18px;
                     @media (max-width: $screen-sm) {
                         top: -40px;
                         left: 25px;
@@ -228,6 +227,7 @@ export default {
             padding: 0;
             margin: 0;
             font-size: 1.25rem;
+            font-family: 'Raleway', Arial, sans-serif;
         }
     }
     &__content {
@@ -235,9 +235,9 @@ export default {
         h3 {
             margin: 0;
             padding: 0 0 15px 0;
+            font-family: 'Raleway', Arial, sans-serif;
             color: rgba(53,168,224,1);
-            font-size: 1.5rem;
-            text-transform: uppercase;
+            font-size: 1.75rem;
         }
         p {
             margin: 10px 0 0;
