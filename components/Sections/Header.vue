@@ -65,6 +65,14 @@ export default {
       flex-direction: row;
     }
 
+    @media(min-width: $screen-md){
+      padding-right: 0;
+      padding-left: 0;
+      max-width: 1300px;
+      margin-right: 30px;
+      margin-left: 50px;
+    }
+
     @media(min-width: $screen-lg){
       height: 6rem;
       padding-right: 0;
