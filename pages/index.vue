@@ -100,7 +100,7 @@
   }
 </script>
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
 
 .parallax1 {
   background: linear-gradient(rgba(53,168,224,0.4), rgba(153, 7, 250, 0.4)), url("../assets/images/turm.jpg");
@@ -123,7 +123,7 @@
   position: relative;
   opacity: 0.65;
   &__caption {
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'Raleway ExtraLight', Arial, sans-serif;
     position: absolute;
     left: 0;
     top: 50%;

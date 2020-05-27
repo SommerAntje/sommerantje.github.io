@@ -88,7 +88,6 @@ export default {
 }
 </script>
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 .timeline {
     position: relative;
     margin: 50px auto;
@@ -227,7 +226,7 @@ export default {
             padding: 0;
             margin: 0;
             font-size: 1.25rem;
-            font-family: 'Raleway', Arial, sans-serif;
+            font-family: 'Raleway ExtraLight', Arial, sans-serif;
         }
     }
     &__content {
@@ -235,7 +234,7 @@ export default {
         h3 {
             margin: 0;
             padding: 0 0 15px 0;
-            font-family: 'Raleway', Arial, sans-serif;
+            font-family: 'Raleway ExtraLight', Arial, sans-serif;
             color: rgba(53,168,224,1);
             font-size: 1.75rem;
         }

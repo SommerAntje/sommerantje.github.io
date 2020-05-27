@@ -35,8 +35,6 @@ export default {};
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-
 .placeholder_lazyload {
   visibility: hidden;
 }
@@ -145,7 +143,7 @@ export default {};
     }
   
     h1 {
-      font-family: 'Raleway', Arial, sans-serif;
+      font-family: 'Raleway ExtraLight', Arial, sans-serif;
       font-size: 3.5rem;
       text-align: center;
       padding: 0;

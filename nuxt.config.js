@@ -110,7 +110,7 @@ module.exports = {
 
   webfontloader: {
     custom: {
-      families: ['Graphik', 'Tiempos Headline'],
+      families: ['Graphik', 'Tiempos Headline', 'Raleway ExtraLight'],
       urls: ['/fonts/fonts.css']
     }
   },

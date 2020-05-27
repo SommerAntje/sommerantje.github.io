@@ -21,3 +21,12 @@
 	font-weight: 400;
   src: url("/fonts/Tiempos-Headline-Semibold.woff2") format("woff2");
 }
+
+@font-face {
+	font-family: "Raleway ExtraLight";
+	font-style: light;
+  	font-display: swap;
+	font-weight: 200;
+	src: url("/fonts/Raleway-ExtraLight.ttf") format("truetype"),
+	 	 url("/fonts/Raleway-ExtraLight.woff") format("woff");
+}
