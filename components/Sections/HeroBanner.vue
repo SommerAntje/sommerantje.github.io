@@ -103,7 +103,7 @@ export default {};
     min-height: 74px;
     margin-bottom: 2rem;
     padding: 1rem;
-    top: 39%;
+    top: 20%;
 
     @media (max-width: $screen-xs) {
       position: relative;
@@ -118,7 +118,6 @@ export default {};
       min-height: 74px;
       margin-bottom: 0;
       margin-top: 2.75rem;
-      top: 12%;
     }
 
     @media (min-width: $screen-sm) {
@@ -131,20 +130,18 @@ export default {};
     @media (min-width: $screen-md) {
       left: 4%;
       width: 43%;
-      top: 21%;
-      padding: 4rem;
+      padding: 1rem;
     }
 
     @media (min-width: $screen-lg) {
       left: 8%;
       width: 35%;
-      top: 20%;
-      padding: 4rem;
+      padding: 2rem;
     }
   
     h1 {
       font-family: 'Raleway ExtraLight', Arial, sans-serif;
-      font-size: 3.5rem;
+      font-size: 3rem;
       text-align: center;
       padding: 0;
       -webkit-transition: background-color .3s ease-out;
@@ -155,13 +152,14 @@ export default {};
       }
 
       @media (min-width: $screen-sm) {
+        font-size: 3rem;
         margin-bottom: 0;
-        font-size: 3.5rem;
         text-align: center;
         padding: 0;
       }
 
       @media (min-width: $screen-md) {
+        font-size: 4rem;
         margin-bottom: 0;
         padding: 0;
       }
