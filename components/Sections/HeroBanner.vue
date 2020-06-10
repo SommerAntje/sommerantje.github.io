@@ -25,6 +25,12 @@
             </nuxt-link>
           </span>
         </h1>
+        <h3>Scroll down to see more</h3>
+        <div id="arrow-down">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 4" aria-hidden="true" style="width: 16px; transform: rotate(90deg);">
+              <polygon fill="#35A8E0" points="0 2.33 4.72 2.33 3.53 3.53 4 4 6 2 4 0 3.53 0.47 4.72 1.67 0 1.67 0 2.33"/>
+          </svg>
+        </div>
       </div>
     </div>
   </section>
@@ -168,7 +174,37 @@ export default {};
         font-size: 4.5rem;
       }
     }
+    h3 {
+      font-family: 'Raleway ExtraLight', Arial, sans-serif;
+      font-size: 2rem;
+      color: $primary;
+      text-align: center;
+      padding: 4% 0;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+ 
+    // Animation
+    @keyframes jump {
+      0% { top: 0; } 50% { top: 50px; } 100% { top: 0; }
+    }
+
+    // Button/Arrow
+    #arrow-down {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      animation: jump 5s infinite;
+      width: 30px;
+      height: 30px;
+        svg {
+          transition: .3s ease-in-out;
+      }
+        svg:hover {
+          opacity: 0.7;
+          transition: .3s ease-in-out;
+      }
+    }
   }
 }
-
 </style>
