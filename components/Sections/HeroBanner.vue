@@ -43,6 +43,7 @@ export default {};
 <style lang="scss">
 .placeholder_lazyload {
   visibility: hidden;
+  position: absolute;
 }
 .hero {
   width: 100%;
