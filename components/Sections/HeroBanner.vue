@@ -77,10 +77,6 @@ export default {};
     padding: 0;  
     max-width: 100%;
     vertical-align: middle;
-
-    @media (min-width: $screen-lg) {
-     height: 100vh;
-    }
   }
 
   &__profile {
@@ -98,8 +94,6 @@ export default {};
 
     @media (min-width: $screen-lg) {
       width: 50%;
-      position: absolute;
-      top: 0;
     }
   }
 
