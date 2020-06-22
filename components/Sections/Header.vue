@@ -40,7 +40,7 @@ export default {
   }
 
   &__logo {
-    height: 33px;
+    height: 30px;
   }
 
   &__link-logo {
@@ -68,8 +68,7 @@ export default {
       padding-right: 0;
       padding-left: 0;
       max-width: 1300px;
-      margin-right: 30px;
-      margin-left: 50px;
+      margin-left: 20px;
     }
 
     @media(min-width: $screen-lg){
@@ -77,8 +76,7 @@ export default {
       padding-right: 0;
       padding-left: 0;
       max-width: 1500px;
-      margin-right: 30px;
-      margin-left: 50px;
+      margin-left: 20px;
     }
   }
 

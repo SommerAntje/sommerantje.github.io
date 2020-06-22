@@ -115,13 +115,21 @@
   background: linear-gradient(rgba(221, 219, 92, 0.4), rgba(153, 7, 250, 0.4)), url("../assets/images/dockland_a.jpg");
 }
 .parallax {
-  min-height: 500px; 
+  min-height: 450px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   opacity: 0.65;
+
+  @media (max-width: $screen-sm) {
+    min-height: 350px; 
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+
   &__caption {
     font-family: 'Raleway ExtraLight', Arial, sans-serif;
     position: absolute;
