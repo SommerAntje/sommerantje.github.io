@@ -125,18 +125,17 @@ export default {};
       width: 48%;
       position: absolute;
       min-height: 0;
-      margin-bottom: 0;
+      margin-top: 0;
+      top:4%;
     }
-
-    @media (min-width: $screen-md) {
-      left: 4%;
-      width: 43%;
-      padding: 1rem;
+    
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+      top: 0;
+      padding: 2rem;
     }
 
     @media (min-width: $screen-lg) {
-      left: 8%;
-      width: 35%;
+      top: 20%;
       padding: 2rem;
     }
   
@@ -153,10 +152,11 @@ export default {};
       }
 
       @media (min-width: $screen-sm) {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 0;
         text-align: center;
         padding: 0;
+        margin-top:15%;
       }
 
       @media (min-width: $screen-md) {
@@ -167,6 +167,7 @@ export default {};
 
       @media (min-width: $screen-lg) {
         font-size: 4.5rem;
+        margin-top: 0;
       }
     }
     h3 {
@@ -177,6 +178,10 @@ export default {};
       padding: 4% 0;
       text-transform: uppercase;
       letter-spacing: 4px;
+      
+      @media (min-width: $screen-sm) {
+        font-size: 1.5rem;
+      }
     }
  
     // Animation
@@ -192,6 +197,7 @@ export default {};
       animation: jump 5s infinite;
       width: 30px;
       height: 30px;
+      margin-bottom: 30px;
         svg {
           transition: .3s ease-in-out;
       }
