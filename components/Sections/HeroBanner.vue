@@ -19,7 +19,7 @@
               rel="noopener"
               href="https://github.com/SommerAntje"
             ><span>Antje Sommer,</span></a>
-            a self-taught Frontend Developer, welcome to 
+            a passionate Frontend Developer - welcome to 
             <nuxt-link to="/posts" class="ani">
               <span>my Blog</span>
             </nuxt-link>

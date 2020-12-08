@@ -53,9 +53,14 @@ export default {
   &__item {
     margin: 10px;
     border-bottom: 1px solid $text-negative;
-    padding: 0.5rem;
 
-    @media (min-width: $screen-sm) {
+    @media  (min-width: $screen-md) and (max-width: $screen-xlg) {
+      margin: 0;
+      border: 0;
+      padding-right: 2.5rem;
+    }
+
+    @media (max-width: $screen-sm) {
       margin: 0;
       border: 0;
       padding: 0;

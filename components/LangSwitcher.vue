@@ -68,6 +68,7 @@ select {
   }
 }
 .lang-switcher {
+    display: none;
     color: $text-negative;
     @media (min-width: $screen-sm) {
       color: $primary;
