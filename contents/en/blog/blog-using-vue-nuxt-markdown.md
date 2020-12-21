@@ -31,14 +31,14 @@ Nuxt, by following the architecture [JAMStack](https://jamstack.org/) is built t
 
 ### Importing posts on the main page depending on the language
 
-Using the asynchronous function <inline-code>asyncData</inline-code> that Nuxt provides only in its pages (it is not avalaible in its components) I import the Markdowns that I have saved in the folder <inline-code>content</inline-code> of the project. Later I return them in the form of a promise as an array of objects. As you can see below, this import depends on the constant <inline-code>blogs</inline-code> which will be the array <inline-code>blogsEs</inline-code> or <inline-code>blogsEn</inline-code> depending on the language of the page stored on the Vuex's state.
+Using the asynchronous function <inline-code>asyncData</inline-code> that Nuxt provides only in its pages (it is not avalaible in its components) I import the Markdowns that I have saved in the folder <inline-code>content</inline-code> of the project. Later I return them in the form of a promise as an array of objects. As you can see below, this import depends on the constant <inline-code>blogs</inline-code> which will be the array <inline-code>blogsDe</inline-code> or <inline-code>blogsEn</inline-code> depending on the language of the page stored on the Vuex's state.
 
 ```javascript
 import blogsEn from '~/contents/en/blogsEn.js'
-import blogsEs from '~/contents/es/blogsEs.js'
+import blogsDe from '~/contents/de/blogsDe.js'
 
 async asyncData ({app}) {
-  const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
+  const blogs = app.i18n.locale === 'en' ? blogsEn : blogsDe
   
   async function asyncImport (blogName) {
     const wholeMD = await import(`~/content/${app.i18n.locale}/blog/${blogName}.md`)
@@ -58,14 +58,14 @@ The reason why I'm importing the arrays containing the blogs names is because I 
 
 ```javascript
 import blogsEn from '~/contents/en/blogsEn.js'
-import blogsEs from '~/contents/es/blogsEs.js'
+import blogsDe from '~/contents/de/blogsDe.js'
 
 generate: {
   routes: [
-    '/es', '404'
+    '/de', '404'
   ]
   .concat(blogsEn.map(blog => `/blog/${blog}`))
-  .concat(blogsEs.map(blog => `es/blog/${blog}`))
+  .concat(blogsDe.map(blog => `de/blog/${blog}`))
 }
 ```
 

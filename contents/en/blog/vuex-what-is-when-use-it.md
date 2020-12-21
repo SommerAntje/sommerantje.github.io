@@ -74,4 +74,3 @@ This error, like so many others that I've found in this project alone, helped me
 
 Luckily I realized my mistake before publishing this webapp and I was able to change the import system. I wrote a post about how I made this dynamic import <nuxt-link to="blog-using-vue-nuxt-markdown">here</nuxt-link>.
 
-Since I don't have a comments section on each post, I would love to continue the conversation on [Twitter](https://twitter.com/MarinaAisa). All feedback is welcome! If you think there is something that it can be improved, write me, you will help me a lot to learn.

@@ -1,3 +1,3 @@
 export default {
-  credits: 'Open source template. Mira el código en <a target="_blank" href="https://github.com/marinaaisa/nuxt-markdown-blog-starter" class="ani"><span>Github</span></a>. Hecho por <a target="_blank" href="https://marinaaisa.com/es/" class="ani"><span>Marina Aisa</span></a>.'
+  credits: 'Open source template. Checkout the code from <a target="_blank" href="https://github.com/SommerAntje" class="ani"><span>Github</span></a>. Website and blog content by <a target="_blank" href="https://antje-sommer.de/de/" class="ani"><span>Antje Sommer</span></a>.'
 }

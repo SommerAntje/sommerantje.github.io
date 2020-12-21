@@ -31,14 +31,14 @@ Nuxt, al seguir la arquitectura [JAMStack](https://jamstack.org/), está constru
 
 ### Importación de los artículos en la página principal dependiendo del idioma
 
-Mediante la función asíncrona <inline-code>asyncData</inline-code> que proporciona Nuxt solo en sus páginas (no en sus componentes) hago una importación de los Markdown que tengo guardados en la carpeta <inline-code>content</inline-code> del proyecto. Posteriormente los devuelvo en forma de promesa como un array de objetos. Como puedes ver a continuación, la importación depende de la constante <inline-code>blogs</inline-code> que será el array <inline-code>blogsEs</inline-code> o <inline-code>blogsEn</inline-code> dependiendo del idioma de la página.
+Mediante la función asíncrona <inline-code>asyncData</inline-code> que proporciona Nuxt solo en sus páginas (no en sus componentes) hago una importación de los Markdown que tengo guardados en la carpeta <inline-code>content</inline-code> del proyecto. Posteriormente los devuelvo en forma de promesa como un array de objetos. Como puedes ver a continuación, la importación depende de la constante <inline-code>blogs</inline-code> que será el array <inline-code>blogsDe</inline-code> o <inline-code>blogsEn</inline-code> dependiendo del idioma de la página.
 
 ```javascript
 import blogsEn from '~/contents/en/blogsEn.js'
-import blogsEs from '~/contents/es/blogsEs.js'
+import blogsDe from '~/contents/de/blogsDe.js'
 
 async asyncData ({app}) {
-  const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
+  const blogs = app.i18n.locale === 'en' ? blogsEn : blogsDe
   
   async function asyncImport (blogName) {
     const wholeMD = await import(`~/content/${app.i18n.locale}/blog/${blogName}.md`)
@@ -58,14 +58,14 @@ La razón por la cual tengo los arrays de los nombres de los blogs importados de
 
 ```javascript
 import blogsEn from '~/contents/en/blogsEn.js'
-import blogsEs from '~/contents/es/blogsEs.js'
+import blogsDe from '~/contents/de/blogsDe.js'
 
 generate: {
   routes: [
-    '/es', '404'
+    '/de', '404'
   ]
   .concat(blogsEn.map(blog => `/blog/${blog}`))
-  .concat(blogsEs.map(blog => `es/blog/${blog}`))
+  .concat(blogsDe.map(blog => `de/blog/${blog}`))
 }
 ```
 
@@ -148,12 +148,9 @@ Para traducir la web en inglés y español utilizo [nuxt-i18n](https://github.co
 
 - Cómo utilizar <inline-code>analyze</inline-code> de Nuxt para analizar el JS que genera Webpack en nuestra app y poder optimizarlo.
 
-- El gran error que cometí en el camino: Vuex. <nuxt-link to="/es/blog/vuex-que-es-cuando-utilizarlo">Ya lo puedes leer aquí</nuxt-link>.
+- El gran error que cometí en el camino: Vuex. <nuxt-link to="/de/blog/vuex-que-es-cuando-utilizarlo">Ya lo puedes leer aquí</nuxt-link>.
 
 - Cómo meter emojis en tu web a través de un sprite hecho en SCSS para que se vean siempre igual independientemente del navegador o dispositivo.
 
 - Carga de componentes asíncronos de Vue con el ejemplo práctico del mapa que hay en la home.
 
-Pensé en publicar un starter de Nuxt pero siendo realista no tendría tiempo para mantenerlo. Creo que este post explica muy bien cómo hacerlo, pero si te has quedado con alguna duda, siempre puedes contactarme a mi email: [marina@marinaaisa](mailto:marina@marinaaisa.com).
-
-Como no tengo comentarios en el blog, me encantaría continuar la conversación en [Twitter](https://twitter.com/MarinaAisa). ¡Todo feedback es bienvenido! Si crees que hay algo que se puede mejorar me ayudarías muchísimo.

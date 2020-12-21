@@ -34,9 +34,9 @@
       ├── en
         ├── blog
         ├── blogsEn.js
-      ├── es
+      ├── de
         ├── blog
-        ├── blogsEs.js
+        ├── blogsDe.js
     ├── layouts
     ├── locales
     ├── pages
@@ -55,7 +55,7 @@
 
 3.  **`/components`**: Vue components for the project. You can find more information at [Nuxt's components directory documentation](https://nuxtjs.org/guide/directory-structure#the-components-directory)
 
-4.  **`/contents`**: You will save your MD files here. They are divided by language and you will have to write the URL name of each of them at `blogsEn.js` and `blogsEs.js`.
+4.  **`/contents`**: You will save your MD files here. They are divided by language and you will have to write the URL name of each of them at `blogsEn.js` and `blogsDe.js`.
 
 5.  **`/layouts`**: You can find information at [Nuxt's layout directory documentation](https://nuxtjs.org/guide/directory-structure#the-layouts-directory)
 

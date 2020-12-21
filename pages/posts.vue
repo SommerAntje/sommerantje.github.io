@@ -10,12 +10,12 @@
   import BlogSection from "~/components/Sections/BlogSection"
 
   import blogsEn from '~/contents/en/blogsEn.js'
-  import blogsEs from '~/contents/es/blogsEs.js'
+  import blogsDe from '~/contents/de/blogsDe.js'
 
   export default {
     async asyncData ({app}) {
 
-      const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
+      const blogs = app.i18n.locale === 'en' ? blogsEn : blogsDe
       
       async function asyncImport (blogName) {
         const wholeMD = await import(`~/contents/${app.i18n.locale}/blog/${blogName}.md`)
