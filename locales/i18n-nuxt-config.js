@@ -18,7 +18,7 @@ const I18N = {
   lazy: true,
   seo: false,
   langDir: '/locales/',
-  defaultLocale: 'en',
+  defaultLocale: 'de',
   parsePages: false
 }
 
