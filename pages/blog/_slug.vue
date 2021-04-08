@@ -13,7 +13,6 @@
           </div>
           <div class="elevate-cover__left">
             <span class="blogSelected-year">{{ year }}</span>
-            —
             <nuxt-link
               v-if="trans"
               v-for="(locale, i) in showLocales"
