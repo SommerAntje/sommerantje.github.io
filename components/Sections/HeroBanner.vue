@@ -199,8 +199,8 @@ export default {};
       height: 30px;
       margin-bottom: 30px;
       border-radius: 50%;
-      border: 2px solid #767676;
-      line-height: 1.7em;
+      border: 1px solid #767676;
+      padding-top: 3px;
         svg {
           transition: .3s ease-in-out;
       }
@@ -208,6 +208,15 @@ export default {};
           opacity: 0.7;
           transition: .3s ease-in-out;
       }
+      @media (max-width: $screen-sm){
+        margin-top: 3px;
+      }
+      @media (min-width: $screen-md){
+        margin-top: 2px;
+      }
+      @media (min-width: $screen-lg){
+        padding-top: 2px;
+      }     
     }
   }
 }
