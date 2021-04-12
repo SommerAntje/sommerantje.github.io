@@ -198,6 +198,9 @@ export default {};
       width: 30px;
       height: 30px;
       margin-bottom: 30px;
+      border-radius: 50%;
+      border: 2px solid #767676;
+      line-height: 1.7em;
         svg {
           transition: .3s ease-in-out;
       }
