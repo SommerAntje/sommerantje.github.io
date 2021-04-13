@@ -1,10 +1,9 @@
 <template>
     <section>
-       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Velit euismod in pellentesque massa placerat duis. Praesent elementum facilisis leo vel.
-        Pellentesque elit eget gravida cum sociis. Augue lacus viverra vitae congue eu consequat. 
+       <p class="about">
+        I am Antje, a passionate Frontend Developer with longtime experience 
+        in UI/UX Design and Ecommerce, based in Hamburg.
+        Currently diving into the magical world of Vue.js and Typescript while working remotely for dpa-IT!
       </p>
       <Timeline />
     </section>
@@ -16,5 +15,9 @@ export default {
 };
 </script>
 <style lang="scss">
-
+.about {
+  line-height: 1.7;
+  letter-spacing: -.1px; 
+  padding-top: 5rem;
+}
 </style>

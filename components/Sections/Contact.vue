@@ -1,6 +1,6 @@
 <template>
     <section>
-       <p>
+       <p class="contact">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Velit euismod in pellentesque massa placerat duis. Praesent elementum facilisis leo vel.
@@ -21,5 +21,9 @@
 export default {};
 </script>
 <style lang="scss">
-
+.contact {
+  line-height: 1.7;
+  letter-spacing: -.1px; 
+  padding-top: 5rem;
+}
 </style>
