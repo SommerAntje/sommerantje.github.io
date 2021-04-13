@@ -14,22 +14,22 @@
     
     <div class="parallax2 parallax">
       <div class="parallax__caption">
-        <span class="parallax__caption__border">SKILLS</span>
+        <span class="parallax__caption__border">ABOUT ME</span>
       </div>
     </div>
     
     <div class="container">
-      <Skills />
+      <About />
     </div>
 
     <div class="parallax3 parallax">
       <div class="parallax__caption">
-        <span class="parallax__caption__border">About Me</span>
+        <span class="parallax__caption__border">SKILLS</span>
       </div>
     </div>
 
     <div class="container">
-      <About />
+      <Skills />
     </div>
 
     <div class="parallax4 parallax">

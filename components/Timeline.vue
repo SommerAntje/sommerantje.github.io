@@ -48,7 +48,8 @@
                         Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
                         <br />
                         <span class="highlight">#Salesforce Commerce Cloud</span>
-                        <span class="highlight">#jQuery #ES6</span><br />
+                        <span class="highlight">#jQuery</span>
+                        <span class="highlight">#ES6</span><br />
                         <span class="highlight">#E-Commerce</span>
                         <span class="highlight">#HTML5</span>
                         <span class="highlight">#CSS3</span>
