@@ -1,4 +1,4 @@
 export default [
   'vue-multislider-ui',
-  'bacon-ipsum',
+  'deploy-nuxt-app-to-github-pages',
 ] 

@@ -17,7 +17,7 @@
               v-if="trans"
               v-for="(locale, i) in showLocales"
               :key="i"
-              :to="`${locale.code == 'en' ? '' : '/' + locale.code}/blog/${trans}`"
+              :to="`${locale.code == 'de' ? '' : '/en' + locale.code}/blog/${trans}`"
             >
                 {{ $t('changeLanguagePost') }}
             </nuxt-link>
@@ -131,7 +131,7 @@
         return {
           hid: 'alternate-hreflang-' + this.showLocales[0].iso,
           rel: 'alternate',
-          href: `${process.env.baseUrl + (this.showLocales[0].code === 'en' ? '' : '/de')}/blog/${this.trans}`,
+          href: `${process.env.baseUrl + (this.showLocales[0].code === 'de' ? '' : '/en')}/blog/${this.trans}`,
           hreflang: this.showLocales[0].code
         }
       },
