@@ -4,7 +4,7 @@
 
     <div class="parallax1 parallax">
       <div class="parallax__caption">
-        <span class="parallax__caption__border">Blog Posts</span>
+        <span class="parallax__caption__border">TECH BLOG</span>
       </div>
     </div>
    

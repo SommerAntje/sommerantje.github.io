@@ -5,14 +5,9 @@
                 <div class="timeline__content">
                     <h3>dpa-IT Services GmbH</h3>
                     <p>
-                        At the moment I am working as Front-End Engineer at the dpa-IT Services GmbH
-                        where I am diving into the magical world of Vue.js, Typescript, TailwindCSS
-                        and sharp my testing skills in vue-testing-library.<br />
-                        <span class="highlight">#vue.js</span>
-                        <span class="highlight">#Tailwind CSS</span> <br />
-                        <span class="highlight">#Typescript</span>
-                        <span class="highlight">#GraphQL</span>
-                        <span class="highlight">#vue-testing-library</span>
+                        I am currently employeed at the dpa-IT Services GmbH,
+                        where I am working in a scrum team developing services and solutions for the media and communications industries.
+                        Sharping my skills in <span class="highlight">vue-testing-library</span>, Typescript, TailwindCSS.
                     </p>
                 </div>
                 <div class="timeline__time">
@@ -26,12 +21,6 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
                         Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
-                        <br />
-                        <span class="highlight">#vue.js</span>
-                        <span class="highlight">#vuetify</span>
-                        <span class="highlight">#Micro Frontends</span><br />
-                        <span class="highlight">#GraphQL</span>
-                        <span class="highlight">#vue-testing-library</span>
                     </p>
                 </div>
                 <div class="timeline__time">
@@ -42,17 +31,9 @@
                 <div class="timeline__content">
                     <h3>avarto eCommerce Verwaltungsgesellschaft mbH</h3>
                     <p>
-                        Software Front-End Engineer | Salesforce Commerce Cloud
-                        for  Uniqlo, Gerry Weber, Tommy Hilfiger.
-                        labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
-                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
-                        <br />
-                        <span class="highlight">#Salesforce Commerce Cloud</span>
-                        <span class="highlight">#jQuery</span>
-                        <span class="highlight">#ES6</span><br />
-                        <span class="highlight">#E-Commerce</span>
-                        <span class="highlight">#HTML5</span>
-                        <span class="highlight">#CSS3</span>
+                        avarto eCommerce offers a shopsystem based on <span class="highlight">salesforce commerce cloud</span>.
+                        As Software Frontend Engineer, I worked in a scrum team 
+                        providing online shop solutions from design to development for customers such as Tommy Hilfiger, Uniqlo and Gerry Weber.
                     </p>
                 </div>
                 <div class="timeline__time">
@@ -63,16 +44,9 @@
                 <div class="timeline__content">
                     <h3>ePages GmbH</h3>
                     <p>
-                        Software Front-End Engineer | E-commerce, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
-                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
-                        <br />
-                        <span class="highlight">#Bootstrap</span>
-                        <span class="highlight">#jQuery</span>
-                        <span class="highlight">#ePages Template Framework</span><br />
-                        <span class="highlight">#CSS3</span>
-                        <span class="highlight">#HTML5</span>
-                        <span class="highlight">#E-Commerce</span>
+                        ePages offers a shopsystem as solution for merchants to easy maintain and upscale their online business.
+                        As UI/UX Designer and Software Frontend Engineer, I worked in a scrum team 
+                        developing the <span class="highlight">shopsystem</span> and the <span class="highlight">ecommerce storefront</span>.
                     </p>
                 </div>
                 <div class="timeline__time">
@@ -83,16 +57,7 @@
                 <div class="timeline__content">
                     <h3>Ministry Group GmbH</h3>
                     <p>
-                        Trainee in web development with focus on frontend, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
-                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
-                        <br />
-                        <span class="highlight">#Bootstrap</span>
-                        <span class="highlight">#jQuery</span>
-                        <span class="highlight">#PHP</span><br />
-                        <span class="highlight">#HTML5</span>
-                        <span class="highlight">#CSS3</span>
-                        <span class="highlight">#E-Commerce</span>
+                        Trainee at the department for web development at an advertising agency with focus on front-end solutions for<span class="highlight"> web and mobile apps</span>.
                     </p>
                 </div>
                 <div class="timeline__time">
@@ -110,11 +75,11 @@ export default {
 <style lang="scss">
 .timeline {
     position: relative;
-    margin: 50px auto;
+    margin: 50px auto; 
     padding: 40px 0;
-    width: 1000px;
+    width: 1000px; 
     box-sizing: border-box;
-    
+
     @media (max-width: $screen-sm) {
       width: 100%;
       padding-bottom: 0;
@@ -265,7 +230,6 @@ export default {
             letter-spacing: -.1px;
         }
         p {
-            margin: 10px 0 0;
             padding: 0;
             line-height: 1.5;
             letter-spacing: -.1px;

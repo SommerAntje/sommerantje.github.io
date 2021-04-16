@@ -19,13 +19,13 @@
               rel="noopener"
               href="https://github.com/SommerAntje"
             ><span>Antje Sommer,</span></a>
-            a passionate Frontend Developer - welcome to 
+            a Front-End Developer based in Hamburg welcome to 
             <nuxt-link to="/posts" class="ani">
               <span>my Blog</span>
             </nuxt-link>
           </span>
         </h1>
-        <h3>Scroll down to see more</h3>
+        <h3>Scroll down to read more</h3>
         <div id="arrow-down">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 4" aria-hidden="true" style="width: 16px; transform: rotate(90deg);">
               <polygon fill="#35A8E0" points="0 2.33 4.72 2.33 3.53 3.53 4 4 6 2 4 0 3.53 0.47 4.72 1.67 0 1.67 0 2.33"/>
@@ -111,7 +111,8 @@ export default {};
       min-height: 74px;
       margin-bottom: 0;
       top: 0;
-      margin-top: 2.75rem;
+      padding: 2rem;
+      margin-top: 1.75rem;
     }
 
     @media (min-width: $screen-xs) and (max-width: $screen-sm)  {

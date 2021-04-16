@@ -1,12 +1,14 @@
 <template>
     <section>
+       <h3 class="padding">Welcome to my tech blog! </h3>
        <p class="about">
-        Hello and welcome to my tech blog! <br /><br /> I am Antje a graphic designer, autodidact and Front-End Developer with passion. 
-        <br /> Taking online shop development to the next level, I've been working as UI/UX Designer and Front-End Developer in E-Commerce for many years.
-         Following my passion for constant learning and upgrading my front end skills, I am currently working in a scrum team at the dpa-IT Services GmbH
-        where I am diving into the magical world of Vue.js and Typescript.
-        Apart from that I am also an autodidactic guitarist (bloody beginner level) and enthusiastic about learning dutch!
+         I am Antje, a former graphic designer by profession and self-taught front-end developer based in Hamburg.
+         With a focus on online shop software development, I have worked as UI/UX designer and front-end developer in e-commerce for many years.
+         As an autodidact I want to focus on one area and be good at it - therefore I decided to follow my passion for consistent learning and to micro-specialize focusing on vue.js.
+       Apart from being a nerd, I am also an autodidactic guitarist (bloody beginner level) and enthusiastic about learning dutch.
+       <br />
       </p>
+      <h3>Work Experience</h3>
       <Timeline />
     </section>
 </template>
@@ -17,9 +19,17 @@ export default {
 };
 </script>
 <style lang="scss">
+.padding {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
 .about {
   line-height: 1.7;
   letter-spacing: -.1px; 
-  padding-top: 5rem;
+}
+h3 {
+  font-family: 'Raleway ExtraLight', Arial, sans-serif;
+  color: rgba(53,168,224,1);
+  font-size: 1.75rem;
 }
 </style>
