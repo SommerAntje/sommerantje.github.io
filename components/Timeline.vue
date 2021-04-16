@@ -31,7 +31,7 @@
                 <div class="timeline__content">
                     <h3>avarto eCommerce Verwaltungsgesellschaft mbH</h3>
                     <p>
-                        avarto eCommerce offers a shopsystem based on <span class="highlight">salesforce commerce cloud</span>.
+                        avarto eCommerce offers shopsystems based on <span class="highlight">salesforce commerce cloud</span>.
                         As Software Frontend Engineer, I worked in a scrum team 
                         providing online shop solutions from design to development for customers such as Tommy Hilfiger, Uniqlo and Gerry Weber.
                     </p>
