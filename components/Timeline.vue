@@ -18,9 +18,9 @@
                 <div class="timeline__content">
                     <h3>dreamIT GmbH</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea.
-                        Ornare lectus sit amet est placerat in egestas. Sem fringilla ut morbi tincidunt augue interdum.
+                        dreamIT focuses on B2C software solutions in ecommerce.
+                        As Software Frontend Engineer I worked in a scrum team building a modular and highly user interactive web application
+                        based on a <span class="highlight">microservice-based architecture</span>.
                     </p>
                 </div>
                 <div class="timeline__time">
