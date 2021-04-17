@@ -214,10 +214,7 @@ export default {};
       }
       @media (min-width: $screen-md){
         margin-top: 2px;
-      }
-      @media (min-width: $screen-lg){
-        padding-top: 2px;
-      }     
+      }    
     }
   }
 }

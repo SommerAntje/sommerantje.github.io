@@ -23,9 +23,36 @@
           <div class="skill-box">
             <div class="skill-title">
               <div class="img">
-                 <img src="~/assets/images/logo-antje.svg" alt="" />
+                 <img src="~/assets/images/bird.svg" alt="" />
+               </div>
+               <h3>Twitter</h3>
+             </div>
+             <p>Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada</p>
+          </div>
+            <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                 <img src="~/assets/images/linkSocial.svg" alt="" />
+               </div>
+               <h3>linkedIn</h3>
+             </div>
+             <p>Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada</p>
+          </div>
+            <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                 <img src="~/assets/images/github.svg" alt="" />
                </div>
                <h3>Github</h3>
+             </div>
+             <p>Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada</p>
+          </div>
+            <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                 <img src="~/assets/images/xing.svg" alt="" />
+               </div>
+               <h3>Xing</h3>
              </div>
              <p>Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada</p>
           </div>
