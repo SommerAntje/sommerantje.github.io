@@ -1,62 +1,61 @@
 <template>
     <section>
-       <p class="contact">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Velit euismod in pellentesque massa placerat duis. Praesent elementum facilisis leo vel.
-        Pellentesque elit eget gravida cum sociis. Augue lacus viverra vitae congue eu consequat. 
-        Aliquam sem fringilla ut morbi tincidunt augue interdum velit. 
-        Orci dapibus ultrices in iaculis nunc sed augue lacus. 
-        Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. 
-        Arcu ac tortor dignissim convallis aenean et tortor at. 
-        Sit amet cursus sit amet dictum sit amet. Consectetur libero id faucibus nisl tincidunt. 
-        Non curabitur gravida arcu ac tortor dignissim convallis aenean et. 
-        Sed cras ornare arcu dui vivamus. Elementum integer enim neque volutpat ac tincidunt vitae semper quis.
-        Nibh sed pulvinar proin gravida hendrerit lectus. Semper risus in hendrerit gravida. 
-        Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.
-      </p>
-        <div class="inner">
-          <div  class="header">
-            <h1>Contact me</h1>
-          </div>
-        <div class="skill-container">
-          <div class="skill-box">
-            <div class="skill-title">
-              <div class="img">
-                 <img src="~/assets/images/bird.svg" alt="" class="skill-icon" />
-               </div>
-               <h3>Twitter</h3>
-             </div>
-             <p>Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada</p>
-          </div>
+        <div class="skill-inner">
+          <div class="skill-container">
             <div class="skill-box">
-            <div class="skill-title">
-              <div class="img">
-                 <img src="~/assets/images/linkSocial.svg" alt="" class="skill-icon" />
-               </div>
-               <h3>linkedIn</h3>
-             </div>
-             <p>Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada</p>
-          </div>
+              <div class="skill-title">
+                <div class="skill-img">
+                  <img src="~/assets/images/bird_2.svg" alt="" class="skill-icon" />
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://twitter.com/AntjeSommer3"
+                ><h3>Twitter</h3>
+                </a>
+              </div>
+            </div>
+              <div class="skill-box">
+              <div class="skill-title">
+                <div class="skill-img">
+                  <img src="~/assets/images/linkSocial.svg" alt="" class="skill-icon" />
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.linkedin.com/in/antje-sommer"
+                >
+                <h3>LinkedIn</h3>
+                </a>
+              </div>
+            </div>
+              <div class="skill-box">
+              <div class="skill-title">
+                <div class="skill-img">
+                  <img src="~/assets/images/github_2.svg" alt="" class="skill-icon" />
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://github.com/SommerAntje"
+                ><h3>GitHub</h3>
+                </a>
+              </div>
+            </div>
             <div class="skill-box">
-            <div class="skill-title">
-              <div class="img">
-                 <img src="~/assets/images/github.svg" alt="" class="skill-icon" />
-               </div>
-               <h3>Github</h3>
-             </div>
-             <p>Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada</p>
+              <div class="skill-title">
+                <div class="skill-img">
+                  <img src="~/assets/images/xing_3.svg" alt="" class="skill-icon" />
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.xing.com/profile/Antje_Sommer9/cv"
+                ><h3>Xing</h3>
+                </a>
+              </div>
+            </div>
           </div>
-            <div class="skill-box">
-            <div class="skill-title">
-              <div class="img">
-                 <img src="~/assets/images/xing.svg" alt="" class="skill-icon" />
-               </div>
-               <h3>Xing</h3>
-             </div>
-             <p>Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada</p>
-          </div>
-        </div>
       </div>
     </section>
 </template>
@@ -64,34 +63,9 @@
 export default {};
 </script>
 <style lang="scss">
-.contact {
-  line-height: 1.7;
-  letter-spacing: -.1px; 
-  padding-top: 5rem;
+.skill-inner {
+  margin-top: 5rem;
 }
-
-.inner {
-  padding-top: 20px;
-}
-
-.header {
-  text-align: center;
-  color: #000;
-  padding: 1rem;
-  position: relative;
-}
-
-.header:after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
-  width: 100px;
-  background-color: #2ecc71;
-}
-
 .skill-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -103,10 +77,18 @@ export default {};
   font-size: 1.2rem;
 }
 
+.skill-box:hover > .skill-title:after,
+.skill-box:hover > .skill-title:before {
+  width: 35px;
+}
+
 .skill-box {
   padding: 1rem;
-  color: #ddd;
   cursor: pointer;
+}
+
+.skill-box:hover .skill-img {
+  transform: translateY(-10px)
 }
 
 .skill-title {
@@ -115,25 +97,82 @@ export default {};
   align-items: center;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
+  position: relative;
 }
 
-img {
+.skill-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 2px;
+  border-radius: 2px 0 0 2px;
+  background-color: $primary;
+  transition: .5s;
+}
+
+.skill-title:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  border-radius: 0 2px 2px 0;
+  background-color:  $primary;
+  transition: .5s;
+}
+
+.skill-img {
   width: 90px;
   height: 90px;
   position: relative;
   border-radius: 45px;
-  background-color: #fff;
+  background-color:  $primary-light;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .5s;
+}
+
+.skill-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90px;
+  background:  $primary;
+  border-radius: 45px 0 0 45px;
 }
 
 .skill-title h3 {
-  color: #000;
-  margin: 0.5rem;
+  color:  $primary;
+  margin-top: 0.5rem;
 }
 
 .skill-icon {
   width: 50px;
+  z-index: 2;
+}
+
+@media (max-width: $screen-md){
+  .skill-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 50px;
+  }
+}
+
+@media  (min-width: $screen-sm) and (max-width: $screen-sm){
+  .skill-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: $screen-xs){
+  .skill-container {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
