@@ -1,11 +1,11 @@
 <template>
     <section>
-        <div class="skill-inner">
-          <div class="skill-container">
-            <div class="skill-box">
-              <div class="skill-title">
-                <div class="skill-img">
-                  <img src="~/assets/images/bird_2.svg" alt="" class="skill-icon" />
+        <div class="contact-inner">
+          <div class="contact-container">
+            <div class="contact-box">
+              <div class="contact-title">
+                <div class="contact-img">
+                  <img src="~/assets/images/bird_2.svg" alt="" class="contact-icon" />
                 </div>
                 <a
                   target="_blank"
@@ -15,10 +15,10 @@
                 </a>
               </div>
             </div>
-              <div class="skill-box">
-              <div class="skill-title">
-                <div class="skill-img">
-                  <img src="~/assets/images/linkSocial.svg" alt="" class="skill-icon" />
+              <div class="contact-box">
+              <div class="contact-title">
+                <div class="contact-img">
+                  <img src="~/assets/images/linkSocial.svg" alt="" class="contact-icon" />
                 </div>
                 <a
                   target="_blank"
@@ -29,10 +29,10 @@
                 </a>
               </div>
             </div>
-              <div class="skill-box">
-              <div class="skill-title">
-                <div class="skill-img">
-                  <img src="~/assets/images/github_2.svg" alt="" class="skill-icon" />
+              <div class="contact-box">
+              <div class="contact-title">
+                <div class="contact-img">
+                  <img src="~/assets/images/github_2.svg" alt="" class="contact-icon" />
                 </div>
                 <a
                   target="_blank"
@@ -42,10 +42,10 @@
                 </a>
               </div>
             </div>
-            <div class="skill-box">
-              <div class="skill-title">
-                <div class="skill-img">
-                  <img src="~/assets/images/xing_3.svg" alt="" class="skill-icon" />
+            <div class="contact-box">
+              <div class="contact-title">
+                <div class="contact-img">
+                  <img src="~/assets/images/xing_3.svg" alt="" class="contact-icon" />
                 </div>
                 <a
                   target="_blank"
@@ -63,10 +63,10 @@
 export default {};
 </script>
 <style lang="scss">
-.skill-inner {
+.contact-inner {
   margin-top: 5rem;
 }
-.skill-container {
+.contact-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
@@ -77,21 +77,21 @@ export default {};
   font-size: 1.2rem;
 }
 
-.skill-box:hover > .skill-title:after,
-.skill-box:hover > .skill-title:before {
+.contact-box:hover > .contact-title:after,
+.contact-box:hover > .contact-title:before {
   width: 35px;
 }
 
-.skill-box {
+.contact-box {
   padding: 1rem;
   cursor: pointer;
 }
 
-.skill-box:hover .skill-img {
+.contact-box:hover .contact-img {
   transform: translateY(-10px)
 }
 
-.skill-title {
+.contact-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,7 +100,7 @@ export default {};
   position: relative;
 }
 
-.skill-title:after {
+.contact-title:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -112,7 +112,7 @@ export default {};
   transition: .5s;
 }
 
-.skill-title:before {
+.contact-title:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -124,7 +124,7 @@ export default {};
   transition: .5s;
 }
 
-.skill-img {
+.contact-img {
   width: 90px;
   height: 90px;
   position: relative;
@@ -136,7 +136,7 @@ export default {};
   transition: .5s;
 }
 
-.skill-img:after {
+.contact-img:after {
   content: '';
   position: absolute;
   top: 0;
@@ -147,31 +147,31 @@ export default {};
   border-radius: 45px 0 0 45px;
 }
 
-.skill-title h3 {
+.contact-title h3 {
   color:  $primary;
   margin-top: 0.5rem;
 }
 
-.skill-icon {
+.contact-icon {
   width: 50px;
   z-index: 2;
 }
 
 @media (max-width: $screen-md){
-  .skill-container {
+  .contact-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem 50px;
   }
 }
 
 @media  (min-width: $screen-sm) and (max-width: $screen-sm){
-  .skill-container {
+  .contact-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: $screen-xs){
-  .skill-container {
+  .contact-container {
     grid-template-columns: 1fr;
   }
 }
