@@ -27,9 +27,7 @@
         </h1>
         <h3>Scroll down to read more</h3>
         <div id="arrow-down">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 4" aria-hidden="true" style="width: 16px; transform: rotate(90deg);">
-              <polygon fill="#35A8E0" points="0 2.33 4.72 2.33 3.53 3.53 4 4 6 2 4 0 3.53 0.47 4.72 1.67 0 1.67 0 2.33"/>
-          </svg>
+          <img src="~/assets/images/arrow_down.svg" />
         </div>
       </div>
     </div>
@@ -201,11 +199,13 @@ export default {};
       margin-bottom: 30px;
       border-radius: 50%;
       border: 1px solid #767676;
-      padding-top: 3px;
-        svg {
+      padding: 5px;
+        img {
           transition: .3s ease-in-out;
+          width: 16px;
+          height: 16px;
       }
-        svg:hover {
+        img:hover {
           opacity: 0.7;
           transition: .3s ease-in-out;
       }

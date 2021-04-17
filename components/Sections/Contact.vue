@@ -15,6 +15,22 @@
         Nibh sed pulvinar proin gravida hendrerit lectus. Semper risus in hendrerit gravida. 
         Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.
       </p>
+        <div class="inner">
+          <div  class="header">
+            <h1>My Skills</h1>
+          </div>
+        <div class="container">
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                 <img src="~/assets/images/logo-antje.svg" alt="" />
+               </div>
+               <h3>Github</h3>
+             </div>
+             <p>Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada</p>
+          </div>
+        </div>
+      </div>
     </section>
 </template>
 <script>
