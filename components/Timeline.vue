@@ -220,12 +220,11 @@ export default {
             margin: 0;
             padding: 0 0 15px 0;
             font-family: 'Raleway ExtraLight', Arial, sans-serif;
-            color: rgba(53,168,224,1);
+            color: $primary;
             font-size: 1.75rem;
         }
         .highlight {
-            font-family: 'Raleway ExtraLight', Arial, sans-serif;
-            color: rgba(53,168,224,1);
+            color: $primary;
             line-height: 1.5;
             letter-spacing: -.1px;
         }

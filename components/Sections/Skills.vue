@@ -9,7 +9,7 @@
                 </div>
                <h3>Technologies</h3>
               </div>
-                <p>#Vue.js #Tailwind CSS #Vuetify #Bootstrap #Rest API #GraphQL
+                <p class="skill-content">#Vue.js #Tailwind CSS #Vuetify #Bootstrap #Rest API #GraphQL
                   #jQuery #Docker #Gitlab #nuxt.js #VS Code #npm #yarn
                 </p>
             </div>
@@ -20,8 +20,9 @@
                 </div>
                 <h3>Experience</h3>
               </div>
-                <p>#Software Development #Salesforce eCommerce Cloud #eCommerce Software #Unit Testing #CI/CD
-                  #UI/UX Design #Scrum / Kanban
+                <p class="skill-content">#Software Development #micro frontend #microservice architecture 
+                  #eCommerce Software #Unit Testing #CI/CD
+                  #UI/UX Design 
                 </p>
             </div>
             <div class="skill-box">
@@ -31,7 +32,7 @@
                 </div>
                 <h3>Languages</h3>
               </div>
-                <p>#Html5 #CSS3 #SASS/LESS #JavaScript #TypeScript #Dutch #English #German
+                <p class="skill-content">#Html5 #CSS3 #SASS/LESS #JavaScript #TypeScript #Dutch #English #German
                 </p>
             </div>
             <div class="skill-box">
@@ -41,8 +42,8 @@
                 </div>
                 <h3>Soft Skills</h3>
               </div>
-                <p>#Software Development #Salesforce eCommerce Cloud #eCommerce Software #Unit Testing #CI/CD
-                  #UI/UX Design #Scrum / Kanban</p>
+                <p class="skill-content">#Agile Software Development #Pair Porgramming #Mentoring #Creative #Leadership
+                  #Approachability #Teamplayer #Patience #Ability to Take Criticism #Adaptable </p>
             </div>
          </div>
       </div>
@@ -59,10 +60,8 @@ export default {};
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
-  align-items: center;
   text-align: center;
   grid-gap: 1rem;
-  padding: 1rem 80px;
   font-size: 1.2rem;
 }
 
@@ -76,6 +75,12 @@ export default {};
   cursor: pointer;
 }
 
+.skill-content {
+  line-height: 1.7;
+  letter-spacing: -.1px;
+  font-size: 1.5rem;
+}
+
 .skill-box:hover .skill-img {
   transform: translateY(-10px)
 }
@@ -87,30 +92,6 @@ export default {};
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   position: relative;
-}
-
-.skill-title:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  width: 0;
-  height: 2px;
-  border-radius: 2px 0 0 2px;
-  background-color: $primary;
-  transition: .5s;
-}
-
-.skill-title:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  border-radius: 0 2px 2px 0;
-  background-color:  $primary;
-  transition: .5s;
 }
 
 .skill-img {
@@ -149,7 +130,6 @@ export default {};
 @media (max-width: $screen-md){
   .skill-container {
     grid-template-columns: repeat(2, 1fr);
-    padding: 2rem 50px;
   }
 }
 
