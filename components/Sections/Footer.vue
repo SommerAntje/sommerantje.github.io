@@ -6,9 +6,7 @@
           © {{ year }} — <span v-html="$t('footer.credits')"/>
         </div>
         <a id="arrow-up" class="footer__top-page"  @click="scrollTop">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 4" aria-hidden="true" style="width: 16px; transform: rotate(270deg);">
-              <polygon fill="#35A8E0" points="0 2.33 4.72 2.33 3.53 3.53 4 4 6 2 4 0 3.53 0.47 4.72 1.67 0 1.67 0 2.33"/>
-          </svg>
+          <img src="~/assets/images/arrow_up.svg" />
         </a>
       </div>
     </div>
@@ -84,11 +82,13 @@ export default {
       margin-bottom: 30px;
       border-radius: 50%;
       border: 1px solid #767676;
-      padding-top: 7px;
-        svg {
+      padding: 6px;
+        img {
           transition: .3s ease-in-out;
+          width: 16px;
+          height: 16px;
         }
-        svg:hover {
+        img:hover {
           opacity: 0.7;
           transition: .3s ease-in-out;
         }
