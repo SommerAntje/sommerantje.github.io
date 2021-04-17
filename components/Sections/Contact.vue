@@ -17,13 +17,13 @@
       </p>
         <div class="inner">
           <div  class="header">
-            <h1>My Skills</h1>
+            <h1>Contact me</h1>
           </div>
-        <div class="container">
+        <div class="skill-container">
           <div class="skill-box">
             <div class="skill-title">
               <div class="img">
-                 <img src="~/assets/images/bird.svg" alt="" />
+                 <img src="~/assets/images/bird.svg" alt="" class="skill-icon" />
                </div>
                <h3>Twitter</h3>
              </div>
@@ -32,7 +32,7 @@
             <div class="skill-box">
             <div class="skill-title">
               <div class="img">
-                 <img src="~/assets/images/linkSocial.svg" alt="" />
+                 <img src="~/assets/images/linkSocial.svg" alt="" class="skill-icon" />
                </div>
                <h3>linkedIn</h3>
              </div>
@@ -41,7 +41,7 @@
             <div class="skill-box">
             <div class="skill-title">
               <div class="img">
-                 <img src="~/assets/images/github.svg" alt="" />
+                 <img src="~/assets/images/github.svg" alt="" class="skill-icon" />
                </div>
                <h3>Github</h3>
              </div>
@@ -50,7 +50,7 @@
             <div class="skill-box">
             <div class="skill-title">
               <div class="img">
-                 <img src="~/assets/images/xing.svg" alt="" />
+                 <img src="~/assets/images/xing.svg" alt="" class="skill-icon" />
                </div>
                <h3>Xing</h3>
              </div>
@@ -68,5 +68,72 @@ export default {};
   line-height: 1.7;
   letter-spacing: -.1px; 
   padding-top: 5rem;
+}
+
+.inner {
+  padding-top: 20px;
+}
+
+.header {
+  text-align: center;
+  color: #000;
+  padding: 1rem;
+  position: relative;
+}
+
+.header:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #2ecc71;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.skill-box {
+  padding: 1rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-title h3 {
+  color: #000;
+  margin: 0.5rem;
+}
+
+.skill-icon {
+  width: 50px;
 }
 </style>
