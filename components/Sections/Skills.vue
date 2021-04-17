@@ -94,27 +94,39 @@ export default {};
   position: relative;
 }
 
+.skill-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 2px;
+  border-radius: 2px 0 0 2px;
+  background-color:  $primary;
+  transition: .5s;
+}
+
+.skill-title:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  border-radius: 0 2px 2px 0;
+  background-color:  $primary;
+  transition: .5s;
+}
+
 .skill-img {
   width: 90px;
   height: 90px;
   position: relative;
   border-radius: 45px;
-  background-color:  $primary-light;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: .5s;
-}
-
-.skill-img:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 90px;
-  background:  $primary;
-  border-radius: 45px 0 0 45px;
 }
 
 .skill-title h3 {

@@ -19,7 +19,7 @@
               rel="noopener"
               href="https://github.com/SommerAntje"
             ><span>Antje Sommer,</span></a>
-            a Front-End Developer based in Hamburg welcome to 
+            a Front-End Developer based in Hamburg, welcome to 
             <nuxt-link to="/posts" class="ani">
               <span>my Blog</span>
             </nuxt-link>
