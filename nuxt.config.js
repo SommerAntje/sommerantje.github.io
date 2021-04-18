@@ -15,6 +15,7 @@ module.exports = {
     baseUrl,
     productionUrl
   },
+  target: 'static',
   head: {
     title: 'Antje Sommer | Front-end Developer with UX Design and Ecommerce background',
     meta: [
@@ -117,9 +118,9 @@ module.exports = {
 
   generate: {
     routes: [
-      '/de', '404'
+      '/en', '404'
     ]
-    .concat(blogsEn.map(w => `/blog/${w}`))
-    .concat(blogsDe.map(w => `de/blog/${w}`))
+    .concat(blogsDe.map(w => `/blog/${w}`))
+    .concat(blogsEn.map(w => `/en/blog/${w}`))
   }
 }
