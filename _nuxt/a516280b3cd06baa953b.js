@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{139:function(e,n){e.exports={I18N:{useCookie:!1,alwaysRedirect:!0,locales:[{code:"en",iso:"en-US",name:"English",file:"en/index.js"},{code:"de",iso:"de-DE",name:"German",file:"de/index.js"}],lazy:!0,seo:!1,langDir:"/locales/",defaultLocale:"de",parsePages:!1}}}}]);
