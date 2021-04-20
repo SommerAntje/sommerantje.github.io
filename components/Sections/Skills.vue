@@ -42,7 +42,7 @@
                 </div>
                 <h3>Soft Skills</h3>
               </div>
-                <p class="skill-content">#Agile Software Development #Pair Porgramming #Mentoring #Creative #Leadership
+                <p class="skill-content">#Agile Software Development #Pair Programming #Mentoring #Creative #Leadership
                   #Approachability #Teamplayer #Patience #Ability to Take Criticism #Responsibility</p>
             </div>
          </div>
