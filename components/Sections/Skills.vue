@@ -5,7 +5,7 @@
             <div class="skill-box">
               <div class="skill-title">
                 <div class="skill-img">
-                  <img src="~/assets/images/code_tag.svg" alt="" class="skill-icon" />
+                  <img src="~/assets/images/code_tag.svg" alt="technologies image" class="skill-icon" />
                 </div>
                <h3>Technologies</h3>
               </div>
@@ -16,7 +16,7 @@
             <div class="skill-box">
               <div class="skill-title">
                 <div class="skill-img">
-                  <img src="~/assets/images/browser_coffee.svg" alt="" class="skill-icon" />
+                  <img src="~/assets/images/browser_coffee.svg" alt="experience image" class="skill-icon" />
                 </div>
                 <h3>Experiences</h3>
               </div>
@@ -28,7 +28,7 @@
             <div class="skill-box">
               <div class="skill-title">
                 <div class="skill-img">
-                  <img src="~/assets/images/experience_skills.svg" alt="" class="skill-icon" />
+                  <img src="~/assets/images/experience_skills.svg" alt="language image" class="skill-icon" />
                 </div>
                 <h3>Languages</h3>
               </div>
@@ -38,7 +38,7 @@
             <div class="skill-box">
               <div class="skill-title">
                 <div class="skill-img">
-                  <img src="~/assets/images/coffee_cup.svg" alt="" class="skill-icon" />
+                  <img src="~/assets/images/coffee_cup.svg" alt="soft skill image" class="skill-icon" />
                 </div>
                 <h3>Soft Skills</h3>
               </div>
