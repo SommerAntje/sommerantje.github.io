@@ -18,9 +18,9 @@
                 <div class="skill-img">
                   <img src="~/assets/images/browser_coffee.svg" alt="" class="skill-icon" />
                 </div>
-                <h3>Experience</h3>
+                <h3>Experiences</h3>
               </div>
-                <p class="skill-content">#Software Development #Jamstack #micro frontend #microservice architecture 
+                <p class="skill-content">#Software Development #Jamstack architecture #micro frontend #microservice architecture 
                   #eCommerce Software #Unit Testing #CI/CD
                   #UI/UX Design 
                 </p>
@@ -43,7 +43,7 @@
                 <h3>Soft Skills</h3>
               </div>
                 <p class="skill-content">#Agile Software Development #Pair Porgramming #Mentoring #Creative #Leadership
-                  #Approachability #Teamplayer #Patience #Ability to Take Criticism </p>
+                  #Approachability #Teamplayer #Patience #Ability to Take Criticism #Responsibility</p>
             </div>
          </div>
       </div>

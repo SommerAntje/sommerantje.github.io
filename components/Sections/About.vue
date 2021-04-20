@@ -4,7 +4,7 @@
        <p class="about">
          I am Antje, a former graphic designer by profession and self-taught front-end developer based in Hamburg.
          With a focus on online shop software development, I have worked as UI/UX designer and front-end developer in e-commerce for many years.
-         <br /><br />As an autodidact I decided to follow my passion for consistent learning and to specialize focusing on vue.js.
+         <br /><br />As an autodidact I decided to follow my passion for consistent learning and to specialize focusing on vue.js and Jamstack architecture.
        Apart from being a nerd, I am also an autodidactic guitarist (bloody beginner level) and enthusiastic about learning dutch.
        <br />
       </p>
