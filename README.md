@@ -1,12 +1,6 @@
-<p align="center">
-  <a href="https://nuxtjs.org/">
-  <img src="https://avatars2.githubusercontent.com/u/23360933?s=200&v=4" height="60">
-  </a>
-  +
-  <img src="https://geekytheory.com/wp-content/uploads/2014/03/markdown_inte-1024x630.png" height="60">
-</p>
+# Web App built with  [nuxt.js](https://nuxtjs.org) + [vue.js](https://vuejs.org) + markdown hostet on [GitHub Pages](https://pages.github.com/g) &#127378; 
 
-## ✨ Quick start
+## Development 
 
 1.  **Clone this repository.**
 
@@ -24,7 +18,7 @@
 
     Your site is now running at `http://localhost:3000`!
 
-## 🧐 What's inside?
+## Structure
 
     .
     ├── node_modules
@@ -47,6 +41,7 @@
     ├── nuxt.config.js
     ├── package-lock.json
     ├── package.json
+    ├── ci.yml
     └── README.md
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
@@ -79,6 +74,6 @@
 
 15. **`README.md`**: A text file containing useful reference information about your project.
 
-## 💫 Deploy
+## Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/)
+Deploy through [GitHub actions](https://docs.github.com/en/actions/) &#128526;

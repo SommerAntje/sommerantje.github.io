@@ -6,7 +6,7 @@
           © {{ year }} — <span v-html="$t('footer.credits')"/>
         </div>
         <a id="arrow-up" class="footer__top-page"  @click="scrollTop">
-          <img src="~/assets/images/arrow_up.svg" />
+          <img alt="arrowup" src="~/assets/images/arrow_up.svg" />
         </a>
       </div>
     </div>

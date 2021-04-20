@@ -27,7 +27,7 @@
         </h1>
         <h3>Scroll down to read more</h3>
         <div id="arrow-down">
-          <img src="~/assets/images/arrow_down.svg" />
+          <img alt="arrowdown" src="~/assets/images/arrow_down.svg" />
         </div>
       </div>
     </div>
