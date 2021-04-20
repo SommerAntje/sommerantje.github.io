@@ -20,7 +20,7 @@
                 </div>
                 <h3>Experience</h3>
               </div>
-                <p class="skill-content">#Software Development #micro frontend #microservice architecture 
+                <p class="skill-content">#Software Development #Jamstack #micro frontend #microservice architecture 
                   #eCommerce Software #Unit Testing #CI/CD
                   #UI/UX Design 
                 </p>
