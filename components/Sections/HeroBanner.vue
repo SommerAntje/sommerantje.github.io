@@ -25,7 +25,7 @@
             </nuxt-link>
           </span>
         </h1>
-        <h3>Scroll down to read more</h3>
+        <h2>Scroll down to read more</h2>
         <div id="arrow-down">
           <img alt="arrowdown" src="~/assets/images/arrow_down.svg" />
         </div>
@@ -139,7 +139,7 @@ export default {};
     }
   
     h1 {
-      font-family: 'Raleway ExtraLight', Arial, sans-serif;
+      font-family: $font-family-headline;
       font-size: 3rem;
       text-align: center;
       padding: 0;
@@ -169,13 +169,12 @@ export default {};
         margin-top: 0;
       }
     }
-    h3 {
-      font-family: 'Raleway ExtraLight', Arial, sans-serif;
+    h2 {
+      font-family: $font-family-headline;
       font-size: 2rem;
       color: $primary;
       text-align: center;
       padding: 4% 0;
-      text-transform: uppercase;
       letter-spacing: 4px;
       
       @media (min-width: $screen-sm) {

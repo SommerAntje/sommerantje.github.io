@@ -26,7 +26,7 @@ export default {
   width: 100%;
   display: -webkit-box;
   display: flex;
-  font-family: 'Raleway ExtraLight', Arial, sans-serif;
+  font-family: $font-family-headline;
   height: 8rem;
   justify-content: space-around;
   -webkit-box-align: center;
