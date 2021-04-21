@@ -28,7 +28,7 @@ export default {
   letter-spacing: -.1px; 
 }
 h3 {
-  font-family: 'Raleway ExtraLight', Arial, sans-serif;
+  font-family: $font-family-headline;
   color: rgba(53,168,224,1);
   font-size: 1.75rem;
 }
