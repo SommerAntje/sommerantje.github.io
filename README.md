@@ -41,7 +41,7 @@
     ├── nuxt.config.js
     ├── package-lock.json
     ├── package.json
-    ├── ci.yml
+    ├── CNAME
     └── README.md
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
