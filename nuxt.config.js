@@ -104,13 +104,14 @@ module.exports = {
       '@/assets/css/utilities/_variables.scss',
       '@/assets/css/utilities/_helpers.scss',
       '@/assets/css/base/_grid.scss',
-      '@/assets/css/base/_buttons.scss'
+      '@/assets/css/base/_buttons.scss',
+      '@/assets/css/base/_fonts.scss'
     ],
   },
 
   webfontloader: {
     custom: {
-      families: ['Graphik', 'Tiempos Headline', 'Raleway ExtraLight'],
+      families: ['Graphik','Raleway'],
       urls: ['/fonts/fonts.css']
     }
   },
