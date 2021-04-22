@@ -67,15 +67,7 @@ export default {
     @media(min-width: $screen-md){
       padding-right: 0;
       padding-left: 0;
-      max-width: 1300px;
-      margin-left: 20px;
-    }
-
-    @media(min-width: $screen-lg){
-      height: 6rem;
-      padding-right: 0;
-      padding-left: 0;
-      max-width: 1500px;
+      max-width: 1920px;
       margin-left: 20px;
     }
   }

@@ -10,7 +10,7 @@
                <h3>Technologies</h3>
               </div>
                 <p class="skill-content">#Vue.js #Tailwind CSS #Vuetify #Bootstrap #Rest API #GraphQL
-                  #jQuery #Docker #Gitlab #nuxt.js #VS Code #npm #yarn
+                  #jQuery #Docker #Wordpress / CMS #Gitlab #nuxt.js #VS Code #npm #yarn
                 </p>
             </div>
             <div class="skill-box">
@@ -21,7 +21,7 @@
                 <h3>Experiences</h3>
               </div>
                 <p class="skill-content">#Software Development #Jamstack architecture #micro frontend #microservice architecture 
-                  #eCommerce Software #Unit Testing #CI/CD
+                 #Minimum Viable Product (MVP) Development  #eCommerce Software #Unit Testing #CI/CD
                   #UI/UX Design 
                 </p>
             </div>
