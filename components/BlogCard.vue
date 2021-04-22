@@ -55,7 +55,7 @@
 
     &__title {
       font-family: $font-family-headline;
-      color: $secondary;
+      color: $grey-2;
       padding-top: 1rem;
       font-size: 2.5rem;
       transition: color .3s;

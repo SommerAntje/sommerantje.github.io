@@ -204,7 +204,7 @@
   &__title {
     font-size: 3rem;
     font-family: $font-family-headline;
-    color: $secondary;
+    color: $grey-2;
     line-height: 1.25em;
 
     @media (min-width: $screen-sm){

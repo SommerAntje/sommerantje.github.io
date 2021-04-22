@@ -148,6 +148,7 @@ export default {};
 
       a {
         cursor: pointer;
+        color: $primary;
       }
 
       @media (min-width: $screen-sm) {
@@ -197,7 +198,7 @@ export default {};
       height: 30px;
       margin-bottom: 30px;
       border-radius: 50%;
-      border: 1px solid #767676;
+      border: 1px solid $grey-2;
       padding: 5px;
         img {
           transition: .3s ease-in-out;
