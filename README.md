@@ -1,4 +1,4 @@
-# Web App built with  [nuxt.js](https://nuxtjs.org) + [vue.js](https://vuejs.org) + markdown hostet on [GitHub Pages](https://pages.github.com/g) &#127378; 
+# Web App built with  [nuxt.js](https://nuxtjs.org) + [vue.js](https://vuejs.org) + [Markdown](https://guides.github.com/features/mastering-markdown/) hostet on [GitHub Pages](https://pages.github.com/g) &#127378; 
 
 ## Development 
 
