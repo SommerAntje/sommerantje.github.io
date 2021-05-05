@@ -4,16 +4,18 @@ title: Deploy a nuxt app to GitHub Pages and host your website
 year: 24 April 2021
 id: 'deploy-nuxt-app-to-github-pages'
 description: |
-  Deploy a nuxt app to GitHub Pages by creating a workflow through GitHub actions and host your website using a custom URL
+  Deploy a nuxt app to GitHub Pages by creating a workflow through GitHub actions and host your website using a custom domain
 ---
 
-Deploying a nuxt app to GitHub Pages spare ribs ham t-bone buffalo prosciutto, frankfurter bresaola short ribs cupim ground round filet mignon shoulder pork chuck strip steak. Jowl biltong meatloaf ham hock alcatra hamburger pork chop andouille pastrami leberkas frankfurter short ribs bacon venison. Shoulder pork belly andouille burgdoggen, rump bacon boudin tongue drumstick jowl porchetta fatback cow picanha. Tri-tip sirloin venison, corned beef boudin strip steak shank ham hock ball tip andouille tongue turkey brisket landjaeger ground round. Biltong corned beef pork ham, cupim sirloin ribeye. Leberkas corned beef rump fatback prosciutto burgdoggen meatloaf kielbasa bresaola pig ham pork loin landjaeger picanha. Pastrami pork pork belly shoulder bresaola, chuck brisket flank boudin spare ribs alcatra ham picanha.
+Given you want to host a web application made with nuxt.js that includes a blog, which dynamically requests each post
+to GitHub and creates a static version in the build (pre-rendering SPA) - that also should be served from a custom domain other than the default github.io preset.
 
-Pork chop burgdoggen frankfurter porchetta salami, alcatra ham tri-tip meatball drumstick landjaeger prosciutto ball tip. Ham hock jowl spare ribs, brisket tongue jerky strip steak pork belly shoulder bresaola ground round corned beef pork loin. Tenderloin flank salami, rump brisket ham hock ham corned beef. Flank drumstick brisket, turkey ground round kevin swine filet mignon chuck tongue cupim pork chop capicola short ribs. Beef ribs brisket t-bone pork tri-tip picanha ham jerky fatback. Alcatra short ribs kielbasa meatloaf corned beef jowl brisket tail. Cow beef ham hock, pastrami boudin tenderloin jerky ball tip burgdoggen shank pig.
+This blog post documents the steps needed to be exectued in order to deploy such a web app to GitHub Pages.
+### Technologies that I've been using
 
-Spare ribs short loin turducken beef, kevin shank shoulder ham ham hock rump shankle. Capicola burgdoggen ham hock tenderloin, salami kevin shankle leberkas brisket bresaola sausage boudin. Shoulder kielbasa andouille ham hock chicken boudin beef ribs chuck tenderloin shankle. Prosciutto pastrami ball tip, ribeye filet mignon short ribs chicken ham capicola spare ribs cow fatback sausage turkey. Sausage prosciutto doner tenderloin pork belly.
-
-Kevin picanha bresaola, ribeye ball tip swine chicken pork loin. Landjaeger shoulder pork belly burgdoggen, pork loin tenderloin jowl bacon frankfurter. T-bone venison capicola ground round rump frankfurter leberkas pork chop salami burgdoggen cupim pancetta boudin. Cow doner frankfurter porchetta.
+- A pre-rendering SPA _nuxt.js, vue.js and markdown_
+- GitHub Pages
+- [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages)
 
 Landjaeger strip steak frankfurter, shoulder rump jowl short loin buffalo shankle ribeye brisket kevin pig andouille shank. Salami ham frankfurter t-bone shoulder ground round pork shankle pork loin. Picanha jerky swine capicola doner chicken prosciutto strip steak fatback shank andouille pork chop porchetta. Tenderloin shank ham leberkas capicola. Boudin swine leberkas jerky, biltong picanha cow. Porchetta tail sirloin kielbasa bacon strip steak swine short loin chuck leberkas.
 
