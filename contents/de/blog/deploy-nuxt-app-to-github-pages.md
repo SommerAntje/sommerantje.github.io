@@ -3,7 +3,7 @@ name: 'deploy-nuxt-app-to-github-pages'
 title: Deploy a nuxt app to GitHub Pages and host your website
 year: 05 May 2021
 id: 'deploy-nuxt-app-to-github-pages'
-description: 
+description: |
   Deploy a nuxt app to GitHub Pages by creating a workflow through GitHub actions and host your website using a custom domain
 ---
 Given you want to host a web application made with nuxt.js that includes a blog, which dynamically requests each post
@@ -17,11 +17,34 @@ This blog post documents the steps needed to be exectued in order to deploy such
 - [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages)
 
 
-## Push your nuxt app to your Github repository
+## Create a User Pages Site on GitHub Pages
 
-Landjaeger strip steak frankfurter, shoulder rump jowl short loin buffalo shankle ribeye brisket kevin pig andouille shank. Salami ham frankfurter t-bone shoulder ground round pork shankle pork loin. Picanha jerky swine capicola doner chicken prosciutto strip steak fatback shank andouille pork chop porchetta. Tenderloin shank ham leberkas capicola. Boudin swine leberkas jerky, biltong picanha cow. Porchetta tail sirloin kielbasa bacon strip steak swine short loin chuck leberkas.
+I wanted to host my tech blog as a website, but being also allowed to publish my blog posts at anytime without much effort by using a continuous integration workflow, which is why I choosed to host my blog on GitHub Pages, **as GitHub entitles a user to host at least one User Site Page per account for free as well.**
 
-Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
+- 
+
+<image-responsive
+  imageURL="blog/deploy-nuxt-app-to-github-pages/create_user_site.png"
+  :width="'952'"
+  :height="'509'"
+  alt="create user site" />
+
+
+<inline-code>asyncData</inline-code>
+
+```javascript
+import blogsEn from '~/contents/en/blogsEn.js'
+import blogsEs from '~/contents/es/blogsEs.js'
+
+generate: {
+  routes: [
+    '/es', '404'
+  ]
+  .concat(blogsEn.map(blog => `/blog/${blog}`))
+  .concat(blogsEs.map(blog => `es/blog/${blog}`))
+}
+```
+
 
 ## Configure your nuxt application
 
