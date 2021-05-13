@@ -17,27 +17,97 @@ This blog post documents the steps needed to be exectued in order to deploy such
 - [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages)
 
 
-## Create a User Pages Site on GitHub Pages
+## Create a User Page Site on GitHub Pages
 
-I wanted to host my tech blog as a website, but being also allowed to publish my blog posts at anytime without much effort by using a continuous integration workflow, which is why I choosed to host my blog on GitHub Pages, **as GitHub entitles a user to host at least one User Site Page per account for free.**
+I wanted to host my tech blog as a website, but being also allowed to publish my blog posts at anytime without much effort by using a continuous deployment workflow, which is why I choosed to use GitHub actions and to host my blog on GitHub Pages as user page site.
+
+I already had my blog constantly developed in a private GitHub repository, so I just needed to make the repository public, as I am using GitHub free, where a public repository is required, if you want to create a user page site for your account, **GitHub entitles a user to host at least one User page site per account for free.**
+
+To have a user page site created all I had to do afterwards, was changing the repository name under the settings tab from the project name to <inline-code>your-user-account.github.io</inline-code>, which represents a repository dedicated to the GitHub page files, where now my tech blog is stored in. 
 
 
-I already had my blog constantly developed in a private GitHub repository, so I just needed to make the repository public, as I am using GitHub free, where a public repository is required, if you want to create a User page site for your account. 
 
-To have a user page site created all I had to do afterwards, was changing the repository name under the settings tab from the project name to <inline-code>your-user-account.github.io</inline-code>, which represents a repository dedicated to the GitHub pages files, where now my tech blog is stored in as GitHub page site. 
+## Configure a continous deployment workflow with GitHub Actions
 
-**What is the gh-pages branch for?**
+As I want my content to be published automatically everytime I update the source code, I introduced a continous deployment workflow to my project using [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages).
 
-As soon as such a user page site has been created, a gh-pages branch will be added automatically - this is where GitHub will look for static content to serve, such as build artifacts. 
 
-If there hasn't been a gh-pages branch created automatically this can be done by command line from your local repository: 
+<image-responsive
+  imageURL="blog/deploy-nuxt-app-to-github-pages/_main.jpg"
+  :width="'952'"
+  :height="'509'"
+  alt="create user site" />
 
-  ```sh
-  git checkout -b gh-pages
-  git push --set-upstream origin gh-pages 
-  ```
 
-**Configure GitHub pages to serve static content**
+This workflow enables me to deploy a static site to GitHub Pages with [Static Site Generators](https://jamstack.org/generators/) and also creates a new gh-pages branch automatically, as soon as the corresponding action has been executed.
+
+To set up a workflow for my muxt project I had to create a **cd.yml** file inside of my repository like the following
+
+<inline-code>/.github/workflows/cd.yml</inline-code>
+
+```
+  name: cd
+
+  on: 
+    push:
+      branches:
+        - master
+  jobs:
+    cd:
+      runs-on: ${{ matrix.os }}
+
+      strategy:
+        matrix:
+          os: [ubuntu-latest]
+          node: [14]
+
+      steps:
+        - name: Checkout
+          uses: actions/checkout@master
+
+        - name: Setup node env
+          uses: actions/setup-node@v2.1.2
+          with:
+            node-version: ${{ matrix.node }}
+
+        - name: Install dependencies
+          run: npm ci
+
+        - name: Generate
+          run: npm run generate
+
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./dist
+            cname: antje-sommer.de
+```
+## Configure a deployment target to enable nuxt for static hosting
+
+For static sites add <inline-code>target: static</inline-code> to your **nuxt.config.js**, as Nuxt.js also works as a static site generator.
+
+ ```
+  module.exports = {
+    env: {
+      baseUrl,
+      productionUrl
+    },
+    target: 'static',
+``` 
+The nuxt <inline-code>generate</inline-code> command will generate a static version of your website. It will generate HTML for every one of your routes and put it inside of its own file in the **dist/ directory**
+
+```
+ generate: {
+    routes: [
+      '/en', '404'
+    ]
+    .concat(blogsDe.map(w => `/blog/${w}`))
+    .concat(blogsEn.map(w => `/en/blog/${w}`))
+  }
+```
+
+## Configure your User page site to serve static content
 
 Go to the **settings tab** in GitHub and navigate to **pages** to set the configuation for the gh-pages branch.
 
@@ -49,15 +119,19 @@ I selected the **gh-pages branch as source** and **serve the static content from
   :height="'509'"
   alt="create user site" />
 
+**What is the gh-pages branch for?**
 
-## Configure a workflow with GitHub Actions
+The gh-pages branch is where GitHub will look for static content to serve, such as build artifacts. 
 
-Landjaeger strip steak frankfurter, shoulder rump jowl short loin buffalo shankle ribeye brisket kevin pig andouille shank. Salami ham frankfurter t-bone shoulder ground round pork shankle pork loin. Picanha jerky swine capicola doner chicken prosciutto strip steak fatback shank andouille pork chop porchetta. Tenderloin shank ham leberkas capicola. Boudin swine leberkas jerky, biltong picanha cow. Porchetta tail sirloin kielbasa bacon strip steak swine short loin chuck leberkas.
+A gh-pages branch can either be created by command line from your local repository
 
-Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
+  ```sh
+  git checkout -b gh-pages
+  git push --set-upstream origin gh-pages 
+  ```
 
-
-## Have your website served from a custom domain 
+or by using [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages) as part of the configuration of a CD workflow.
+## Serve your website from a custom domain 
 
 Landjaeger strip steak frankfurter, shoulder rump jowl short loin buffalo shankle ribeye brisket kevin pig andouille shank. Salami ham frankfurter t-bone shoulder ground round pork shankle pork loin. Picanha jerky swine capicola doner chicken prosciutto strip steak fatback shank andouille pork chop porchetta. Tenderloin shank ham leberkas capicola. Boudin swine leberkas jerky, biltong picanha cow. Porchetta tail sirloin kielbasa bacon strip steak swine short loin chuck leberkas.
 
