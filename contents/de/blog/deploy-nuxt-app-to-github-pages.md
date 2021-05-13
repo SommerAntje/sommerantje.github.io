@@ -133,9 +133,20 @@ A gh-pages branch can either be created by command line from your local reposito
 or by using [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages) as part of the configuration of a CD workflow.
 ## Serve your website from a custom domain 
 
-Landjaeger strip steak frankfurter, shoulder rump jowl short loin buffalo shankle ribeye brisket kevin pig andouille shank. Salami ham frankfurter t-bone shoulder ground round pork shankle pork loin. Picanha jerky swine capicola doner chicken prosciutto strip steak fatback shank andouille pork chop porchetta. Tenderloin shank ham leberkas capicola. Boudin swine leberkas jerky, biltong picanha cow. Porchetta tail sirloin kielbasa bacon strip steak swine short loin chuck leberkas.
+After running a test deployment, my User page site was available on <inline-code>https://sommerantje.github.io</inline-code>
+now I wanted to have my User page site being prompted from my custom domain, which I already had set up for my old website by [webhoster.ag](https://webhoster.ag)
 
-Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
+**Configure a custom domain on GitHub**
+
+To configure a custom domain in GitHub, go to the settings tab an navigate to pages and add your custom domain accordingly.
+
+<image-responsive
+  imageURL="blog/deploy-nuxt-app-to-github-pages/custom-domain.jpg"
+  :width="'952'"
+  :height="'509'"
+  alt="create user site" />
+
+To have your custom domain set up  by your provider ..
 
 ## What problems have I encountered 
 
