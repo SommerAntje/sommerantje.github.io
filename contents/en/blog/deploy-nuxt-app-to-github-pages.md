@@ -134,12 +134,107 @@ A gh-pages branch can either be created by command line from your local reposito
 or by using [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages) as part of the configuration of a CD workflow.
 ## Serve your website from a custom domain 
 
-Landjaeger strip steak frankfurter, shoulder rump jowl short loin buffalo shankle ribeye brisket kevin pig andouille shank. Salami ham frankfurter t-bone shoulder ground round pork shankle pork loin. Picanha jerky swine capicola doner chicken prosciutto strip steak fatback shank andouille pork chop porchetta. Tenderloin shank ham leberkas capicola. Boudin swine leberkas jerky, biltong picanha cow. Porchetta tail sirloin kielbasa bacon strip steak swine short loin chuck leberkas.
+After running a test deployment, my User page site was available on <inline-code>https://sommerantje.github.io</inline-code>
+now I wanted to have my custom domain being prompted to my User page site.
 
-Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
+_Read on GitHub Docs [configure a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)_
+
+
+**Configure a custom domain on GitHub**
+
+To configure a custom domain in GitHub, go to the settings tab, navigate to pages and add your custom domain accordingly.
+
+<image-responsive
+  imageURL="blog/deploy-nuxt-app-to-github-pages/custom-domain.jpg"
+  :width="'952'"
+  :height="'509'"
+  alt="create user site" />
+
+**Set up your DNS configuration**
+
+**What is an apex domain?**
+
+An Apex domain, is a root domain that does not contain a subdomain, for example <inline-code>antje-sommer.de</inline-code> is an
+apex domain because it doesn't have a subdomain.
+
+<inline-code>www.antje-sommer.de</inline-code> is not an apex domain because it contains the subdomain part www.
+
+To point to an apex domain I use an A record pointing to the server's IP. 
+**Note:** _This solution doesn't scale and isn't viable for cloud platforms, where multiple and frequently changing backends are responsible for responding to requests._
+
+**What is a CNAME record?**
+
+An IP address isn’t always linked with one domain name. Several names can also refer to the same IP address. To enable this, the DNS uses CNAME records.
+
+A Canonical Name record is a type of resource record in the Domain Name System that maps one domain name to another. This can prove convenient when running multiple services from a single IP address. One can, for example, point _ftp.example.com_ and _www.example.com_ to the DNS entry for _example.com_ , which in turn has an A record which points to the IP address.
+
+I also use CNAME records for my subdomain pointing to <inline-code>sommerantje.github.io</inline-code>.
+
+For having these changes be made I had to contact the provider service to add the DNS settings like the following:
+
+```DNS settings
+  DNS A Records for my domain antje-sommer.de:
+  185.199.108.153
+  185.199.109.153
+  185.199.110.153
+  185.199.111.153
+  
+  A CNAME Record from www.antje-sommer.de to sommerantje.github.io
+
+```
+
+As last step I had to add my apex domain to the cname configuration inside the **cd.yml** where I have set up the peaceiris/actions-gh-pages@v3 for the deployment
+
+```
+- name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        cname: antje-sommer.de
+```
+**Enforce HTTPS**
+
+After the DNS changes have been added enforce https inside of the GitHub page settings to have your site served from https only.
+
+<image-responsive
+  imageURL="blog/deploy-nuxt-app-to-github-pages/custom_domain_setup.png"
+  :width="'952'"
+  :height="'509'"
+  alt="create user site" />
 
 ## What problems have I encountered 
 
-Landjaeger strip steak frankfurter, shoulder rump jowl short loin buffalo shankle ribeye brisket kevin pig andouille shank. Salami ham frankfurter t-bone shoulder ground round pork shankle pork loin. Picanha jerky swine capicola doner chicken prosciutto strip steak fatback shank andouille pork chop porchetta. Tenderloin shank ham leberkas capicola. Boudin swine leberkas jerky, biltong picanha cow. Porchetta tail sirloin kielbasa bacon strip steak swine short loin chuck leberkas.
+**Testing GitHub Actions is not really possible**
 
-Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
+I had to perform test deployments with minimal changes to the master branch, for 
+testing my CD.
+
+This is also how I encountered an issue within my CD configuration, as I had executed a deployment each time when I pushed to master but also with each pull request, caused by the following configuration inside of the **cd.yml**:
+
+```
+on: 
+    push:
+      branches:
+        - master
+    pull_request:
+      branches:
+        - master
+```
+
+I needed pull requests not to trigger a deployment because I am  developing my blog content on WIP:Pull requests as part of my personal workflow.
+
+**Wrong CNAME configuration within the deployment action**
+
+At the beginning I've missed adding my apex domain to the cname configuration at the deployment action.
+
+That caused a deletation of my custom domain entry within the GitHub pages settings with the consequence that each time a deployment action has been executed my domain entry appears to be empty and therefore my User page site down.
+
+```
+- name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        cname: antje-sommer.de
+``
