@@ -4,7 +4,7 @@ title: Deploy a nuxt app to GitHub Pages and host your website
 year: 14 May 2021
 id: 'deploy-nuxt-app-to-github-pages'
 description:
-  Deploy a nuxt app to GitHub Pages by creating a workflow through GitHub actions and host your website using a custom domain
+  Deploy a nuxt app to GitHub Pages by creating a workflow through GitHub actions and serve your website from a custom domain
 ---
 Given you want to host a web application made with nuxt.js that includes a blog, which dynamically requests each post
 to GitHub and creates a static version in the build (pre-rendering SPA) - that also should be served from a custom domain other than the default github.io preset.
