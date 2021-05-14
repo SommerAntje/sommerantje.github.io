@@ -9,7 +9,7 @@
                 </div>
                <h3>Technologies</h3>
               </div>
-                <p class="skill-content">#Vue.js #Tailwind CSS #Vuetify #Bootstrap #Rest API #GraphQL
+                <p class="skill-content">#Vue.js #Storybook (Vue) #Tailwind CSS #Vuetify #Bootstrap #Rest API #GraphQL
                   #jQuery #Docker #Wordpress / CMS #Gitlab #nuxt.js #VS Code #npm #yarn
                 </p>
             </div>
