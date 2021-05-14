@@ -15,6 +15,7 @@ This blog post documents the steps needed to be exectued in order to deploy such
 - A pre-rendering SPA _nuxt.js, vue.js and markdown_
 - GitHub Pages
 - [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages)
+- DNS configurations
 
 
 ## Create a User Page Site on GitHub Pages
@@ -119,7 +120,7 @@ I selected the **gh-pages branch as source** and **serve the static content from
   :height="'509'"
   alt="create user site" />
 
-**What is the gh-pages branch for?**
+**_What is the gh-pages branch for?_**
 
 The gh-pages branch is where GitHub will look for static content to serve, such as build artifacts. 
 
@@ -149,9 +150,9 @@ To configure a custom domain in GitHub, go to the settings tab, navigate to page
   :height="'509'"
   alt="create user site" />
 
-**Set up your DNS configuration**
+**Set up your DNS and CNAME configuration**
 
-**What is an apex domain?**
+**_What is an apex domain?_**
 
 An Apex domain, is a root domain that does not contain a subdomain, for example <inline-code>antje-sommer.de</inline-code> is an
 apex domain because it doesn't have a subdomain.
@@ -161,7 +162,7 @@ apex domain because it doesn't have a subdomain.
 To point to an apex domain I use an A record pointing to the server's IP. 
 **Note:** _This solution doesn't scale and isn't viable for cloud platforms, where multiple and frequently changing backends are responsible for responding to requests._
 
-**What is a CNAME record?**
+**_What is a CNAME record?_**
 
 An IP address isn’t always linked with one domain name. Several names can also refer to the same IP address. To enable this, the DNS uses CNAME records.
 
@@ -182,7 +183,7 @@ For having these changes be made I had to contact the provider service to add th
 
 ```
 
-As last step I had to add my apex domain to the cname configuration inside the **cd.yml** where I have set up the peaceiris/actions-gh-pages@v3 for the deployment
+As last steps I had to set my apex domain to the cname configuration inside the **cd.yml** where I have set up the peaceiris/actions-gh-pages@v3 for the deployment.
 
 ```
 - name: Deploy
@@ -192,6 +193,13 @@ As last step I had to add my apex domain to the cname configuration inside the *
         publish_dir: ./dist
         cname: antje-sommer.de
 ```
+
+And add a **CNAME** file to my directory on the root level, to complete the mapping.
+
+```CNAME
+  www.antje-sommer.de
+```
+
 **Enforce HTTPS**
 
 After the DNS changes have been added enforce https inside of the GitHub page settings to have your site served from https only.
@@ -223,9 +231,9 @@ on:
 
 I needed pull requests not to trigger a deployment because I am  developing my blog content on WIP:Pull requests as part of my personal workflow.
 
-**Wrong CNAME configuration within the deployment action**
+**Wrong CNAME configuration**
 
-At the beginning I've missed adding my apex domain to the cname configuration at the deployment action.
+At the beginning I've missed adding my apex domain to the cname configuration within the deployment action and creating a CNAME file in my directory contaning my subdomain.
 
 That caused a deletation of my custom domain entry within the GitHub pages settings with the consequence that each time a deployment action has been executed my domain entry appears to be empty and therefore my User page site down.
 
