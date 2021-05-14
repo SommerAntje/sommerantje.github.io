@@ -194,7 +194,7 @@ As last steps I had to set my apex domain to the cname configuration inside the 
         cname: antje-sommer.de
 ```
 
-And add a **CNAME** file to my directory on the root level, to complete the mapping.
+And add a **CNAME** file to my directory on the root level containing my subdomain, to complete the mapping.
 
 ```CNAME
   www.antje-sommer.de
