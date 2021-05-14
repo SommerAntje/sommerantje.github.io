@@ -1,7 +1,7 @@
 ---
 name: 'deploy-nuxt-app-to-github-pages'
 title: Deploy a nuxt app to GitHub Pages and host your website
-year: 05 May 2021
+year: 14 May 2021
 id: 'deploy-nuxt-app-to-github-pages'
 description: |
   Deploy a nuxt app to GitHub Pages by creating a workflow through GitHub actions and host your website using a custom domain
