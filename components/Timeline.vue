@@ -211,7 +211,7 @@ export default {
             padding: 0;
             margin: 0;
             font-size: 1.25rem;
-            font-family: 'Raleway ExtraLight', Arial, sans-serif;
+            font-family: $font-family-headline;
         }
     }
     &__content {
@@ -219,7 +219,7 @@ export default {
         h3 {
             margin: 0;
             padding: 0 0 15px 0;
-            font-family: 'Raleway ExtraLight', Arial, sans-serif;
+            font-family: $font-family-headline;
             color: $primary;
             font-size: 1.75rem;
         }

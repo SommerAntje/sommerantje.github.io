@@ -5,7 +5,7 @@
             <div class="contact-box">
               <div class="contact-title">
                 <div class="contact-img">
-                  <img src="~/assets/images/bird_2.svg" alt="" class="contact-icon" />
+                  <img src="~/assets/images/bird_2.svg" alt="twitter" class="contact-icon" />
                 </div>
                 <a
                   target="_blank"
@@ -18,7 +18,7 @@
               <div class="contact-box">
               <div class="contact-title">
                 <div class="contact-img">
-                  <img src="~/assets/images/linkSocial.svg" alt="" class="contact-icon" />
+                  <img src="~/assets/images/linkSocial.svg" alt="linkedIn" class="contact-icon" />
                 </div>
                 <a
                   target="_blank"
@@ -32,7 +32,7 @@
               <div class="contact-box">
               <div class="contact-title">
                 <div class="contact-img">
-                  <img src="~/assets/images/github_2.svg" alt="" class="contact-icon" />
+                  <img src="~/assets/images/github_2.svg" alt="github" class="contact-icon" />
                 </div>
                 <a
                   target="_blank"
@@ -45,7 +45,7 @@
             <div class="contact-box">
               <div class="contact-title">
                 <div class="contact-img">
-                  <img src="~/assets/images/xing_3.svg" alt="" class="contact-icon" />
+                  <img src="~/assets/images/xing_3.svg" alt="xing" class="contact-icon" />
                 </div>
                 <a
                   target="_blank"

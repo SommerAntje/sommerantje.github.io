@@ -27,14 +27,6 @@ export default {
     justify-content: space-between;
   }
 
-  a {
-    color: $text-negative;
-    
-    @media (min-width: $screen-sm) {
-      color: $primary;
-    }
-  }
-
   &__list {
     padding-left:0;
     
@@ -53,6 +45,14 @@ export default {
   &__item {
     margin: 10px;
     border-bottom: 1px solid $text-negative;
+
+    .ani > span {
+      color: $grey-2;
+      &:hover {
+        color: $primary-light;
+      }
+    }
+    
 
     @media  (min-width: $screen-md) and (max-width: $screen-xlg) {
       margin: 0;

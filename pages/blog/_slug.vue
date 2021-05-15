@@ -203,8 +203,9 @@
 
   &__title {
     font-size: 3rem;
-    font-family: 'Tiempos Headline', Arial, sans-serif;
-    color: $secondary;
+    font-family: $font-family-headline;
+    color: $grey-2;
+    line-height: 1.25em;
 
     @media (min-width: $screen-sm){
       font-size: 4rem;

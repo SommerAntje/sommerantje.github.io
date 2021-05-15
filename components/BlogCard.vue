@@ -54,11 +54,12 @@
     }
 
     &__title {
-      font-family: 'Tiempos Headline', Arial, sans-serif;
-      color: $secondary;
+      font-family: $font-family-headline;
+      color: $grey-2;
       padding-top: 1rem;
       font-size: 2.5rem;
       transition: color .3s;
+      line-height: 1.25em;
     }
 
     &__description {

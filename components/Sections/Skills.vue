@@ -5,30 +5,30 @@
             <div class="skill-box">
               <div class="skill-title">
                 <div class="skill-img">
-                  <img src="~/assets/images/code_tag.svg" alt="" class="skill-icon" />
+                  <img src="~/assets/images/code_tag.svg" alt="technologies image" class="skill-icon" />
                 </div>
                <h3>Technologies</h3>
               </div>
-                <p class="skill-content">#Vue.js #Tailwind CSS #Vuetify #Bootstrap #Rest API #GraphQL
-                  #jQuery #Docker #Gitlab #nuxt.js #VS Code #npm #yarn
+                <p class="skill-content">#Vue.js #Storybook (Vue) #Tailwind CSS #Vuetify #Bootstrap #Rest API #GraphQL
+                  #jQuery #Docker #Wordpress / CMS #Gitlab #nuxt.js #VS Code #npm #yarn
                 </p>
             </div>
             <div class="skill-box">
               <div class="skill-title">
                 <div class="skill-img">
-                  <img src="~/assets/images/browser_coffee.svg" alt="" class="skill-icon" />
+                  <img src="~/assets/images/browser_coffee.svg" alt="experience image" class="skill-icon" />
                 </div>
-                <h3>Experience</h3>
+                <h3>Experiences</h3>
               </div>
-                <p class="skill-content">#Software Development #micro frontend #microservice architecture 
-                  #eCommerce Software #Unit Testing #CI/CD
+                <p class="skill-content">#Software Development #Jamstack architecture #micro frontend #microservice architecture 
+                 #Minimum Viable Product (MVP) Development  #eCommerce Software #Unit Testing #CI/CD
                   #UI/UX Design 
                 </p>
             </div>
             <div class="skill-box">
               <div class="skill-title">
                 <div class="skill-img">
-                  <img src="~/assets/images/experience_skills.svg" alt="" class="skill-icon" />
+                  <img src="~/assets/images/experience_skills.svg" alt="language image" class="skill-icon" />
                 </div>
                 <h3>Languages</h3>
               </div>
@@ -38,12 +38,12 @@
             <div class="skill-box">
               <div class="skill-title">
                 <div class="skill-img">
-                  <img src="~/assets/images/coffee_cup.svg" alt="" class="skill-icon" />
+                  <img src="~/assets/images/coffee_cup.svg" alt="soft skill image" class="skill-icon" />
                 </div>
                 <h3>Soft Skills</h3>
               </div>
-                <p class="skill-content">#Agile Software Development #Pair Porgramming #Mentoring #Creative #Leadership
-                  #Approachability #Teamplayer #Patience #Ability to Take Criticism </p>
+                <p class="skill-content">#Agile Software Development #Pair Programming #Mentoring #Creative #Leadership
+                  #Approachability #Teamplayer #Patience #Ability to Take Criticism #Responsibility</p>
             </div>
          </div>
       </div>

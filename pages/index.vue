@@ -131,7 +131,7 @@
   }
 
   &__caption {
-    font-family: 'Raleway ExtraLight', Arial, sans-serif;
+    font-family: $font-family-headline;
     position: absolute;
     left: 0;
     top: 50%;

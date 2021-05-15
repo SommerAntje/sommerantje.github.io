@@ -1,6 +1,6 @@
 ---
 name: 'vue-multislider-ui'
-title: Build a Multislider Ui Component with Vue
+title: Coming soon - Build a Multislider Ui Component with Vue
 year: 10 January 2021
 id: 'vue-multislider-ui'
 description: |
