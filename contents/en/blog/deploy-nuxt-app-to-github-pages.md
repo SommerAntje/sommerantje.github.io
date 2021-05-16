@@ -244,4 +244,4 @@ That caused a deletation of my custom domain entry within the GitHub pages setti
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
         cname: antje-sommer.de
-``
+```
