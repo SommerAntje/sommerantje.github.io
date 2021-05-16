@@ -194,12 +194,6 @@ As last steps I had to set my apex domain to the cname configuration inside the 
         cname: antje-sommer.de
 ```
 
-And add a **CNAME** file to my directory on the root level containing my subdomain, to complete the mapping.
-
-```CNAME
-  www.antje-sommer.de
-```
-
 **Enforce HTTPS**
 
 After the DNS changes have been added enforce https inside of the GitHub page settings to have your site served from https only.
@@ -233,7 +227,7 @@ I needed pull requests not to trigger a deployment because I am  developing my b
 
 **Wrong CNAME configuration**
 
-At the beginning I've missed adding my apex domain to the cname configuration within the deployment action and creating a CNAME file in my directory contaning my subdomain.
+At the beginning I've missed adding my apex domain to the cname configuration within the deployment action.
 
 That caused a deletation of my custom domain entry within the GitHub pages settings with the consequence that each time a deployment action has been executed my domain entry appears to be empty and therefore my User page site down.
 
