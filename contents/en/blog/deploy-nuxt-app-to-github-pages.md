@@ -20,7 +20,7 @@ This blog post documents the steps needed to be exectued in order to deploy such
 
 ## Create a User Page Site on GitHub Pages
 
-I wanted to host my tech blog as a website, but being also allowed to publish my blog posts at anytime without much effort by using a continuous deployment workflow, which is why I choosed to use GitHub actions and to host my blog on GitHub Pages as user page site.
+I wanted to host my tech blog as a website, but being also allowed to publish my blog posts at anytime without much effort by using a continuous deployment workflow, which is why I've chosen to use GitHub actions and to host my blog on GitHub Pages as user page site.
 
 I already had my blog constantly developed in a private GitHub repository, so I just needed to make the repository public, as I am using GitHub free, where a public repository is required, if you want to create a user page site for your account, **GitHub entitles a user to host at least one User page site per account for free.**
 
