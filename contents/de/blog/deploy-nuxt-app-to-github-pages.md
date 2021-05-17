@@ -6,16 +6,13 @@ id: 'deploy-nuxt-app-to-github-pages'
 description: |
   Deploy a nuxt app to GitHub Pages by creating a workflow through GitHub actions and serve your website from a custom domain
 ---
-Given you want to host a web application made with nuxt.js that includes a blog, which dynamically requests each post
-to GitHub and creates a static version in the build (pre-rendering SPA) - that also should be served from a custom domain other than the default github.io preset.
-
-This blog post documents the steps needed to be exectued in order to deploy such a web app to GitHub Pages.
+This blog post documents the steps needed to be exectued in order to deploy a nuxt app (pre-rendering SPA) as static site generator to GitHub Pages and how to serve it as a website from a custom domain.
 ## Technologies that I've been using
 
-- A pre-rendering SPA _nuxt.js, vue.js and markdown_
+- Website and blog built with _nuxt.js, vue.js and markdown_ (pre-rendering SPA)
 - GitHub Pages
 - [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages)
-- DNS configurations
+- DNS and CNAME configurations
 
 
 ## Create a User Page Site on GitHub Pages
@@ -134,8 +131,8 @@ A gh-pages branch can either be created by command line from your local reposito
 or by using [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages) as part of the configuration of a CD workflow.
 ## Serve your website from a custom domain 
 
-After running a test deployment, my User page site was available on <inline-code>https://sommerantje.github.io</inline-code>
-now I wanted to have my custom domain being prompted to my User page site.
+After running a test deployment, my User page site was available on <inline-code>https://sommerantje.github.io</inline-code>.
+Now I wanted to have my custom domain being prompted to my User page site.
 
 _Read on GitHub Docs [configure a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)_
 
@@ -170,10 +167,11 @@ A Canonical Name record is a type of resource record in the Domain Name System t
 
 I also use CNAME records for my subdomain pointing to <inline-code>sommerantje.github.io</inline-code>.
 
-For having these changes be made I had to contact the provider service to add the DNS settings like the following:
+For having these changes to be made, I had to contact the provider service to add the DNS settings like the following:
 
 ```DNS settings
   DNS A Records for my domain antje-sommer.de:
+  // GitHub IPs
   185.199.108.153
   185.199.109.153
   185.199.110.153
@@ -182,6 +180,10 @@ For having these changes be made I had to contact the provider service to add th
   A CNAME Record from www.antje-sommer.de to sommerantje.github.io
 
 ```
+**Basically you want to create a mapping like this:**
+
+The apex domain antje-sommer.de points to the GitHub IPs, 
+while the subdomain www.antje-sommer.de leads to the CNAME sommerantje.github.io, which GitHub points back to the apex domain.
 
 As last steps I had to set my apex domain to the cname configuration inside the **cd.yml** where I have set up the peaceiris/actions-gh-pages@v3 for the deployment.
 
@@ -193,7 +195,6 @@ As last steps I had to set my apex domain to the cname configuration inside the 
         publish_dir: ./dist
         cname: antje-sommer.de
 ```
-
 **Enforce HTTPS**
 
 After the DNS changes have been added enforce https inside of the GitHub page settings to have your site served from https only.
