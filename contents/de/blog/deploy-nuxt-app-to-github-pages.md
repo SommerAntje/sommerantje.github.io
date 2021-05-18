@@ -6,27 +6,22 @@ id: 'deploy-nuxt-app-to-github-pages'
 description: |
   Deploy a nuxt app to GitHub Pages by creating a workflow through GitHub actions and serve your website from a custom domain
 ---
-Given you want to host a web application made with nuxt.js that includes a blog, which dynamically requests each post
-to GitHub and creates a static version in the build (pre-rendering SPA) - that also should be served from a custom domain other than the default github.io preset.
-
-This blog post documents the steps needed to be exectued in order to deploy such a web app to GitHub Pages.
+This blog post documents the steps needed to be exectued in order to deploy a nuxt app (pre-rendering SPA) as static site generator to GitHub Pages and how to serve it as a website from a custom domain.
 ## Technologies that I've been using
 
-- A pre-rendering SPA _nuxt.js, vue.js and markdown_
+- Website and blog built with _nuxt.js, vue.js and markdown_ (pre-rendering SPA)
 - GitHub Pages
 - [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages)
-- DNS configurations
+- DNS and CNAME configurations
 
 
 ## Create a User Page Site on GitHub Pages
 
-I wanted to host my tech blog as a website, but being also allowed to publish my blog posts at anytime without much effort by using a continuous deployment workflow, which is why I choosed to use GitHub actions and to host my blog on GitHub Pages as user page site.
+I wanted to host my tech blog as a website, but being also allowed to publish my blog posts at anytime without much effort by using a continuous deployment workflow, which is why I've chosen to use GitHub actions and to host my blog on GitHub Pages as user page site.
 
 I already had my blog constantly developed in a private GitHub repository, so I just needed to make the repository public, as I am using GitHub free, where a public repository is required, if you want to create a user page site for your account, **GitHub entitles a user to host at least one User page site per account for free.**
 
-To have a user page site created all I had to do afterwards, was changing the repository name under the settings tab from the project name to <inline-code>your-user-account.github.io</inline-code>, which represents a repository dedicated to the GitHub page files, where now my tech blog is stored in. 
-
-
+To have a user page site created all I had to do afterwards, was changing the repository name under the settings tab from the project name to <inline-code>your-user-account.github.io</inline-code>.
 
 ## Configure a continous deployment workflow with GitHub Actions
 
@@ -42,7 +37,7 @@ As I want my content to be published automatically everytime I update the source
 
 This workflow enables me to deploy a static site to GitHub Pages with [Static Site Generators](https://jamstack.org/generators/) and also creates a new gh-pages branch automatically, as soon as the corresponding action has been executed.
 
-To set up a workflow for my muxt project I had to create a **cd.yml** file inside of my repository like the following
+To set up a workflow for my nuxt project I had to create a **cd.yml** file inside of my repository like the following
 
 <inline-code>/.github/workflows/cd.yml</inline-code>
 
@@ -88,7 +83,7 @@ To set up a workflow for my muxt project I had to create a **cd.yml** file insid
 
 For static sites add <inline-code>target: static</inline-code> to your **nuxt.config.js**, as Nuxt.js also works as a static site generator.
 
- ```
+```
   module.exports = {
     env: {
       baseUrl,
@@ -107,7 +102,6 @@ The nuxt <inline-code>generate</inline-code> command will generate a static vers
     .concat(blogsEn.map(w => `/en/blog/${w}`))
   }
 ```
-
 ## Configure your User page site to serve static content
 
 Go to the **settings tab** in GitHub and navigate to **pages** to set the configuation for the gh-pages branch.
@@ -126,7 +120,7 @@ The gh-pages branch is where GitHub will look for static content to serve, such 
 
 A gh-pages branch can either be created by command line from your local repository
 
-  ```sh
+  ```
   git checkout -b gh-pages
   git push --set-upstream origin gh-pages 
   ```
@@ -134,8 +128,8 @@ A gh-pages branch can either be created by command line from your local reposito
 or by using [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages) as part of the configuration of a CD workflow.
 ## Serve your website from a custom domain 
 
-After running a test deployment, my User page site was available on <inline-code>https://sommerantje.github.io</inline-code>
-now I wanted to have my custom domain being prompted to my User page site.
+After running a test deployment, my User page site was available on <inline-code>https://sommerantje.github.io</inline-code>.
+Now I wanted to have my custom domain being prompted to my User page site.
 
 _Read on GitHub Docs [configure a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)_
 
@@ -159,8 +153,10 @@ apex domain because it doesn't have a subdomain.
 
 <inline-code>www.antje-sommer.de</inline-code> is not an apex domain because it contains the subdomain part www.
 
-To point to an apex domain I use an A record pointing to the server's IP. 
-**Note:** _This solution doesn't scale and isn't viable for cloud platforms, where multiple and frequently changing backends are responsible for responding to requests._
+To point to an apex domain I use an A record pointing to the server's IP.
+
+**Note:**
+_This solution doesn't scale and isn't viable for cloud platforms, where multiple and frequently changing backends are responsible for responding to requests._
 
 **_What is a CNAME record?_**
 
@@ -170,10 +166,11 @@ A Canonical Name record is a type of resource record in the Domain Name System t
 
 I also use CNAME records for my subdomain pointing to <inline-code>sommerantje.github.io</inline-code>.
 
-For having these changes be made I had to contact the provider service to add the DNS settings like the following:
+For having these changes to be made, I had to contact the provider service to add the DNS settings like the following:
 
-```DNS settings
+```
   DNS A Records for my domain antje-sommer.de:
+  // GitHub IPs
   185.199.108.153
   185.199.109.153
   185.199.110.153
@@ -182,6 +179,16 @@ For having these changes be made I had to contact the provider service to add th
   A CNAME Record from www.antje-sommer.de to sommerantje.github.io
 
 ```
+**Basically you want to create a mapping like this:**
+
+The apex domain antje-sommer.de points to the GitHub IPs, 
+while the subdomain www.antje-sommer.de leads to the CNAME sommerantje.github.io, which GitHub points back to the apex domain.
+
+<image-responsive
+  imageURL="blog/deploy-nuxt-app-to-github-pages/dns.png"
+  :width="'952'"
+  :height="'509'"
+  alt="dns" />
 
 As last steps I had to set my apex domain to the cname configuration inside the **cd.yml** where I have set up the peaceiris/actions-gh-pages@v3 for the deployment.
 
@@ -193,13 +200,6 @@ As last steps I had to set my apex domain to the cname configuration inside the 
         publish_dir: ./dist
         cname: antje-sommer.de
 ```
-
-And add a **CNAME** file to my directory on the root level containing my subdomain, to complete the mapping.
-
-```CNAME
-  www.antje-sommer.de
-```
-
 **Enforce HTTPS**
 
 After the DNS changes have been added enforce https inside of the GitHub page settings to have your site served from https only.
@@ -233,7 +233,7 @@ I needed pull requests not to trigger a deployment because I am  developing my b
 
 **Wrong CNAME configuration**
 
-At the beginning I've missed adding my apex domain to the cname configuration within the deployment action and creating a CNAME file in my directory contaning my subdomain.
+At the beginning I've missed adding my apex domain to the cname configuration within the deployment action.
 
 That caused a deletation of my custom domain entry within the GitHub pages settings with the consequence that each time a deployment action has been executed my domain entry appears to be empty and therefore my User page site down.
 
@@ -244,4 +244,4 @@ That caused a deletation of my custom domain entry within the GitHub pages setti
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
         cname: antje-sommer.de
-``
+```
