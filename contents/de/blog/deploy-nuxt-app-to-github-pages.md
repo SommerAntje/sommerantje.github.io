@@ -83,7 +83,7 @@ To set up a workflow for my muxt project I had to create a **cd.yml** file insid
 
 For static sites add <inline-code>target: static</inline-code> to your **nuxt.config.js**, as Nuxt.js also works as a static site generator.
 
- ```
+```
   module.exports = {
     env: {
       baseUrl,
@@ -102,7 +102,6 @@ The nuxt <inline-code>generate</inline-code> command will generate a static vers
     .concat(blogsEn.map(w => `/en/blog/${w}`))
   }
 ```
-
 ## Configure your User page site to serve static content
 
 Go to the **settings tab** in GitHub and navigate to **pages** to set the configuation for the gh-pages branch.
@@ -121,7 +120,7 @@ The gh-pages branch is where GitHub will look for static content to serve, such 
 
 A gh-pages branch can either be created by command line from your local repository
 
-  ```sh
+  ```
   git checkout -b gh-pages
   git push --set-upstream origin gh-pages 
   ```
@@ -154,8 +153,10 @@ apex domain because it doesn't have a subdomain.
 
 <inline-code>www.antje-sommer.de</inline-code> is not an apex domain because it contains the subdomain part www.
 
-To point to an apex domain I use an A record pointing to the server's IP. 
-**Note:** _This solution doesn't scale and isn't viable for cloud platforms, where multiple and frequently changing backends are responsible for responding to requests._
+To point to an apex domain I use an A record pointing to the server's IP.
+
+**Note:**
+_This solution doesn't scale and isn't viable for cloud platforms, where multiple and frequently changing backends are responsible for responding to requests._
 
 **_What is a CNAME record?_**
 
@@ -167,7 +168,7 @@ I also use CNAME records for my subdomain pointing to <inline-code>sommerantje.g
 
 For having these changes to be made, I had to contact the provider service to add the DNS settings like the following:
 
-```DNS settings
+```
   DNS A Records for my domain antje-sommer.de:
   // GitHub IPs
   185.199.108.153
