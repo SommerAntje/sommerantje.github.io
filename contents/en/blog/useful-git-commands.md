@@ -4,9 +4,9 @@ title: Useful git commands
 year: 10 January 2021
 id: 'useful-git-commands'
 description: |
-  Read about git commands that I've been using almost every day, which I am also going to provide as gist
+  Read about git commands that I've been using almost every day and how I am also going to provide them as gist
 ---
-This blog post documents the commands I've been using almost every day, which I am also going to provide as gist
+This blog post documents the commands I've been using almost every day and how I am also going to provide them as gist
 on [gist.github](https://gist.github.com)
 ## Technologies and tools that I've been using
 
