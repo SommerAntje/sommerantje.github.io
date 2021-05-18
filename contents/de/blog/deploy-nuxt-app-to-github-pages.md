@@ -21,9 +21,7 @@ I wanted to host my tech blog as a website, but being also allowed to publish my
 
 I already had my blog constantly developed in a private GitHub repository, so I just needed to make the repository public, as I am using GitHub free, where a public repository is required, if you want to create a user page site for your account, **GitHub entitles a user to host at least one User page site per account for free.**
 
-To have a user page site created all I had to do afterwards, was changing the repository name under the settings tab from the project name to <inline-code>your-user-account.github.io</inline-code>, which represents a repository dedicated to the GitHub page files, where now my tech blog is stored in. 
-
-
+To have a user page site created all I had to do afterwards, was changing the repository name under the settings tab from the project name to <inline-code>your-user-account.github.io</inline-code>.
 
 ## Configure a continous deployment workflow with GitHub Actions
 
@@ -184,6 +182,12 @@ For having these changes to be made, I had to contact the provider service to ad
 
 The apex domain antje-sommer.de points to the GitHub IPs, 
 while the subdomain www.antje-sommer.de leads to the CNAME sommerantje.github.io, which GitHub points back to the apex domain.
+
+<image-responsive
+  imageURL="blog/deploy-nuxt-app-to-github-pages/dns.png"
+  :width="'952'"
+  :height="'509'"
+  alt="dns" />
 
 As last steps I had to set my apex domain to the cname configuration inside the **cd.yml** where I have set up the peaceiris/actions-gh-pages@v3 for the deployment.
 
