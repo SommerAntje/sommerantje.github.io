@@ -38,7 +38,7 @@ As I want my content to be published automatically everytime I update the source
 
 This workflow enables me to deploy a static site to GitHub Pages with [Static Site Generators](https://jamstack.org/generators/) and also creates a new gh-pages branch automatically, as soon as the corresponding action has been executed.
 
-To set up a workflow for my muxt project I had to create a **cd.yml** file inside of my repository like the following
+To set up a workflow for my nuxt project I had to create a **cd.yml** file inside of my repository like the following
 
 <inline-code>/.github/workflows/cd.yml</inline-code>
 
