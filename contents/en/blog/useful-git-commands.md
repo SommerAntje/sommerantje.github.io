@@ -1,7 +1,7 @@
 ---
 name: 'useful-git-commands'
 title: Useful git commands
-year: 01 June 2021
+year: 02 June 2021
 id: 'useful-git-commands'
 description: |
   Read about git commands that I've been using almost every day and how I am going to provide them as gist
@@ -12,7 +12,7 @@ When I first learned about GitHub and git, I used to work with common Graphical 
 Git is the most popular distributed version control system and ubiquitous in the software world.
 This blog post documents git commands I've been using on a daily basis.
 
-The corresponding gist can be found on  [gist.github](https://gist.github.com)
+The corresponding gist to this blog post can be found on gist.github [My daily commandline](https://gist.github.com/SommerAntje/211fba15489d91d14cf7529205317b57)
 ## Used technologies and references 
 
 - git commands
@@ -204,6 +204,12 @@ npx vue-cli-service lint --max-warnings=0
 
 ## Gist
 
-**How to create a Gist**
+Gist is a service provided by GitHub that allows developers to easily share code snippets and even IDE settings (for instance for VS Code).
 
-find all commands on my gist here
+I want to have the commands stored online, so that I am able to look them up at anytime and extend the list on demand.
+
+**How to create a Gist**
+Read more on [gist documentation](https://docs.github.com/en/github/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
+
+
+Find my git commands here [My daily commandline](https://gist.github.com/SommerAntje/211fba15489d91d14cf7529205317b57)
