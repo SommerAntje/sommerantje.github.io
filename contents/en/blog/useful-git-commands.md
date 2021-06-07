@@ -185,7 +185,7 @@ npm cache clean
 npm cache clean --force  
 ```
 Run single unit tests with npm or yarn using jest
-without running the whole test suit
+without running the whole test suite
 *note (jest version must be the same as the build is using)
 
 ```
