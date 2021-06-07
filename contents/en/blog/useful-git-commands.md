@@ -42,6 +42,18 @@ git branch --merged origin/master | grep -v \* | xargs git branch -D
 ```
 git remote update origin --prune
 ```
+Delete a feature branch 
+
+```
+git branch -D <feature-branch-name>
+```
+Abort a merge by using git reset --merge or by using git merge --abort.
+
+```
+git abort merge
+git reset --merge HEAD
+```
+
 Pass --verbose to git-fetch and git-merge
 
 ```
@@ -57,6 +69,13 @@ Push a feature branch
 ```
 git push --set-upstream origin new-feature-branch-name
 ```
+Force push if you have set up a pre-push or pre-commit hook in the package.json with Husky
+as there is no push allowed due to unit tests fail
+
+```
+git push --no-verify
+```
+
 Restore a file
 
 ```
@@ -165,10 +184,18 @@ Clear a cache in npm
 npm cache clean
 npm cache clean --force  
 ```
-Run single unit test
+Run single unit tests with npm or yarn using jest
+without running the whole test suit
+*note (jest version must be the same as the build is using)
 
 ```
 npm run test:unit -t tests/unit/directory/UnitTest.spec.ts
+```
+```
+yarn run jest src/components/ui/UiComponentToTest.spec.ts
+```
+```
+yarn run jest --env=jest-environment-jsdom-sixteen  src/components/ui/UiComponentToTest.spec.ts
 ```
 Flush all pending resolved promise handlers. Useful in tests
 
@@ -210,6 +237,3 @@ I want to have the commands stored online, so that I am able to look them up at 
 
 **How to create a Gist**
 Read more on [gist documentation](https://docs.github.com/en/github/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
-
-
-Find my git commands here [My daily commandline](https://gist.github.com/SommerAntje/211fba15489d91d14cf7529205317b57)
