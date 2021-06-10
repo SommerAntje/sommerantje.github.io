@@ -22,7 +22,7 @@
     "analyze": "nuxt build --analyze"
   },
   "devDependencies": {
-    "frontmatter-markdown-loader": "^3.1.0",
+    "frontmatter-markdown-loader": "1.8.0",
     "highlight.js": "9.18.1",
     "node-sass": "4.13.1",
     "responsive-loader": "1.2.0",
