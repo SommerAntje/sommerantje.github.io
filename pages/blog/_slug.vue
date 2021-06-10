@@ -50,7 +50,6 @@
           :extra-component="extraComponent" />
       </no-ssr>
     </div>
-    <Subscribe/>
   </div>
 </template>
 
