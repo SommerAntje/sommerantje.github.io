@@ -42,13 +42,12 @@
       </div>
     </div>
     <div class="container small">
-      <!-- TODO <no-ssr> has been deprecated and will be removed in Nuxt 3, please use <client-only> instead -->
-      <no-ssr>
+      <client-only>
         <DynamicMarkdown
           :render-func="renderFunc"
           :static-render-funcs="staticRenderFuncs"
           :extra-component="extraComponent" />
-      </no-ssr>
+      </client-only>
     </div>
   </div>
 </template>
