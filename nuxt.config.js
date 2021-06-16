@@ -3,7 +3,7 @@ const path = require('path')
 const { I18N } = require('./locales/i18n-nuxt-config')
 import blogsEn from './contents/en/blogsEn.js'
 import blogsDe from './contents/de/blogsDe.js'
-
+/**TODO: replace highlight js by prism **/
 const productionUrl = {
   en: "/en",
   de: "/de"
