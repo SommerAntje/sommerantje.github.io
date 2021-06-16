@@ -173,6 +173,31 @@ Add packages to package.json as dev dependency *exact version
 ```
 npm install --save-dev --save-exact
 ```
+
+Removing a local package from your node_modules directory
+Unscoped package
+```
+npm uninstall <package_name>
+```
+Scoped package
+```
+npm uninstall <@scope/package_name>
+```
+Removing a local package from the package.json dependencies
+To remove a package from the dependencies in package.json, use the --save flag. Include the scope if the package is scoped.
+Unscoped package
+```
+npm uninstall --save <package_name>
+```
+Scoped package
+```
+npm uninstall --save <@scope/package_name>
+```
+If you installed a package as a "devDependency" (i.e. with --save-dev), use --save-dev to uninstall it
+
+```
+npm uninstall --save-dev package_name
+```
 Remove and reinstall node modules
 
 ```
