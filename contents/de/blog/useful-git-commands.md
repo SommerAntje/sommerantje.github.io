@@ -163,6 +163,15 @@ Check for package updates
 ```
 npm run check-updates
 ```
+Install a specific package 
+
+```
+yarn add some-package@version
+// or
+npm install some-package@version
+npm install markdown-it@10.0.0
+```
+
 Check for outdated dependencies in the package.json
 
 ```
