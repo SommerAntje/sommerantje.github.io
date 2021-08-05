@@ -21,7 +21,7 @@ I wanted to host my tech blog as a website, but being also allowed to publish my
 
 I already had my blog constantly developed in a private GitHub repository, so I just needed to make the repository public, as I am using GitHub free, where a public repository is required, if you want to create a user page site for your account, **GitHub entitles a user to host at least one User page site per account for free.**
 
-To have a user page site created all I had to do afterwards, was changing the repository name under the settings tab from the project name to <inline-code>your-user-account.github.io</inline-code>.
+To have a user page site created all I had to do afterwards, was changing the repository name under the settings tab from the project name to `your-user-account.github.io `.
 
 ## Configure a continous deployment workflow with GitHub Actions
 
@@ -39,7 +39,7 @@ This workflow enables me to deploy a static site to GitHub Pages with [Static Si
 
 To set up a workflow for my nuxt project I had to create a **cd.yml** file inside of my repository like the following
 
-<inline-code>/.github/workflows/cd.yml</inline-code>
+ `/.github/workflows/cd.yml `
 
 ```
   name: cd
@@ -81,7 +81,7 @@ To set up a workflow for my nuxt project I had to create a **cd.yml** file insid
 ```
 ## Configure a deployment target to enable nuxt for static hosting
 
-For static sites add <inline-code>target: static</inline-code> to your **nuxt.config.js**, as Nuxt.js also works as a static site generator.
+For static sites add `target: static ` to your **nuxt.config.js**, as Nuxt.js also works as a static site generator.
 
 ```
   module.exports = {
@@ -91,7 +91,7 @@ For static sites add <inline-code>target: static</inline-code> to your **nuxt.co
     },
     target: 'static',
 ``` 
-The nuxt <inline-code>generate</inline-code> command will generate a static version of your website. It will generate HTML for every one of your routes and put it inside of its own file in the **dist/ directory**
+The nuxt `generate ` command will generate a static version of your website. It will generate HTML for every one of your routes and put it inside of its own file in the **dist/ directory**
 
 ```
  generate: {
@@ -128,7 +128,7 @@ A gh-pages branch can either be created by command line from your local reposito
 or by using [Paeceiris GitHub Actions](https://github.com/peaceiris/actions-gh-pages) as part of the configuration of a CD workflow.
 ## Serve your website from a custom domain 
 
-After running a test deployment, my User page site was available on <inline-code>https://sommerantje.github.io</inline-code>.
+After running a test deployment, my User page site was available on `https://sommerantje.github.io `.
 Now I wanted to have my custom domain being prompted to my User page site.
 
 _Read on GitHub Docs [configure a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)_
@@ -148,10 +148,10 @@ To configure a custom domain in GitHub, go to the settings tab, navigate to page
 
 **_What is an apex domain?_**
 
-An Apex domain, is a root domain that does not contain a subdomain, for example <inline-code>antje-sommer.de</inline-code> is an
+An Apex domain, is a root domain that does not contain a subdomain, for example `antje-sommer.de ` is an
 apex domain because it doesn't have a subdomain.
 
-<inline-code>www.antje-sommer.de</inline-code> is not an apex domain because it contains the subdomain part www.
+ `www.antje-sommer.de ` is not an apex domain because it contains the subdomain part www.
 
 To point to an apex domain I use an A record pointing to the server's IP.
 
@@ -164,7 +164,7 @@ An IP address isn’t always linked with one domain name. Several names can also
 
 A Canonical Name record is a type of resource record in the Domain Name System that maps one domain name to another. This can prove convenient when running multiple services from a single IP address. One can, for example, point _ftp.example.com_ and _www.example.com_ to the DNS entry for _example.com_ , which in turn has an A record which points to the IP address.
 
-I also use CNAME records for my subdomain pointing to <inline-code>sommerantje.github.io</inline-code>.
+I also use CNAME records for my subdomain pointing to `sommerantje.github.io `.
 
 For having these changes to be made, I had to contact the provider service to add the DNS settings like the following:
 
