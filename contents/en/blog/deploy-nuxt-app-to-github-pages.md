@@ -41,7 +41,7 @@ To set up a workflow for my nuxt project I had to create a **cd.yml** file insid
 
  `/.github/workflows/cd.yml `
 
-```
+```yml
   name: cd
 
   on: 
@@ -83,7 +83,7 @@ To set up a workflow for my nuxt project I had to create a **cd.yml** file insid
 
 For static sites add `target: static ` to your **nuxt.config.js**, as Nuxt.js also works as a static site generator.
 
-```
+```js
   module.exports = {
     env: {
       baseUrl,
@@ -93,7 +93,7 @@ For static sites add `target: static ` to your **nuxt.config.js**, as Nuxt.js al
 ``` 
 The nuxt `generate ` command will generate a static version of your website. It will generate HTML for every one of your routes and put it inside of its own file in the **dist/ directory**
 
-```
+```js
  generate: {
     routes: [
       '/en', '404'
@@ -120,7 +120,7 @@ The gh-pages branch is where GitHub will look for static content to serve, such 
 
 A gh-pages branch can either be created by command line from your local repository
 
-  ```
+  ```git
   git checkout -b gh-pages
   git push --set-upstream origin gh-pages 
   ```
@@ -192,7 +192,7 @@ while the subdomain www.antje-sommer.de leads to the CNAME sommerantje.github.io
 
 As last steps I had to set my apex domain to the cname configuration inside the **cd.yml** where I have set up the peaceiris/actions-gh-pages@v3 for the deployment.
 
-```
+```yml
 - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
@@ -219,7 +219,7 @@ testing my CD.
 
 This is also how I encountered an issue within my CD configuration, as I had executed a deployment each time when I pushed to master but also with each pull request, caused by the following configuration inside of the **cd.yml**:
 
-```
+```yml
 on: 
     push:
       branches:
@@ -237,7 +237,7 @@ At the beginning I've missed adding my apex domain to the cname configuration wi
 
 That caused a deletation of my custom domain entry within the GitHub pages settings with the consequence that each time a deployment action has been executed my domain entry appears to be empty and therefore my User page site down.
 
-```
+```yml
 - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
