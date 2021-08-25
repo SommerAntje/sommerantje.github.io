@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header sticky">
     <div class="container">
       <a href="/" class="header__link-logo nuxt-link-exact-active nuxt-link-active">
          <img src="~/assets/images/logo-antje.svg" alt="Logo Antje Sommer" class="header__logo" />
@@ -21,6 +21,12 @@ export default {
 </script>
 
 <style lang="scss">
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
 
 .header {
   width: 100%;
