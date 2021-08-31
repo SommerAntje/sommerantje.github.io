@@ -42,6 +42,7 @@ export default {
   &__info-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     flex-direction: column;
 
@@ -53,7 +54,7 @@ export default {
 	&__copyright {
 		text-align: center;
 		@media (min-width: $screen-sm) {
-			text-align: inherit;
+			text-align: center;
 		}
 	}
 
@@ -66,7 +67,7 @@ export default {
     transition: 2s;
     
 		@media (min-width: $screen-sm){
-			text-align: right;
+			text-align: center;
 		}
 	}
 }
@@ -79,22 +80,21 @@ export default {
       text-align: center;
       width: 30px;
       height: 30px;
-      margin-bottom: 30px;
       border-radius: 50%;
-      border: 1px solid #767676;
+      border: 1px solid $primary;
       padding: 6px;
-        img {
-          transition: .3s ease-in-out;
-          width: 16px;
-          height: 16px;
-        }
-        img:hover {
-          opacity: 0.7;
-          transition: .3s ease-in-out;
-        }
-
-      @media (max-width: $screen-sm){
-        margin-top: 15px;
+      &:hover {
+        background-color: $primary-light;
+        transition: .3s ease-in-out;
+      }
+      img {
+        transition: .3s ease-in-out;
+        width: 16px;
+        height: 16px;
+      }
+      img:hover {
+        opacity: 0.7;
+        transition: .3s ease-in-out;
       }
     }
 </style>
