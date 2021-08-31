@@ -26,9 +26,6 @@
           </span>
         </h1>
         <h2>Scroll down to read more</h2>
-        <div id="arrow-down">
-          <img alt="arrowdown" src="~/assets/images/arrow_down.svg" />
-        </div>
       </div>
     </div>
   </section>
@@ -151,17 +148,18 @@ export default {};
         color: $primary;
       }
 
-      @media (min-width: $screen-sm) {
+      @media (max-width: $screen-sm) {
         font-size: 2.5rem;
         margin-bottom: 0;
         text-align: center;
         padding: 0;
-        margin-top:15%;
+        margin-top:10%;
       }
 
       @media (min-width: $screen-md) {
         font-size: 4rem;
         margin-bottom: 0;
+        margin-top: 5%;
         padding: 0;
       }
 
@@ -173,48 +171,12 @@ export default {};
     h2 {
       font-family: $font-family-headline;
       font-size: 2rem;
+      font-weight: 400;
       color: $primary;
       text-align: center;
       padding: 4% 0;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
       
-      @media (min-width: $screen-sm) {
-        font-size: 1.5rem;
-      }
-    }
- 
-    // Animation
-    @keyframes jump {
-      0% { top: 0; } 50% { top: 50px; } 100% { top: 0; }
-    }
-
-    // Button/Arrow
-    #arrow-down {
-      position: relative;
-      margin: 0 auto;
-      text-align: center;
-      animation: jump 5s infinite;
-      width: 30px;
-      height: 30px;
-      margin-bottom: 30px;
-      border-radius: 50%;
-      border: 1px solid $grey-2;
-      padding: 5px;
-        img {
-          transition: .3s ease-in-out;
-          width: 16px;
-          height: 16px;
-      }
-        img:hover {
-          opacity: 0.7;
-          transition: .3s ease-in-out;
-      }
-      @media (max-width: $screen-sm){
-        margin-top: 3px;
-      }
-      @media (min-width: $screen-md){
-        margin-top: 2px;
-      }    
     }
   }
 }
