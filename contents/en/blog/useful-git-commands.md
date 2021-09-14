@@ -263,6 +263,32 @@ Make vue-cli-service serve use auto fix listing for lint
 npx vue-cli-service lint --max-warnings=0 
 ```
 
+## aws - locate hidden aws directory
+
+Assuming awscli has already been installed.
+
+run aws configure first to create the ~/.aws directory 
+
+```
+aws configure
+```
+
+As .aws is a hidden directory, you need to write command ls -a. 
+This command will provide all hidden folders.
+
+```
+ls -a
+```
+
+To edit your config or credential file, navigate to the hidden directory using cd command  and 
+open the file with a nano editor 
+
+```
+ nano config
+ or 
+ nano credentials
+```
+
 ## Gist
 
 Gist is a service provided by GitHub that allows developers to easily share code snippets and even IDE settings (for instance for VS Code).
