@@ -5,6 +5,9 @@
       <nuxt-link to="/posts" class="ani">
         <span>Blog</span>
       </nuxt-link>
+       <nuxt-link   :to="{ path: localePath('index'), hash:`#contact` }" class="ani">
+        <span>Contact</span>
+      </nuxt-link>
     </li>
   </ul>
   <LangSwitcher />
