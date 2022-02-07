@@ -262,6 +262,94 @@ Make vue-cli-service serve use auto fix listing for lint
 ```
 npx vue-cli-service lint --max-warnings=0 
 ```
+## nvm
+
+nvm is a version manager for node.js that allows you to quickly install and use different versions of node via the command line.
+
+install the latest node.js version
+
+```
+nvm install node 
+```
+use the default version
+note: default versions won't be reseted in a new terminal
+
+```
+nvm use default 
+```
+list already installed node versions
+
+```
+nvm ls
+```
+list available node releases
+
+```
+nvm ls-remote
+nvm ls-remote | grep -i "latest"        
+nvm ls-remote | grep -i "<node_version>" 
+```
+install a specific node version
+
+```
+nvm install <node_version>  
+```
+install latest LTS release of NodeJS
+
+```
+nvm install --lts 
+```
+install latest npm release only
+
+```
+nvm install-latest-npm  
+```
+switch to the latest available node version
+
+```
+nvm use node 
+```
+switch to a specific version
+
+```
+nvm use <node_version_or_alias> 
+```
+switch to the latest LTS node version
+
+```
+nvm use --lts 
+```
+uninstall a specific Node version
+
+```
+nvm uninstall <node_version> 
+```
+uninstall the latest LTS release of Node
+
+```
+nvm uninstall --lts
+```
+uninstall latest (Current) release of Node
+
+```
+nvm uninstall node  
+```
+path to where a specific Node version is installed
+
+```
+nvm which <installed_node_version>  
+```
+defaults to the latest available node version on a shell
+
+```
+nvm alias default node  
+```
+set default node version on a shell
+
+```
+nvm alias default <node_version>  
+```
+To delete or uninstall nvm remove the $NVM_DIR folder (~/.nvm)
 
 ## aws - locate hidden aws directory
 
